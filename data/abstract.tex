@@ -1,39 +1,73 @@
-% !TeX root = ../thuthesis-example.tex
+% !TeX root = ../main.tex
 
 % 中英文摘要和关键字
 
 \begin{abstract}
-  论文的摘要是对论文研究内容和成果的高度概括。
-  摘要应对论文所研究的问题及其研究目的进行描述，对研究方法和过程进行简单介绍，对研究成果和所得结论进行概括。
-  摘要应具有独立性和自明性，其内容应包含与论文全文同等量的主要信息。
-  使读者即使不阅读全文，通过摘要就能了解论文的总体内容和主要成果。
+  
+位于欧洲的大型强子对撞机(LHC)的两个主要的目标是标准模型的精确测量和寻找超出标准模型的新物理。
+随着2012年标准模型中最后一个粒子希格斯玻色子的发现，
+与希格斯玻色子相关的性质测量变得非常重要，
+其中$H\to b\bar{b}$是希格斯玻色子主要的衰变模式。
+在LHC上的ATLAS实验中，
+高横动量$H\to b\bar{b}$衰变过程是通过一个距离参数R=1的LR-jet重建出来的，
+随后在这个LR-jet中重建出带有味标定信息的subjet。
+这篇论文展示了一种用于标定高横动量$H\to b\bar{b}$事例的新算法，
+新算法是基于一个前馈型神经网络，
+以LR-jet的动力学变量以及其中subjet的味标定区分因子为输入进行训练得到的，
+它不仅对LR-jet的质量没有明显的影响，而且相对于其他基线算法，
+它能更有效的排除来自于QCD过程和高横动量t夸克衰变的本底。
 
-  论文摘要的书写应力求精确、简明。
-  切忌写成对论文书写内容进行提要的形式，尤其要避免“第 1 章……；第 2 章……；……”这种或类似的陈述方式。
+同时，在寻找超出标准模型的新物理方面，
+这篇论文还展示了，
+利用ATLAS从2015年到2018年在质心系能量为$\sqrt{s}$=13TeV下收集到的总积分亮度为139$fb^{-1}$的质子-质子对撞数据，
+在事例中两个横动量最高的jet的不变质量谱中寻找衰变末态为两个jet的新共振态，其中包含末态jet被标记为b-jet的信号道。
+在平滑下降的标准模型本底上，没有发现显著的新物理信号，
+并对一系列基准信号在95\%置信度下设置了更强的排除限，包括模型无关的高斯信号。
+在衰变末态包含b-jet的信号道，
+得益于在高横动量下b-jet标定算法的显著改进，
+相对于上一轮分析，除了因积分亮度提高带来的增益之外，
+灵敏度在此基础上有了更大的提升。
 
-  关键词是为了文献标引工作、用以表示全文主要内容信息的单词或术语。
-  关键词不超过 5 个，每个关键词中间用分号分隔。
 
-  % 关键词用“英文逗号”分隔，输出时会自动处理为正确的分隔符
+
+
+
+
+
+  % 关键词用“英文逗号”分隔
   \thusetup{
-    keywords = {关键词 1, 关键词 2, 关键词 3, 关键词 4, 关键词 5},
+    keywords = {大型强子对撞机,ATLAS实验,标准模型,希格斯玻色子,b夸克,暗物质,神经网络},
   }
 \end{abstract}
 
 \begin{abstract*}
-  An abstract of a dissertation is a summary and extraction of research work and contributions.
-  Included in an abstract should be description of research topic and research objective, brief introduction to methodology and research process, and summarization of conclusion and contributions of the research.
-  An abstract should be characterized by independence and clarity and carry identical information with the dissertation.
-  It should be such that the general idea and major contributions of the dissertation are conveyed without reading the dissertation.
 
-  An abstract should be concise and to the point.
-  It is a misunderstanding to make an abstract an outline of the dissertation and words “the first chapter”, “the second chapter” and the like should be avoided in the abstract.
+Two of the most important targets of the Large Hadron Collider(LHC) is the precision measurement of the Standard Model and 
+the search for Beyond Standard Model particles and interactions.
+In 2012, the ATLAS and CMS experiments completed the search for Standard Model particles with the discovery of the Higgs boson,
+then the precision measurement of the properties of the Higgs boson becomes really important.
+Boosted Higgs bosons decaying via the dominant $H\to b\bar{b}$ mode are an essential ingredient to a number of LHC physics signatures,
+ATLAS identifies these hadronic Higgs bosons by reconstructing a large-R jet with R=1, associating variable-radius subjets to the large-R jet,
+and then assigning a flavor discriminant to each of the subjets using standard flavor tagging.
+This thesis presents an algorithm to select boosted Higgs bosons that combines flavor discriminants from up to three subjets using a feed-forward neural network.
+In addition to the decorrelation from the large-R jet mass,
+a comparison of several algorithms that combine individual subjet discriminants show that the neural network-based algorithm is the most powerful, 
+assessed on its ability to reject both boosted top quark jets and jets arising from QCD processes. 
 
-  Keywords are terms used in a dissertation for indexing, reflecting core information of the dissertation.
-  An abstract may contain a maximum of 5 keywords, with semi-colons used in between to separate one another.
+In the meantime, for the Beyond Standard Model search,
+this thesis also presents a search for new resonances decaying into a pair of jets 
+using the dataset of proton--proton collisions recorded at $\sqrt{s}$=13TeV with the ATLAS detector at the LHC between 2015 and 2018, corresponding to an integrated luminosity of 139fb$^{-1}$.
+The distribution of the invariant mass of the two leading jets is examined for local excesses above a data-derived estimate of the Standard Model background.
+In addition to an inclusive search, events with jets identified as containing $b$-hadrons are examined specifically,
+no significant excess of events above the smoothly falling background spectra is observed.
+The results are used to set cross-section upper limits at 95\% confidence level on a range of new physics scenarios, model-independent limits on Gaussian-shaped signals are also reported.
+The analysis looking at jets containing $b$-hadrons benefits from improvements in the jet flavour identification at high transverse momentum, 
+which increases its sensitivity relative to the previous analysis beyond that expected from the higher integrated luminosity.
 
-  % Use comma as seperator when inputting
+
+
+
   \thusetup{
-    keywords* = {keyword 1, keyword 2, keyword 3, keyword 4, keyword 5},
+    keywords* = {LHC, the ATLAS experiment, the Standard Model ,the Higgs boson , b-tagging ,Dark Matter, Neural network},
   }
 \end{abstract*}

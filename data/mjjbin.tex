@@ -1,0 +1,50 @@
+对于$m_{jj}$的分bin，我们希望bin的总数量达到最大，从而能够探测到尽可能窄的新共振态，
+但是，为了限制bin到bin之间事例的迁移带来的影响，bin宽需要大于探测器的分辨率。
+因此首先我们需要找到探测器的分辨率，然后决定bin宽。
+
+为了找到探测器的分辨率，
+在多个$m_{jj}^{truth}$区间，对$m_{jj}^{reco}/m_{jj}^{truth}$比率的分布用一个高斯分布进行拟合，
+然后，探测器的分辨率R可以由拟合出来的方法除以均值$R=\sigma/\mu$得到。
+其中$m_{jj}^{reco}$是由MC模拟重建出来的事例中两个领头jet的不变质量，
+利用与MC模拟重建出来的两个领头jet相关联的TH-jet，
+可以计算相应的不变质量$m_{jj}^{truth}$，
+其中TH-jet是通过产生子层面的真实粒子构建的，称为真实的jet，
+为了与探测器响应相对应，要求这些真实粒子的寿命大于10ps，且不包含$\mu$和中微子，
+随后以这些真实粒子为单元，用第~\ref{sec:JET}~小节与SR-jet重建相同的重建算法构建TH-jet，
+随后通过第~\ref{sec:JET}~小节描述的“幻影”关联~\cite{Cacciari:2008gn}
+的过程将MC模拟重建出来的jet与TH-jet的关联起来。
+
+接下来，将探测器的分辨率R随着$m_{jj}^{truth}$变化的分布用函数：
+\begin{equation} 
+\label{eq:MJJR1}
+R(m_{jj}^{truth})=\frac{a}{m_{jj}^{truth}}+\frac{b}{\sqrt{m_{jj}^{truth}}}+c
+\end{equation}
+进行拟合，用于对分辨率R的变化建模。
+在领头jet横动量$p_T>150GeV$的初始筛选条件下，
+边界946GeV略高于MC样本中$m_{jj}$分布的峰值，而且远低于用于分析的$m_{jj}$初始值。
+于是，给定一个bin初始边界$m_{initial}=946GeV$之后，
+用以下过程决定其他高质量区的bin边界：
+\begin{enumerate}
+  \item 对于给定的bin初始边界$m_{initial}$，计算相应的分辨率$R(m_{initial})$，
+  然后推断该bin中心值为$m_{centre}=m_{initial}(1+\frac{1}{2}R(m_{initial}))$；
+  \item 由推断的bin中心值$m_{center}$反过来计算bin左边的边界值
+  $m_{lower}=m_{centre}(1-\frac{1}{2}R(m_{centre}))$；
+  \item 检查$m_{initial}$和$m_{lower}$之间的相对差异是否小于0.1\%，
+  如果差异大于0.1\%且$m_{lower}>m_{initial}$，则使$m_{centre}=m_{centre}-0.01GeV$，然后重复步骤2中的过程；
+ 如果差异大于0.1\%且$m_{lower}<m_{initial}$，则使$m_{centre}=m_{centre}+0.01GeV$，然后重复步骤2中过程；
+  \item 一旦$m_{initial}$和$m_{lower}$之间的相对差异小于0.1，固定$m_{centre}$，并计算该bin右边的边界值
+  $m_{upper}=m_{centre}(1+\frac{1}{2}R(m_{centre}))$，并四舍五入到最接近的整数GeV；
+  \item 然后使$m_{initial}=m_{upper}$，并重复以上过程。
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,1634 @@
+% !TeX root = ../main.tex
+
+\chapter{高横动量希格斯玻色子衰变到双b夸克的标定}
+\label{cha:Xbb}
+
+
+自从ATLAS实验和CMS实验在2012年发现希格斯玻色子~\cite{ATLASHIGGS,CMSHIGGS}之后，与之相关的一系列性质的精确测量变得非常重要，比如其自身性质、它与标准模型中其他粒子的耦合和它的产生模式和衰变，
+这些属性都能对标准模型进行严格验证。
+而这也是LHC上两个大型探测器ATLAS和CMS的主要任务之一，
+在2015年到2018年$Run\_2$计划期间，LHC将质心系能量提高到了13TeV，ATLAS探测器和CMS探测器在这期间收集到的可用于物理分析的数据总积分亮度分别为139$fb^{-1}$和137$fb^{-1}$，
+并开展一系列与希格斯玻色子相关的研究，标准模型中希格斯玻色子的产生和衰变在第~\ref{sec:Higgs}~小节中有简要介绍，
+这里在表~\ref{tab:ACHIGGS}~中总结了ATLAS实验和CMS实验进行的与希格斯玻色子产生和衰变相关的一系列最新测量结果~\cite{ATLASHM,CMSHM}，
+ATLAS合作组和CMS合作组测得的组合希格斯玻色子信号强度
+$\footnote{组合信号强度定义为测得的信号量与标准模型所预测的信号量的比值。}$分别为1.06$\pm$0.07和$1.02^{+0.07}_{-0.06}$，
+并且由不同产生和衰变模式测得的信号强度都与标准模型的预期一致。
+
+%ATLASHIGGS\cite{ATLASHIGGS1,ATLASHIGGS2,ATLASHIGGS3,ATLASHIGGS4,ATLASHIGGS5,ATLASHIGGS6,ATLASHIGGS7}
+%CMSHIGGS\cite{CMSHIGGS1,CMSHIGGS2,CMSHIGGS3,CMSHIGGS4,CMSHIGGS5,CMSHIGGS6,CMSHIGGS7,CMSHIGGS8,CMSHIGGS9,CMSHIGGS10}
+%ATLASHBB\cite{AHbb1,AHbb2,AHbb3,AHbb4,AHbb5,AHbb6,AHbb7,AHbb8,AHbb9}
+%CMSHBB\cite{CHbb1,CHbb2,CHbb3,CHbb4}
+
+\begin{table}[ht]
+\caption{ATLAS实验和CMS实验进行的与希格斯玻色子产生和衰变相关的一系列最新测量结果。}
+\begin{center}
+\begin{adjustbox}{width=\columnwidth,center}
+\begin{tabular}{c|cc|cc}
+    \hline
+    \hline
+    \multirow{2}{*}{Analysis} & \multicolumn{2}{c|}{ATLAS} & \multicolumn{2}{c}{CMS} \\
+    & Production tags & \thead{Luminosity($fb^{-1}$) \\ and References} & Production tags & \thead{Luminosity($fb^{-1}$) \\ and References} \\
+    \hline
+    $H\rightarrow\gamma\gamma$ & \thead{ggF,VBF,WH\\ZH,$t\bar{t}H$,tH} & 139\cite{ATLASHIGGS1} & ggF,VBF,$t\bar{t}$H & 35.9\cite{CMSHIGGS2},41.5\cite{CMSHIGGS3},77.4\cite{CMSHIGGS1} \\
+    \hline
+    $H\rightarrow ZZ^*$ & \thead{ggF,VBF,WH\\ZH,$t\bar{t}H$,tH} & 36.1\cite{ATLASHIGGS5,AHbb10},139\cite{ATLASHIGGS2} & \thead{ggF,VBF,VH\\$t\bar{t}H$}& 137\cite{CMSHIGGS4}  \\
+     \hline
+    $H\rightarrow WW^*$ & ggF,VBF,$t\bar{t}H$ & 36.1\cite{ATLASHIGGS3,ATLASHIGGS5,AHbb10} & \thead{ggF,VBF,VH\\WH,ZH} & 35.9\cite{CMSHIGGS5}  \\
+     \hline
+    $H\rightarrow \tau\tau$ & ggF,VBF,$t\bar{t}H$ & 36.1\cite{ATLASHIGGS4,ATLASHIGGS5,AHbb10} & ggF,VBF,VH & 35.9\cite{CMSHIGGS6},77.4\cite{CMSHIGGS7}   \\
+     \hline
+    $H\rightarrow b\bar{b}$ & \thead{VBF,WH,ZH\\$t\bar{t}H$}  & 30.6\cite{AHbb6},36.1\cite{AHbb7,AHbb8},139\cite{AHbb5} & \thead{ggF,WH,ZH\\$t\bar{t}H$} & 35.9\cite{CHbb3},41.5\cite{CHbb2,CHbb4},77.4\cite{CHbb1} \\
+     \hline
+    $H\rightarrow \mu\mu$ & \thead{ggF,VBF,VH\\$t\bar{t}H$} & 139\cite{ATLASHIGGS6} & ggF,VBF& 35.9\cite{CMSHIGGS10}  \\
+    \hline
+    \hline
+\end{tabular}
+\end{adjustbox}
+\end{center}
+\label{tab:ACHIGGS}
+\end{table}
+
+其中，尽管$H\rightarrow b\bar{b}$衰变道是希格斯玻色子的主要衰变模式，占高达$58\%$的分支比，
+但是也因为来自QCD过程和t夸克衰变的本底非常大，使得在LHC上面观测这个衰变模式变得很困难。
+通过要求事例中包含孤立的轻子，可以显著的降低QCD本底，因此寻找$H\rightarrow b\bar{b}$衰变道灵敏度最高的产生模式是VH，
+ATLAS合作组和CMS合作组在2018年分别利用$79.8fb^{-1}$和$41.3fb^{-1}$的数据通过VH产生模式观测到显著的$H\rightarrow b\bar{b}$事例，
+显著性分别达到了4.9和4.8倍的标准差~\cite{AHbb8,CHbb3}，
+随后在2020年，ATLAS合作组利用$139fb^{-1}$的数据观测到了更加丰富的事例~\cite{AHbb5}。
+但是也有一部分研究在其他产生模式下测量$H\rightarrow b\bar{b}$的衰变，比如$t\bar{t}H$~\cite{AHbb7,AHbb8,CHbb1}、VBF~\cite{AHbb6}和高横动量区的ggF~\cite{CHbb3}。
+
+而高横动量的$H\rightarrow b\bar{b}$衰变与低横动量的$H\rightarrow b\bar{b}$衰变拓扑性质不一样，
+如图~\ref{fig:Boosted}~所示，在探测器中，来自高横动量希格斯玻色子衰变的两个b夸克接近准直，
+会合并到一个LR-jet当中，依靠其整体性使得$H\rightarrow b\bar{b}$事例更容易鉴定。
+而且在许多超出标准模型的新物理模型中~\cite{BSMHIGGS1,BSMHIGGS2,BSMHIGGS3}都引入了能与标准模型中希格斯玻色子耦合的新粒子的存在，
+这些新粒子的质量都很大，衰变产生的希格斯玻色子将会具有很高的横动量。
+因此对高横动量的$H\rightarrow b\bar{b}$衰变的研究或者标定对希格斯玻色子性质的精确测量和新物理的寻找都有着重要意义。
+
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=0.75\textwidth]{figuresXbb/Boosted.jpg}
+  \end{center}
+  \caption{
+来自高横动量希格斯玻色子衰变的两个b夸克接近准直，从而合并到一个LR-jet当中。
+  }
+    \label{fig:Boosted}
+\end{figure}
+
+
+
+\section{研究背景}
+\label{sec:XbbBKG}
+
+
+%TAGGING~\cite{TAGGING1,TAGGING2,TAGGING3,TAGGING4}
+ATLAS合作组早在2014年就开始研究强子型衰变的LR-jet标定算法。
+包括高横动量的希格斯玻色子的标定，最早在2014年它是利用LR-jet中subjet基于提升决策树的高级算法实现对LR-jet的标定的，并优化了距离参数R~\cite{TAGGING1}，
+随后在$Run\_2$计划期间合作组沿用了这一标定方法并开始使用优化后的距离参数R~\cite{TAGGING5}，
+并且后续为了更好的提高高横动量希格斯玻色子标定的性能，合作组还发展了专用的subjet重建算法~\cite{ATL-PHYS-PUB-2017-010}。
+而在2015年左右高横动量的W玻色子~\cite{TAGGING3}和t夸克(Top)的标定~\cite{TAGGING2}中，
+它们利用了LR-jet整体的独特性质发展了一系列低级算法和相应的变量(Jet substructure, JSS)用于LR-jet的标定，
+称为LR-jet的结构变量，
+表~\ref{tab:JSS}~总结了这些标定技术和对应的变量，第~\ref{sec:XbbORJSS}~小节将对它们做简要介绍。
+
+\begin{table}[ht]
+\caption{用于高横动量W玻色子和t夸克标定的各种低级算法和对应的变量。称为LR-jet的结构变量。}
+\begin{center}
+\begin{adjustbox}{width=\columnwidth,center}
+\begin{tabular}{c|c|c}
+    \hline
+    \hline
+    Observable & Variable & Tagging and reference \\
+    \hline  
+    Energy correlation ratios & \thead{$ECF_1,ECF_2$\\$ECF_1,C_2,D_2,e_3$} & t,W\cite{JSS1,JSS2} \\
+    \hline  
+    N-subjettiness & \thead{$\tau_1,\tau_2,\tau_3$\\$\tau_{21},\tau_{32}$} & t,W\cite{JSS3,JSS4} \\
+    \hline  
+    Center of mass observables & \thead{Fox Wolfram($R_2^{FW}$)\\Sphericity(S)\\Thrust($T_{MIN},T_{MAJ}$)} & W\cite{JSS5,JSS6,JSS7}  \\
+    \hline  
+    Splitting Measures & \thead{$Z_{CUT12},\mu_{12}$\\$\sqrt{d_{12}},\sqrt{d_{23}}$} & \thead{W\cite{JSS8,JSS9}\\t,w\cite{JSS10}} \\
+    \hline  
+    Planar Flow & $\mathcal{P}$& W\cite{JSS11} \\
+    \hline  
+    Dipolarity & $\mathcal{D}$ & W\cite{JSS12} \\
+    \hline  
+    Angularity & $a_3$ & W\cite{JSS13} \\
+    \hline  
+    Aplanarity & $A$ & W\cite{JSS6} \\
+    \hline  
+    KtDR & $KtDR$ & W\cite{JSS14} \\
+    \hline  
+    Qw & $Q_w$ & W\cite{JSS8} \\
+    \hline
+    \hline
+\end{tabular}
+\end{adjustbox}
+\end{center}
+\label{tab:JSS}
+\end{table}
+
+
+后来合作组利用神经网络和提升决策树将这些变量整合到更高级的LR-jet标定算法当中~\cite{ATL-PHYS-PUB-2017-004}，
+使得标定效率有了显著提升，但是随之而来也引入了一个困难，
+如图~\ref{fig:MSCULP}~所示，
+其中绿色实线表示QCD样本中LR-jet的质量分布，
+而深红色虚线表示被基于神经网络的高级算法标定之后的LR-jet质量分布，
+蓝色虚线表示被基于提升决策树的高级算法标定之后的LR-jet质量分布。
+可以看到基于神经网络和提升决策树的高级算法学会了利用LR-jet质量信息区分信号和本底，
+也就是在被高级算法标定后，QCD样本中的LR-jet的质量分布会失真，并变成类似于W玻色子的质量分布，
+使得这种高级算法与LR-jet的质量表现出非常大的非线性相关性，
+这在实际的利用质量谱测定散射截面或寻找新物理的分析中是不允许出现的。
+
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=0.9\textwidth]{figuresXbb/MSCULP.jpg}
+  \end{center}
+  \caption{
+基于神经网络(DNN)和提升决策树(BDT)的高级算法标定前和标定后，信号和本底的LR-jet质量分布。
+左图是W玻色子标定，右图为t夸克标定。
+  }
+    \label{fig:MSCULP}
+\end{figure}
+
+
+
+针对这一问题，合作组在2018年提出了多种去质量关联的技术~\cite{ATL-PHYS-PUB-2018-014}：
+专用去相关标定算法(Designed decorrelated taggers, DDT)~\cite{DDT}、
+k近邻回归方法(Fixed-efficiency k-nearest neighbours regression, k-NN)~\cite{KNN}和
+卷积结构方法(convolved substructure, CSS)~\cite{CSS}
+提供了三种解除JSS与LR-jet质量之间关联性的解析方法；
+而对抗性神经网络(adversarial neural networks, ANN)~\cite{ANN}和
+自适应增强方法(adaptive boosting for uniform efficiency, uBoost)~\cite{UBOOST}则是
+通过降低基于机器学习的高级算法与LR-jet质量之间的相关性来解决这个问题。
+其中基于对抗性神经网络的算法能成功的实现去质量关联性，但是是以牺牲精确度为代价，
+图~\ref{fig:ANNROC}~展示的是对于上述几种去质量关联的算法，
+来自W玻色子的信号jet标定效率\footnote{效率定义为算法标定的物理对象数目与用到的物理对象总数的比值。}
+与来自QCD过程的本底排除率\footnote{排除率定义为用到的物理对象总数与算法标定的物理对象数目的比值。}
+的关系，
+左图为低横动量区间[200,500]GeV，右图为横高动量区间[500,1000]GeV，
+不同颜色的虚线对应不同的去质量关联算法，
+在信号效率相等的情况下，本底排除率越高说明算法的性能越好，
+可以看到，
+基于对抗性神经网络的去质量关联算法$Z_{ANN}$相对于基于神经网络的表现出质量相关性的算法$Z_{NN}$来说，
+存在一定程度的性能损失。
+
+
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=0.9\textwidth]{figuresXbb/ANN.jpg}
+  \end{center}
+  \caption{对于不同的去质量关联算法~\cite{ATL-PHYS-PUB-2018-014}，来自W玻色子的信号jet标定效率与来自QCD过程的本底排除率的关系。
+其中LR-jet质量满足m$\in$[600,1000]GeV，左图为低横动量区间[200,500]GeV，右图为横高动量区间[500,1000]GeV。}
+    \label{fig:ANNROC}
+\end{figure}
+
+
+同时，在高横动量的希格斯玻色子标定方面，
+合作组希望结合之前沿用的技术即基于LR-jet中subjet的标定算法和高横动量的W玻色子和t夸克的标定技术，
+发展一种基于神经网络的既能实现去质量关联又能保持高精确度的高级算法。
+但在经过两轮研究人员的尝试之后，发现始终不能同时保证去质量关联和高精确度，
+我在2019年初接手这个任务之后，在尝试原有方法不可行的同时，也开始尝试新方法，
+最后成功发展出一种既能实现去质量关联又能保持高精确度的高级算法。
+
+本章将要展示的是，基于前馈型深度学习神经网络~\cite{FDNN}和变量控制的方法，利用LR-jet的运动学变量和其中subjet的高级标定算法，
+实现了一种既能实现去质量关联又能保持高精确度的高横动量$H\rightarrow b\bar{b}$标定算法。
+
+\section{MC样本}
+\label{sec:XbbSim}
+
+\subsection{信号}
+\label{sec:XbbSimS}
+
+为了产生丰富的信号事例，
+高横动量的希格斯玻色子是由MC模拟的超出标准模型的Randall-Sundrum额外维模型~\cite{Randall:1999ee}产生，
+模型中的Kaluza-Klein引力子能与标准模型中希格斯玻色子耦合，其中耦合参数被设置为$k/\bar{M}_P=1$，
+并衰变到两个希格斯玻色子，希格斯玻色子的质量设置为125GeV，
+两个希格斯玻色子随后均衰变为$b\bar{b}$夸克对。
+事例是使用领头阶NNPDF2.3部分子分布函数~\cite{Martin:2009iq}和\textsc{ATLAS A14}校准参数集~\cite{ATL-PHYS-PUB-2014-021}
+并通过\textsc{Pythia 8.186}~\cite{Sjostrand:2007gs}和\textsc{MadGraph5}~\cite{Alwall:2014hca}模拟产生。
+Kaluza-Klein引力子和希格斯玻色子之间的质量差距足够大的情况下可以迫使衰变出来的希格斯玻色子具有高横动量，
+因此，这里模拟到的Kaluza-Klein引力子质量有：300、400、500、600、700、800、900、1000、1100、1200、1300、1400、1500
+、1600、1800、2000、2250、2500、2750、3000、3500、4000、4500、5000、6000GeV，
+可以使信号样本以合适的比例覆盖感兴趣的高横动量区域，这些MC样本中，希格斯玻色子只衰变到$b\bar{b}$夸克对。
+各个引力子质量不同的样本最后会合并在一起并且重新赋予权重，使得其中LR-jet的横动量分布和QCD样本中的一致，
+用于后续算法性能的评估和对比，
+下一小节也就是第小节将会介绍其中一种本底高横动量的QCD过程的模拟。
+这样加权是为了减小由未加权的样本之间的运动学差异带来的影响。
+
+
+\subsection{本底}
+\label{sec:XbbSimB}
+
+这里考虑了两种本底：一种是来自QCD过程高横动量的夸克胶子相互作用或胶子自相互作用，记为multijet，
+模拟的multijet样本中事例的领头LR-jet也就是横动量最高的LR-jet的横动量分布如图~\ref{fig:bkg-pt}~所示，
+具有这种物理分布的样本会用于第~\ref{sec:XbbTagger}~小节和第~\ref{sec:XbbPerf}~小节中算法性能的评估和对比；
+另一种是来自于强子型衰变的高横动量t夸克的LR-jet，
+为了产生丰富的t夸克事例，
+t夸克样本是由$Z\prime$模型中高质量$Z' \to t\bar{t}$衰变产生，
+所模拟的$Z\prime$质量有：
+400、500、750、1000、1250、1500、1750、2000、2250、2500、2750、3000、4000、5000GeV。
+同样，所有样本最后会合并在一起并且重新加权，使得最后LR-jet的横动量分布和QCD样本中的一致，
+而且这些MC样本中，t夸克只允许强子型衰变。
+这两种本底样本都是使用领头阶NNPDF2.3部分子分布函数和\textsc{ATLAS A14}校准参数集
+并通过\textsc{Pythia 8.186}~\cite{Sjostrand:2007gs}模拟产生的。
+
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=0.75\textwidth]{figuresXbb/samples/pt_norm.pdf}
+  \end{center}
+  \caption{
+  multijet样本中LR-jet的横动量分布。分布已经被归一化。
+  }
+    \label{fig:bkg-pt}
+\end{figure}
+
+所有样本中的堆积事例都是用\textsc{Pythia 8}来实现的，
+事例中b强子和c强子衰变的建模都是用\textsc{Evtgen}~\cite{Lange:2001uf} 完成的，
+而且它们都会经过一个全模拟过程来模拟事例在ATLAS探测器中的行为~\cite{SOFT-2010-01}。
+
+
+
+\section{事例重建和筛选}
+\label{sec:XbbOR}
+
+%算法设计的目的是为了在不引入质量关联性的同时，
+%提高来自高横动量$H\rightarrow b\bar{b}$事例与来自QCD过程的multijet事例和来自强子型衰变的t夸克事例的区分度。
+事例的重建分为两步：
+第一步是重建距离参数R=1的LR-jet，这是为了俘获整个大质量粒子的衰变，比如希格斯玻色子；
+第二步是重建LR-jet中subjet，目的是为了分辨和识别由大质量粒子衰变而来的小质量粒子，比如识别由希格斯玻色子衰变而来的b夸克。
+
+\subsection{LR-jet的重建和筛选}
+\label{sec:XbbORLR}
+
+在LR-jet的重建当中，如第~\ref{sec:JET}~小节所述，先是重建量能器单元中具有噪声抑制功能的拓扑集群~\cite{PERF-2014-07}，
+然后用anti-$k_t$算法~\cite{Cacciari:2008gp}将这些拓扑集群重建为距离参数R=1的LR-jet，
+接着利用“幻影”关联算法~\cite{Cacciari:2008gn}将带电粒子的径迹与LR-jet匹配起来。
+随后通过修剪技术~\cite{Krohn:2009th}消除堆积事例和潜在事例的影响，具体来说，
+先使用距离参数为R=0.2的$k_t$算法~\cite{KTA}重建LR-jet中可能的subjet，
+如果这些subjet所携带的横动量小于LR-jet横动量的5\%，则将它们从这个LR-jet中移除。
+
+为了克服量能器有限的角分辨率，合作组有一种独立的方法用来评估LR-jet的质量~\cite{TAGGING5}，
+首先定义量能器质量$m^{calo}$和径迹质量$m^{track}$：
+\begin{equation} 
+\label{eq:LRMASS1}
+ \begin{aligned}
+  m^{calo}=\sqrt{(\sum_{i\in  calo} E_i )^2-(\sum_{i\in calo} \vec{p}_i)^2}
+  \\
+  m^{track}=\sqrt{(\sum_{i\in tracks} E_i )^2-(\sum_{i\in tracks} \vec{p}_i)^2}
+ \end{aligned}
+\end{equation}
+其中$m^{calo}$和$m^{track}$中的$(E_i,\vec{p}_i)$分别是与LR-jet关联的量能器拓扑集群和带电粒子径迹的能量和动量，
+在$m^{track}$中径迹的质量设为$\pi$介子的质量。
+通过结合与LR-jet关联的量能器拓扑集群和带电粒子径迹的信息，
+可以定义一种径迹关联质量$m^{TA}$，即LR-jet质量：
+\begin{equation} 
+\label{eq:LRMASS2}
+ \begin{aligned}
+m^{TA}=\frac{p_{T}^{calo}}{p_{T}^{track}} \times m^{track},
+\\
+p_{T}^{track}=\sum_{i\in tracks} \vec{p}_T^i, \quad p_{T}^{calo}=\sum_{i\in calo} \vec{p}_T^i
+ \end{aligned}
+\end{equation}
+其中$m^{track}$是由径迹信息得到的质量，$p_{T}^{calo}$是与LR-jet关联的拓扑集群横动量的矢量和，
+$p_{T}^{track}$ 是与LR-jet关联的径迹横动量的矢量和，
+比率$p_{T}^{calo}/p_{T}^{track}$可以修正来自LR-jet中不带电成分的贡献，从而提高LR-jet质量的分辨率。
+图~\ref{fig:LRMASS}~展示了利用以上三种方式重建出来的LR-jet质量分布在校准前和校准后的比较，
+虚线代表校准前的分布，实线代表校准后的分布，黑线代表$m^{TA}$，红线代表$m^{calo}$，蓝线代表$m^{track}$，
+从峰值位置和宽度可以看出由$m^{TA}$重建出来的LR-jet更接近真实的分布。
+最后使用从MC模拟得到的校准因子将LR-jet的能量和质量校准到粒子水平~\cite{JETM-2018-02}。
+重建和校准完成之后，满足如下筛选条件的将会用于后续算法开发和性能对比：$p_{T}$>250GeV、$p_{T}$<3000GeV和$|\eta|$<2.0。
+
+
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=0.75\textwidth]{figuresXbb/LRMASS.jpg}
+  \end{center}
+  \caption{
+  通过量能器质量$m^{calo}$、径迹质量$m^{track}$和径迹关联质量$m^{TA}$三种方式重建出来的LR-jet分布在校准前后的比较。
+  虚线代表校准前的分布，实线代表校准后的分布，黑线代表$m^{TA}$，红线代表$m^{calo}$，蓝线代表$m^{track}$。
+  }
+    \label{fig:LRMASS}
+\end{figure}
+
+
+
+\subsection{subjet的重建和筛选}
+\label{sec:XbbORSR}
+
+而在LR-jet中subjet的重建过程中，合作组最初是通过内部探测器中的径迹重建出来的~\cite{TAGGING1,TAGGING5}，
+与第~\ref{sec:JET}~小节中做法不同的是，subjet是直接以内部探测器中径迹为单元，
+固定距离参数R=0.2，用anti-$k_t$算法将这些径迹聚集并重建出来的，记为FR-jet。
+在希格斯玻色子的横动量没有足够高到使得衰变而来的两个b-jet重叠之前，FR-jet算法能非常有效的重建subjet，
+但是当横动量足够高并使衰变而来的两个b-jet重叠的时候，FR-jet算法便不能分辨这两个b-jet了，
+为了解决这一问题，在2017年经过性能优化之后，
+合作组引入了一种距离参数R可变的subjet重建算法~\cite{VRJET1,VRJET2}，记为VR-jet，
+在这个算法中，距离参数R是jet横动量$p_T$的函数：
+\begin{equation} 
+\label{eq:VR}
+R_{eff}(p_{T})=\frac{\rho}{p_T}
+\end{equation}
+其中新参数$\rho$决定了有效的subjet尺寸大小随着这个subjet横动量动量减小的速度。
+为了使b强子方向和subjet轴向之间的匹配效率最大化，这个常数$\rho=30GeV$，
+在用anti-$k_t$算法将径迹和VR-jet匹配的过程中，有效距离参数$R_{eff}$会随着subjet横动量的变化而不同，
+从而使低横动量subjet的缔合锥(association cone)更宽，高横动量subjet的缔合锥体更窄。
+除了之外，该算法还有两个附加的参数和分别是subjet大小的上限$R_{\text{min}}=0.02$和下限$R_{\text{min}}=0.4$，
+这个限制可以防止jet在低横动量时变得太大或者在高横动量时收缩到探测器分辨率以下。
+与此同时，这两种subjet重建算法中还包含以下对径迹的筛选要求：
+$p_{T}>0.5GeV$和$|\eta|<2.5$；而且其在像素探测器和半导体径迹探(SCT)测器上至少留下七个探测点(hits)；
+像素探测器上最多缺少一个预期的探测点，而半导体径迹探测器上最多缺少两个预期的探测点，并且与其他径迹最多共享一个探测点，
+这些筛选要求可以大大的减少来自堆积事例的径迹。
+然后，为了更完整收集用于b-jet标定算法实现的径迹，会将其他满足更宽松的筛选条件的径迹与subjet进行匹配~\cite{TRAVR}，
+匹配过程是基于subjet轴线与径迹之间的角距
+$\Delta R$\footnote{如式~\ref{eq:DRdef}~所示，角距$\Delta R$定义为两个物理对象在$\eta$-$\phi$平面内的距离。}
+，其阈值也会随着subjet横动量的变化而变化，
+从而使得低横动量subjet的缔合锥更宽，高横动量subjet的缔合锥体更窄，准直性更好，
+一个径迹最多与一个subjet匹配，当多个subjet满足要求时，选取$\Delta R$最小的那个subjet进行匹配。
+subjet重建完成之后，要求其满足$p_{T}$>7GeV和$|\eta|$<2.5，且至少有两条与之关联的径迹。
+如图~\ref{fig:ATLASJET2}~展示了利用FR-jet和VR-jet算法重建LR-jet中的subjet的简要示意图。
+其中VR-jet是本章第~\ref{sec:XbbTagger}~小节用于高横动量LR-jet标定算法的开发和研究的主要subjet重建算法，
+另一种subjet重建算法FR-jet也会用于第~\ref{sec:XbbPerf}~小节算法性能对比当中。
+
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=0.9\textwidth]{figuresEXP/ATLASJET2.jpg}
+  \end{center}
+  \caption{
+使用FR-jet和VR-jet算法重建LR-jet中subjet的示意图。
+  }
+    \label{fig:ATLASJET2}
+\end{figure}
+
+
+\subsection{味标签}
+\label{sec:XbbORFT}
+
+在MC样本中，FR-jet和VR-jet真实的味标签是通过与产生子层面的真实强子进行几何匹配来确定的。
+基于事例中b强子或c强子与subjet轴线之间的角距$\Delta R$
+%\footnote{如式~\ref{eq:DRdef}~所示，角距$\Delta R$定义为两个物理对象在$\eta$-$\phi$平面内的距离。}
+：如果在$\Delta R$<0.3的范围内有一个b强子，那么这个subjet被标签为b-jet，
+若是按这种方式一个b强子可以匹配多个subjet，那么只有与这个b强子最接近的subjet才被标签为b-jet；
+如果在$\Delta R$<0.3的范围内没有b强子但是有一个c强子，那么这个subjet被标签为c-jet，
+同样当一个c强子可以匹配多个subjet时，只有与这个c强子最接近的subjet才被标签为c-jet；
+如果在$\Delta R$<0.3的范围内即没有b强子也没有c强子，那么将这个subjet标签为light-jet。
+
+给LR-jet贴上正确的味标签对于后续分析标定算法的信号效率和本底排除率来说至关重要，
+它是通过其与真实jet之间匹配实现的，这里将真实jet记为TH-jet，
+在MC样本中，TH-jet是通过产生子层面的真实粒子构建的，
+为了与探测器响应相对应，要求这些真实粒子的寿命大于10ps，且不包含$\mu$和中微子，
+随后以这些真实粒子为单元，用第~\ref{sec:JET}~小节与LR-jet重建相同的重建算法构建TH-jet。
+有了TH-jet之后，基于事例中TH-jet与LR-jet轴线之间的角距$\Delta R$给LR-jet贴上真实的味标签：
+如果在$\Delta R$<1的范围内有一个来自希格斯玻色子的TH-jet，并且TH-jet中还包含两个b强子，
+那么这个LR-jet被标签为来自希格斯玻色子的LR-jet，记为Higgs-jet，
+若是按这种方式一个TH-jet可以匹配多个LR-jet，那么只有与这个TH-jet最接近的LR-jet才被标签为Higgs-jet；
+如果在$\Delta R$<1的范围内有一个来自t夸克的TH-jet，
+那么这个LR-jet被标签为来t夸克的LR-jet，记为Top-jet，
+同样当一个TH-jet可以匹配多个LR-jet，只有与这个TH-jet最接近的LR-jet才被标签为Top-jet；
+其余的LR-jet都被标签为QCD-jet。
+对于信号样本，要求事例中至少包含一个Higgs-jet。
+而对于t夸克样本中，要求事例中至少包含一个Top-jet。
+
+\subsection{LR-jet与subjet的匹配}
+\label{sec:XbbORMT}
+
+在subjet和LR-jet重建完成之后，便是subjet即FR-jet或VR-jet与LR-jet之间的匹配，
+它也是通过“幻影”关联的算法~\cite{Cacciari:2008gn}实现的。
+与简单的角距匹配相比，“幻影”关联算法匹配功能更强大，
+它可以实现具有不规则边界的jet之间的匹配。
+首先，“幻影”是指事例中subjet横动量被设置成无穷小之后的四矢量，
+基本只保留了subjet的方向信息，
+然后用anti-$k_t$算法将这个“幻影”和构成LR-jet的量能器拓扑集群重新会聚成R=1的LR-jet，
+这样保证了重建出来的LR-jet仍然是未修建之前的LR-jet，
+如果此时“幻影”也是LR-jet的组成部分，那么相应的subjet就和LR-jet匹配上了。
+
+
+\subsection{b-jet标定算法}
+\label{sec:XbbORBJ}
+
+如第~\ref{sec:BJET}~小节所描述的，对于subjet，常用的b-jet标定算法有MV2和DL1r两种~\cite{ATL-PHYS-PUB-2017-013,DLOR1,DLOR2}，
+它们都是基于一些低级算法利用机器学习发展出来的高级算法，其中的低级算法是利用b-jet独特的性质构建起来的。
+MV2以提升决策树为框架，而DL1r以深度学习神经网络为框架，
+图~\ref{fig:VRDL1r}~展示的是对于MV2、DL1和DL1r三种算法，VR-jet中b-jet标定效率与c-jet
+排除率和light-jet排除率的关系，
+可以看到DL1r的性能更优于MV2~\cite{DLOR2}。
+这里MV2和DL1r都将用作基线算法来研究高横动量$H\rightarrow b\bar{b}$标定算法的性能。
+
+\begin{figure}  
+  \begin{center}
+    \includegraphics[width=0.45\textwidth]{figuresXbb/VRDL1r2.pdf}
+    \includegraphics[width=0.45\textwidth]{figuresXbb/VRDL1r1.pdf}
+  \end{center}
+  \caption{
+  对于MV2、DL1和DL1r三种b-jet算法，VR-jet中b-jet标定效率与c-jet排除率(左图)和light-jet排除率(右图)的关系。
+   }
+  \label{fig:VRDL1r}
+\end{figure}
+
+\subsection{LR-jet的结构变量}
+\label{sec:XbbORJSS}
+
+
+前面提到，
+合作组引入了一部分用于高横动量的W玻色子和t夸克标定的LR-jet的结构变量来研究高横动量$H\rightarrow b\bar{b}$的标定算法，
+如表~\ref{tab:JS}~所示，在新算法的研究和设计过程中，我们利用了这14个典型的结构变量，这里做简要介绍。
+
+\begin{table}[ht]
+\caption{用于高横动量$H\rightarrow b\bar{b}$标定算法的研究和设计的部分LR-jet结构变量。}
+\begin{center}
+\begin{adjustbox}{width=\columnwidth,center}
+\begin{tabular}{c|c|c}
+    \hline
+    \hline
+    Observable & Variable & Tagging and reference \\
+    \hline  
+    Energy correlation ratios & $C_2,D_2,e_3$ & t,W\cite{JSS1,JSS2} \\
+    \hline  
+    N-subjettiness & $\tau_{21},\tau_{32}$ & t,W\cite{JSS3,JSS4} \\
+    \hline  
+    KtDR & $KtDR$ & W\cite{JSS14} \\
+    \hline  
+    Qw & $Q_w$ & W\cite{JSS8} \\
+    \hline  
+    Splitting Measures & $Z_{CUT12},\sqrt{d_{12}},\sqrt{d_{23}}$ & t,w\cite{JSS8,JSS10} \\ 
+    \hline  
+    Center of mass observables & Fox Wolfram($R_2^{FW}$) & W\cite{JSS5}  \\
+    \hline  
+    Aplanarity & $A$ & W\cite{JSS6} \\
+     \hline  
+    Angularity & $a_3$ & W\cite{JSS13} \\
+    \hline  
+    Planar Flow & $\mathcal{P}$& W\cite{JSS11} \\
+    \hline
+    \hline
+\end{tabular}
+\end{adjustbox}
+\end{center}
+\label{tab:JS}
+\end{table}
+
+\input{data/JSS.tex}
+
+
+\section{高横动量$H\rightarrow b\bar{b}$标定算法}
+\label{sec:XbbTagger}
+
+%新算法设计是基于深度学习神经网络，其目的是为了在不引入质量关联性的同时，
+%提高Higgs-jet与Top-jet或QCD-jet的区分能力。
+
+新算法设计是基于深度学习神经网络，在第~\ref{cha:ML}~章有简要介绍神经网络。
+新算法设计的目的是为了在不引入质量关联性的同时，
+提高来自高横动量$H\rightarrow b\bar{b}$事例与来自QCD过程的multijet事例和来自强子型衰变的t夸克事例的区分度。
+其训练是在\textsc{Keras}~\cite{Chollet:2015}的框架下以\textsc{TensorFlow}~\cite{Tensorflow:2015}为平台完成的。
+训练所用的结构参数如表~\ref{tab:Hyper}~所示，训练过程中，为了防止过拟合(Overfitting)，用于训练、验证和测试的样本是分开的，
+其中用于训练的样本容量有$6\times 10^{6}$。
+算法的输出有$p_{\text{Higgs}}$、$p_{\text{multijet}}$和$p_{\text{top}}$三个，
+分别代表事例是来自Higgs-jet、QCD-jet和Top-jet事例的概率，
+本小节新算法开发过程所用的区分因子
+为$p_{\text{Higgs}}/p_{\text{multijet}}$和$p_{\text{Higgs}}/p_{\text{top}}$，
+其中$p_{\text{Higgs}}/p_{\text{multijet}}$用来区分来自高横动量$H\rightarrow b\bar{b}$事例与来自QCD过程的multijet事例，
+$p_{\text{Higgs}}/p_{\text{top}}$用来区分来自高横动量$H\rightarrow b\bar{b}$事例与来自强子型衰变的t夸克事例。
+
+
+\subsection{输入变量控制}
+\label{sec:XbbTagger1}
+
+算法设计过程中，每个事例中用于训练的可选输入变量集主要有三种，
+它们代表事例中领头LR-jet的性质和其中subjet的性质，其中subjet是利用VR-jet算法重建出来的：
+\begin{itemize}
+       \item JS：表~\ref{tab:JS}~展示了用于高横动量的W玻色子和t夸克标定的部分LR-jet结构变量，在第~\ref{sec:XbbORJSS}~小节有简要介绍，
+       而JS表示这些变量的集合；
+       \item JK：它代表LR-jet的运动学变量集合，包括$p_{T}$和$\eta$；
+       \item DLS：它代表LR-jet中的横动量最高的三个subjet的味标定信息，由DL1r算法提供，在第~\ref{sec:BJET}~小节有简要介绍，
+       对于每个subjet，DL1r算法的输出值有三个DL1r\_pb、DL1r\_pc和DL1r\_pl，分别代表该subjet被标定为b-jet、c-jet或者light-jet的概率，总共9个变量。
+\end{itemize}
+为了实现去质量关系，显然可选输入变量中没有包含LR-jet的质量。
+其中subjet的味标定算法选择DL1r是因为DL1r比MV2性能更好~\cite{DLOR2}，
+没有把MV2算法的信息也加进去是因为DL1r和MV2都是基于一部分相同的低级算法。
+
+首先，基于变量控制的方法，我用这些输入变量集自由组合，
+保持神经网络的结构参数相同，训练出了六种不同的模型。
+表~\ref{tab:MODELS}~展示的是用神经网络训练出来的不同模型和与之对应的输入变量集。
+对于DLS变量集，如果事例中领头LR-jet中仅包含小于三个subjet，
+那么缺失的subjet的味标定信息将会由训练样本中这个变量的平均值来代替。
+
+\begin{table}[ht]
+\caption{用神经网络训练出来的不同模型和与之对应的输入变量集。}
+\begin{center}
+\begin{adjustbox}{width=\columnwidth,center}
+\begin{tabular}{c|c|c|c|c|c|c|c}
+    \hline
+    \hline
+    Model & JS & JK & DLS & JSJK & JSDLS & JKDLS & JSJKDLS \\
+    \hline  
+    Set combination & JS & JK & DLS & JS+JK & JS+DLS & JK+DLS & JS+JK+DLS\\
+    \hline
+    \hline
+\end{tabular}
+\end{adjustbox}
+\end{center}
+\label{tab:MODELS}
+\end{table}
+
+然后用测试样本对这六个模型逐个检查，观察它们是否与LR-jet质量表现出非线性相关性，
+如图~\ref{fig:XbbTagger1}~所示，
+展示的是其中三个模型DLS、JKDLS和JSJKDLS对multijet样本中LR-jet的质量分布的影响，
+即multijet样本中LR-jet的质量分布被这三个模型标定之前和标定之后的分布对比，
+其中所有分布都已经归一化。
+结果发现，其中四个模型JS、JSJK、JSDLS和JSJKDLS与LR-jet质量表现出强烈的非线性相关性，
+而JK、DLS和JKDLS则对multijet样本中LR-jet的质量分布没有明显的影响，
+可以看出，质量关联主要是由于对JS变量集的训练引起的，因为JS依赖LR-jet整体的性质，
+而LR-jet的质量又是一个很典型的整体特征量，很容易通过JS变量集中直接或者间接包含质量信息的变量被神经网络识别出来。
+
+随后，对于变量集JS中的变量，也重新利用了上述变量控制的方法逐个检查它们的质量关联性，
+结果发现只有少数不会引入质量关联，
+于是将这少数变量和JK、DLS变量集结合在一起，
+训练出一个新模型，并将这个新模型与JKDLS进行了性能对比，发现性能几乎没有提升。
+于是，我将JK和DLS作为最终用于算法训练的输入变量集，对应模型为JKDLS。
+
+
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=0.75\textwidth]{figuresXbb/XbbTagger1.pdf}
+  \end{center}
+  \caption{
+基于变量控制的其中三个模型DLS、JKDLS和JSJKDLS对multijet样本中LR-jet的质量分布的影响。所有分布都已经归一化。
+  }
+    \label{fig:XbbTagger1}
+\end{figure}
+
+
+\subsection{优化器}
+\label{sec:XbbTagger2}
+
+在确定算法训练的输入变量集JK和DLS之后，接下来我通过优化神经网络的结构参数来提高信号和本底的区分度，
+研究过程中发现，结构参数中优化器的选择对模型的性能有着比较显著的影响。
+而其他结构参数对模型性能的影响非常小，将会在第~\ref{sec:XbbTagger4}~小节介绍。
+
+这里主要考虑了两种主流的优化器\textsc{Adam}~\cite{Kingma:2014}和\textsc{SGD}~\cite{SGD}，
+通过仅控制神经网络中优化器不同，对训练出来的两个模型进行性能对比，
+如图~\ref{fig:XbbTagger2}~所示，
+展示的是以multijet作为本底时，两个模型的本底排除率随着信号效率的变化关系对比，
+可以看到，使用\textsc{Adam}优化器可以显著提升模型的性能。
+因此，我将\textsc{Adam}作为最终用于算法训练的优化器。
+
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=0.75\textwidth]{figuresXbb/XbbTagger2a.pdf}
+  \end{center}
+  \caption{
+  以multijet作为本底时，基于优化器\textsc{Adam}和\textsc{SGD}的两个模型的本底排除率随着信号效率的变化关系对比。
+%选择不同的优化器\textsc{Adam}和\textsc{SGD}进行训练时，模型JKDLS的性能对比。
+  }
+    \label{fig:XbbTagger2}
+\end{figure}
+
+
+\subsection{输入subjet个数}
+\label{sec:XbbTagger25}
+
+为了说明算法训练的输入中包含LR-jet中的横动量最高的三个subjet的味标定信息相对于
+算法训练的输入中包含LR-jet中的横动量最高的两个subjet的味标定信息来说可以为算法性能带来显著的提升，
+这里分别在这两种情况下进行训练，并对比了相应的模型性能，
+将使用LR-jet中的横动量最高的三个和两个subjet的味标定信息训练出来的模型分别记为JKDLS(3-subjets)和JKDLS(3-subjets)。
+
+如图~\ref{fig:SUBLOSS}~所示，性能对比之前，
+首先检查了两种模型中训练样本和验证样本的损失函数在训练过程中的变化趋势，
+左图展示的是模型JKDLS(3-subjets)训练过程中损失函数随着训练时期(Epoch)的变化，
+右图展示的是模型JKDLS(3-subjets)训练过程中损失函数随着训练时期的变化。
+图中训练在没到200个训练时期的时候就中断了是因为训练过程采用了EarlyStop~\cite{EarlyStop}的技术，
+它是通过监督训练过程中验证样本的损失函数值的变化来判断训练是否终止，
+它可以有效的防止过拟合，也可以节省时间。
+图中可以看到训练样本和验证样本的损失函数都是收敛的，
+这表明训练过程都是可接受的，没有出现过拟合的现象。
+
+\begin{figure}[htbp]
+  \begin{subfigure}{.5\textwidth}
+  \centering
+   \includegraphics[width=0.99\textwidth]{figuresXbb/Subjet/SUB3Loss.pdf}
+   \caption{JKDLS(3-subjets)}
+   \label{fig:}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+  \centering
+   \includegraphics[width=0.99\textwidth]{figuresXbb/Subjet/SUB2Loss.pdf}
+   \caption{JKDLS(2-subjets)}
+   \label{fig:}
+  \end{subfigure}
+  \caption{ 
+ 两种模型JKDLS(3-subjets)和JKDLS(3-subjets)的训练样本和验证样本的损失函数在训练过程中的变化趋势。
+左图展示的是模型JKDLS(3-subjets)训练过程中损失函数随着训练时期的变化，
+右图展示的是模型JKDLS(3-subjets)训练过程中损失函数随着训练时期的变化。
+图中训练在没到200个训练时期的时候就中断了是因为训练过程采用了EarlyStop~\cite{EarlyStop}的技术。
+   }
+  \label{fig:SUBLOSS}
+\end{figure} 
+
+接着对两种模型的性能进行了对比，
+在multijet和t夸克两种本底的排除率与信号效率的变化关系的对比中，
+选取了五个区间进行全方位对比：
+\begin{itemize}
+       \item 仅包含第~\ref{sec:XbbOR}~小节中筛选条件的全包含区间，记为Inclusive。
+       \item 除了第~\ref{sec:XbbOR}~小节描述的筛选条件之外，还要求事例中领头LR-jet的质量在76GeV和146GeV之间，即$m_{J}\in[76,146]GeV$， 
+       在上一轮研究~\cite{TAGGING5}当中，在LR-jet横动量大于250GeV的情况下，这个质量区间所包含的Higgs-jet的数量占总数的90\%。
+       \item 除了第~\ref{sec:XbbOR}~小节描述的筛选条件和$m_{J}\in [76,146]GeV$，还要求事例中领头LR-jet的横动量在250GeV和500GeV之间，
+       即低横动量区间$p_{T}^{J}\in [250,500]GeV$。
+       \item 除了第~\ref{sec:XbbOR}~小节描述的筛选条件和$m_{J}\in [76,146]GeV$，还要求事例中领头LR-jet的横动量在500GeV和1000GeV之间，
+       即中横动量区间$p_{T}^{J}\in [500,1000]GeV$。
+       \item 除了第~\ref{sec:XbbOR}~小节描述的筛选条件和$m_{J}\in [76,146]GeV$，还要求事例中领头LR-jet的横动量在1000GeV和3000GeV之间，
+       即高横动量区间$p_{T}^{J}\in [1000,3000]GeV$。
+\end{itemize}
+如图~\ref{fig:SubjetROC}~所示，
+对于两种模型JKDLS(3-subjets)和JKDLS(3-subjets)，
+左边的图展示的是multijet本底排除率与信号效率的变化关系的对比，
+右边的图展示的是t夸克本底排除率与信号效率的变化关系的对比，
+从上到下依次对应于五个区间
+Inclusive、$m_{J}\in [76,146]GeV$、
+$m_{J}\in [76,146]GeV, p_{T}^{J}\in [250,500]GeV$、
+$m_{J}\in [76,146]GeV, p_{T}^{J}\in [500,1000]GeV$、
+$m_{J}\in [76,146]GeV, p_{T}^{J}\in [1000,3000]GeV$
+的性能对比，
+图中下半部分是在信号效率相同时，两种模型对应的本底排除率的比值。
+可以看到模型JKDLS(3-subjets)相对于模型JKDLS(2-subjets)的性能提升非常明显，
+尤其是在t夸克本底的排除率与信号效率的变化关系的对比中，
+在高横动量区间更为显著，在信号效率为60\%的情况下，
+模型JKDLS(3-subjets)的t夸克本底排除率大约为模型JKDLS(2-subjets)的1.8倍。
+这主要是依赖于t夸克的性质~\cite{PDG}，
+t夸克主要的衰变模式是$t\to b+W^+, \bar{t}\to \bar{b}+W^-$，
+而强子型衰变的t夸克产生的W玻色子随后衰变成两个jet，
+t夸克样本中事例以LR-jet中包含3个subjet为主导，
+因此模型JKDLS(3-subjets)的性能更优。
+
+
+\begin{figure}[htbp]
+  \begin{subfigure}{.5\textwidth}
+  \centering
+   \includegraphics[width=0.75\textwidth]{figuresXbb/Subjet/SUBQCD.pdf}
+   %\caption{Higgs vs. Multijet, inclusive}
+   \caption{}
+   \label{fig:}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+  \centering
+   \includegraphics[width=0.75\textwidth]{figuresXbb/Subjet/SUBTop.pdf}
+   %\caption{Higgs vs. Top, Inclusive}
+     \caption{}
+   \label{fig:}
+  \end{subfigure}
+\newline 
+   \begin{subfigure}{.5\textwidth}
+  \centering
+   \includegraphics[width=0.75\textwidth]{figuresXbb/Subjet/SUBQCDMASS.pdf}
+   %\caption{Higgs vs. Multijet, $m_{J}\in [76,146]GeV$}
+     \caption{}
+   \label{fig:}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+  \centering
+   \includegraphics[width=0.75\textwidth]{figuresXbb/Subjet/SUBTopMASS.pdf}
+   %\caption{Higgs vs. Top, $m_{J}\in [76,146]GeV$}
+     \caption{}
+   \label{fig:}
+  \end{subfigure}
+ \newline 
+   \begin{subfigure}{.5\textwidth}
+  \centering
+   \includegraphics[width=0.75\textwidth]{figuresXbb/Subjet/SUBQCDMASSPT1.pdf}
+   %\caption{Higgs vs. Multijet, $m_{J}\in [76,146]GeV, p_{T}^{J}\in [250,500]GeV$}
+     \caption{}
+   \label{fig:}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+  \centering
+   \includegraphics[width=0.75\textwidth]{figuresXbb/Subjet/SUBTopMASSPT1.pdf}
+   %\caption{Higgs vs. Top, $m_{J}\in [76,146]GeV, p_{T}^{J}\in [250,500]GeV$}
+     \caption{}
+   \label{fig:}
+  \end{subfigure}
+ \newline 
+   \begin{subfigure}{.5\textwidth}
+  \centering
+   \includegraphics[width=0.75\textwidth]{figuresXbb/Subjet/SUBQCDMASSPT2.pdf}
+   %\caption{Higgs vs. Multijet, $m_{J}\in [76,146]GeV, p_{T}^{J}\in [500,1000]GeV$}
+     \caption{}
+   \label{fig:}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+  \centering
+   \includegraphics[width=0.75\textwidth]{figuresXbb/Subjet/SUBTopMASSPT2.pdf}
+   %\caption{Higgs vs. Top, $m_{J}\in [76,146]GeV, p_{T}^{J}\in [500,1000]GeV$}
+     \caption{}
+   \label{fig:}
+  \end{subfigure}
+ \newline 
+   \begin{subfigure}{.5\textwidth}
+  \centering
+   \includegraphics[width=0.75\textwidth]{figuresXbb/Subjet/SUBQCDMASSPT3.pdf}
+   %\caption{Higgs vs. Multijet, $m_{J}\in [76,146]GeV, p_{T}^{J}\in [1000,3000]GeV$}
+     \caption{}
+   \label{fig:}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+  \centering
+   \includegraphics[width=0.75\textwidth]{figuresXbb/Subjet/SUBTopMASSPT3.pdf}
+   %\caption{Higgs vs. Top, $m_{J}\in [76,146]GeV, p_{T}^{J}\in [1000,3000]GeV$}
+     \caption{}
+   \label{fig:}
+  \end{subfigure}
+  \caption{
+ 模型JKDLS(3-subjets)和JKDLS(3-subjets)的性能对比。
+左边的图展示的是multijet本底排除率与信号效率的变化关系的对比，右边的图展示的是t夸克本底排除率与信号效率的变化关系的对比，
+从上到下依次对应于五个区间的性能对比。
+  }
+  \label{fig:SubjetROC}
+\end{figure} 
+
+
+\subsection{加权策略}
+\label{sec:XbbTagger3}
+
+接下来，通过在训练时引入不同的权重策略，我比较了两种加权方式对训练出来的模型的影响。
+第一种称为分布采样(Resampling)，不给样本中事例赋予权重的情况下，同时对信号和本底共三个样本进行采样，
+使得LR-jets的横动量分布中每个bin的事例数等于三个样本中最小的事例数，
+如图~\ref{fig:ReweightPt}~中左图所示，采样后的结果是三个样本中LR-jet的横动量分布都是相同的，
+随后，同样在不赋予权重的情况下对算法进行训练。
+第二种称为分布加权(Reweighting)，给信号样本和t夸克样本中每个事例重新赋予权重，
+如图~\ref{fig:ReweightPt}~中右图所示，
+在包含事例权重的情况下，
+加权后的结果是信号样本和t夸克样本中LR-jet的横动量分布与multijet样本中LR-jet的横动量分布是一致的。
+随后，在含有事例权重的情况下对算法进行训练。
+这两种加权方式都能防止训练出来的模型学到三个样本中LR-jet不同的运动学特性。
+
+\begin{figure}[htbp]
+  \begin{subfigure}{.5\textwidth}
+  \centering
+   \includegraphics[width=0.99\textwidth]{figuresXbb/resample.pdf}
+   \caption{Resampling}
+   \label{fig:resample}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+  \centering
+   \includegraphics[width=0.99\textwidth]{figuresXbb/reweight.pdf}
+   \caption{Reweighting}
+   \label{fig:reweight}
+  \end{subfigure}
+  \caption{
+  算法训练过程中，两种不同的加权方式。左图表示分布采样，右图表示分布加权。
+  }
+  \label{fig:ReweightPt}
+\end{figure} 
+
+如图~\ref{fig:WEILOSS}~所示，
+同样先检查了上述两种模型中训练样本和验证样本的损失函数在训练过程中的变化趋势，
+左图展示的是基于分布采样训练出来的模型在训练过程中损失函数随着训练时期的变化，
+右图展示的是基于分布加权训练出来的模型在训练过程中损失函数随着训练时期的变化。
+图中训练在没到200个训练时期的时候就中断了是因为训练过程采用了EarlyStop的技术。
+图中可以看到训练样本和验证样本的损失函数都是收敛的，
+这表明训练过程都是可接受的，没有出现过拟合的现象。
+
+\begin{figure}[htbp]
+  \begin{subfigure}{.5\textwidth}
+  \centering
+   \includegraphics[width=0.99\textwidth]{figuresXbb/Reweight/LOSSResample.pdf}
+   \caption{JKDLS using resampling strategy}
+   \label{fig:}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+  \centering
+   \includegraphics[width=0.99\textwidth]{figuresXbb/Reweight/LOSSReweight.pdf}
+   \caption{JKDLS using reweighting strategy}
+   \label{fig:}
+  \end{subfigure}
+  \caption{ 
+  基于两种加权方式训练出来的模型的训练样本和验证样本的损失函数在训练过程中的变化趋势。
+左图展示的是基于分布采样训练出来的模型在训练过程中损失函数随着训练时期的变化，
+右图展示的是基于分布加权训练出来的模型在训练过程中损失函数随着训练时期的变化。
+图中训练在没到200个训练时期的时候就中断了是因为训练过程采用了EarlyStop的技术。
+   }
+  \label{fig:WEILOSS}
+\end{figure} 
+
+
+
+接着对比了上述两个加权方式训练出来的模型性能，
+如图~\ref{fig:ReweightROC}~所示，
+左边的图展示的是模型的multijet本底排除率与信号效率的变化关系的对比，
+右边的图展示的是模型的t夸克本底排除率与信号效率的变化关系的对比，
+从上到下依次对应于第~\ref{sec:XbbTagger25}~小节中定义的五个区间的性能对比，
+图中下半部分是在信号效率相同时，两种模型对应的本底排除率的比值。
+从图中可以看出基于分布采样训练出来的模型的性能更优，
+尤其是在高横动量区间，在信号效率为60\%的情况下，
+基于分布采样训练出来的模型的本底排除率大约为基于分布加权的模型的2倍。
+因此，我将分布采样作为最终用于算法训练的加权方式。
+
+\begin{figure}[htbp]
+  \begin{subfigure}{.5\textwidth}
+  \centering
+   \includegraphics[width=0.75\textwidth]{figuresXbb/Reweight/QCDIN.pdf}
+   \caption{}
+   \label{fig:}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+  \centering
+   \includegraphics[width=0.75\textwidth]{figuresXbb/Reweight/TOPIN.pdf}
+   \caption{}
+   \label{fig:}
+  \end{subfigure}
+\newline 
+   \begin{subfigure}{.5\textwidth}
+  \centering
+   \includegraphics[width=0.75\textwidth]{figuresXbb/Reweight/QCDMASS.pdf}
+   \caption{}
+   \label{fig:}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+  \centering
+   \includegraphics[width=0.75\textwidth]{figuresXbb/Reweight/TOPMASS.pdf}
+   \caption{}
+   \label{fig:}
+  \end{subfigure}
+ \newline 
+   \begin{subfigure}{.5\textwidth}
+  \centering
+   \includegraphics[width=0.75\textwidth]{figuresXbb/Reweight/QCDMASSPT1.pdf}
+   \caption{}
+   \label{fig:}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+  \centering
+   \includegraphics[width=0.75\textwidth]{figuresXbb/Reweight/TOPMASSPT1.pdf}
+   \caption{}
+   \label{fig:}
+  \end{subfigure}
+ \newline 
+   \begin{subfigure}{.5\textwidth}
+  \centering
+   \includegraphics[width=0.75\textwidth]{figuresXbb/Reweight/QCDMASSPT2.pdf}
+   \caption{}
+   \label{fig:}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+  \centering
+   \includegraphics[width=0.75\textwidth]{figuresXbb/Reweight/TOPMASSPT2.pdf}
+   \caption{}
+   \label{fig:}
+  \end{subfigure}
+ \newline 
+   \begin{subfigure}{.5\textwidth}
+  \centering
+   \includegraphics[width=0.75\textwidth]{figuresXbb/Reweight/QCDMASSPT3.pdf}
+   \caption{}
+   \label{fig:}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+  \centering
+   \includegraphics[width=0.75\textwidth]{figuresXbb/Reweight/TOPMASSPT3.pdf}
+   \caption{}
+   \label{fig:}
+  \end{subfigure}
+  \caption{
+  选择不同的加权方式进行训练时，模型JKDLS的性能对比。
+  左边的图展示的是模型的multijet本底排除率与信号效率的变化关系的对比，
+右边的图展示的是模型的t夸克本底排除率与信号效率的变化关系的对比，
+从上到下依次对应于五个区间的性能对比。
+  }
+  \label{fig:ReweightROC}
+\end{figure} 
+
+
+
+
+\subsection{结构参数优化}
+\label{sec:XbbTagger4}
+
+在变量、优化器和加权方式得到优化并选定之后，随后利用\textsc{Talos}~\cite{TALOS}对神经网络的结构参数进行了优化。
+首先，选取了具有表~\ref{tab:Hyper}~中结构的神经网络作为对照组(Monitored)，
+这也是前四个小节的研究所使用的结构参数。
+%算法的输出有$p_{\text{Higgs}}$、$p_{\text{multijet}}$和$p_{\text{top}}$三个，
+%分别代表LR-jet被标定为Higgs-jet、QCD-jet和Top-jet的概率。
+%用于训练、验证和测试的样本是分开的，其中用于训练的样本容量有$6\times 10^{6}$。
+
+\begin{table}[ht]
+\caption{用于对照组算法训练的神经网络的结构参数。}
+\begin{center}
+%\begin{adjustbox}{width=\columnwidth,center}
+\begin{tabular}{c|c}
+    \hline
+    \hline
+    Parameter & Value or type  \\
+    \hline  
+    Loss & Categorical crossentropy \\
+    \hline  
+    Hidden layers & 6 \\
+    \hline  
+    Nodes per hidden layers & 250 \\
+    \hline  
+    Learning rate & $10^{-2}$\\
+    \hline  
+    Learning rate decay & $10^{-5}$ \\
+    \hline  
+    Activation of inner layers & \textsc{ReLU}~\cite{Glorot:2011} \\
+    \hline  
+    Activation of outer layers & \textsc{SoftMax}~\cite{MLMIT} \\
+    \hline  
+    Batch normalization~\cite{Ioffe:2015} & $10^{4}$ \\
+    \hline  
+    Epoch & 200 \\
+    \hline
+    \hline
+\end{tabular}
+%\end{adjustbox}
+\end{center}
+\label{tab:Hyper}
+\end{table}
+
+在结构参数的优化过程中，我扫描了如表~\ref{tab:Space}~所示的分立的参数空间，
+总共108个实验，然后比较这108个实验的训练结果。
+在训练过程中，验证样本的损失函数的变化对于训练好坏的判定来说更具有参考意义，
+因此我选取了验证样本的损失函数最小的那组结构作为优化后的结构参数，称为优化组(Optimized)，
+并对比了对照组模型和优化组模型的性能。
+
+\begin{table}[ht]
+\caption{用于算法训练的神经网络结构参数优化的参数空间。}
+\begin{center}
+%\begin{adjustbox}{width=\columnwidth,center}
+\begin{tabular}{c|c}
+    \hline
+    \hline
+    Parameter & Search space  \\
+    \hline  
+    Hidden layers & [4,6,8] \\
+    \hline  
+    Nodes per hidden layers & [50,120,250,500] \\
+    \hline  
+    Learning rate & [$10^{-1}$,$10^{-2}$,$10^{-3}$]\\
+    \hline  
+    Learning rate decay & [$10^{-3}$,$10^{-4}$,$10^{-5}$] \\
+    \hline
+    \hline
+\end{tabular}
+%\end{adjustbox}
+\end{center}
+\label{tab:Space}
+\end{table}
+
+结果表明优化组与对照组的结构参数相比，仅隐层(Hidden layers)数目和学习速率(Learning rate)不同，分别为4层和$10^{-1}$。
+在性能对比时，如图~\ref{fig:LOSS}~所示，
+首先检查了对照组和优化组中训练样本和验证样本的损失函数在训练过程中的变化，
+左图展示的是对照组中损失函数随着训练时期的变化，
+右图展示的是优化组中损失函数随着训练时期的变化，
+可以在看到两组模型的训练中，用于训练和验证的损失函数都是收敛的，
+这表明训练过程都是可接受的，没有出现过拟合的现象。
+
+\begin{figure}[htbp]
+  \begin{subfigure}{.5\textwidth}
+  \centering
+   \includegraphics[width=0.99\textwidth]{figuresXbb/LossMON.pdf}
+   \caption{Monitored}
+   \label{fig:}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+  \centering
+   \includegraphics[width=0.99\textwidth]{figuresXbb/LossOPT.pdf}
+   \caption{Optimized}
+   \label{fig:}
+  \end{subfigure}
+  \caption{
+ 对照组(左图)和优化组(右图)中训练样本和验证样本的损失函数在训练过程中随着训练时期的变化。
+  }
+  \label{fig:LOSS}
+\end{figure} 
+
+如图~\ref{fig:LOSSC}~所示，随后我比较了对照组和优化组中验证样本的损失函数在训练过程中的变化，
+可以看到两组模型中用于验证的损失函数非常的接近，
+这表明对照组的训练已经接近饱和，结构参数的优化对性能可能没有显著的提升。
+
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=0.75\textwidth]{figuresXbb/LossCOM.pdf}
+  \end{center}
+  \caption{
+对照组和优化组中验证样本的损失函数在训练过程中随着训练时期的变化。
+  }
+    \label{fig:LOSSC}
+\end{figure}
+
+接下来，为了证实这一推断，我比较了两组模型的性能，
+如图~\ref{fig:OPTROC}~所示，
+对于对照组和优化组的两种模型，
+左边的图展示的是multijet本底排除率与信号效率的变化关系的对比，
+右边的图展示的是t夸克本底排除率与信号效率的变化关系的对比，
+从上到下依次对应于第~\ref{sec:XbbTagger25}~小节中定义的五个区间的性能对比，
+图中下半部分是在信号效率相同时，两种模型对应的本底排除率的比值。
+可以看到，优化组和对照组的模型性能非常接近，
+尤其是在信号效率比较高的区域，这也是标定算法工作点一般选择的区域，
+这也证实了前面所提到的，对照组的训练已经接近饱和，
+结构参数的优化对性能没有显著的提升。
+于是保留了对照组的模型用于后续性能研究。
+
+\begin{figure}[htbp]
+  \begin{subfigure}{.5\textwidth}
+  \centering
+   \includegraphics[width=0.75\textwidth]{figuresXbb/OPT/OPTQCD.pdf}
+  % \caption{Higgs vs. Multijet, inclusive}
+   \caption{}
+   \label{fig:}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+  \centering
+   \includegraphics[width=0.75\textwidth]{figuresXbb/OPT/OPTop.pdf}
+   %\caption{Higgs vs. Top, Inclusive}
+    \caption{}
+   \label{fig:}
+  \end{subfigure}
+\newline 
+   \begin{subfigure}{.5\textwidth}
+  \centering
+   \includegraphics[width=0.75\textwidth]{figuresXbb/OPT/OPTQCDMASS.pdf}
+  % \caption{Higgs vs. Multijet, $m_{J}\in [76,146]GeV$}
+    \caption{}
+   \label{fig:}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+  \centering
+   \includegraphics[width=0.75\textwidth]{figuresXbb/OPT/OPTopMASS.pdf}
+  % \caption{Higgs vs. Top, $m_{J}\in [76,146]GeV$}
+    \caption{}
+   \label{fig:}
+  \end{subfigure}
+ \newline 
+   \begin{subfigure}{.5\textwidth}
+  \centering
+   \includegraphics[width=0.75\textwidth]{figuresXbb/OPT/OPTQCDMASSPT1.pdf}
+  % \caption{Higgs vs. Multijet, $m_{J}\in [76,146]GeV, p_{T}^{J}\in [250,500]GeV$}
+    \caption{}
+   \label{fig:}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+  \centering
+   \includegraphics[width=0.75\textwidth]{figuresXbb/OPT/OPTopMASSPT1.pdf}
+   %\caption{Higgs vs. Top, $m_{J}\in [76,146]GeV, p_{T}^{J}\in [250,500]GeV$}
+    \caption{}
+   \label{fig:}
+  \end{subfigure}
+ \newline 
+   \begin{subfigure}{.5\textwidth}
+  \centering
+   \includegraphics[width=0.75\textwidth]{figuresXbb/OPT/OPTQCDMASSPT2.pdf}
+  % \caption{Higgs vs. Multijet, $m_{J}\in [76,146]GeV, p_{T}^{J}\in [500,1000]GeV$}
+    \caption{}
+   \label{fig:}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+  \centering
+   \includegraphics[width=0.75\textwidth]{figuresXbb/OPT/OPTopMASSPT2.pdf}
+   %\caption{Higgs vs. Top, $m_{J}\in [76,146]GeV, p_{T}^{J}\in [500,1000]GeV$}
+    \caption{}
+   \label{fig:}
+  \end{subfigure}
+ \newline 
+   \begin{subfigure}{.5\textwidth}
+  \centering
+   \includegraphics[width=0.75\textwidth]{figuresXbb/OPT/OPTQCDMASSPT3.pdf}
+  % \caption{Higgs vs. Multijet, $m_{J}\in [76,146]GeV, p_{T}^{J}\in [1000,3000]GeV$}
+    \caption{}
+   \label{fig:}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+  \centering
+   \includegraphics[width=0.75\textwidth]{figuresXbb/OPT/OPTopMASSPT3.pdf}
+  % \caption{Higgs vs. Top, $m_{J}\in [76,146]GeV, p_{T}^{J}\in [1000,3000]GeV$}
+    \caption{}
+   \label{fig:}
+  \end{subfigure}
+  \caption{
+对照组和优化组的模型的性能对比。
+左边的图展示的是multijet本底排除率与信号效率的变化关系的对比，
+右边的图展示的是t夸克本底排除率与信号效率的变化关系的对比，
+从上到下依次对应于五个区间的性能对比。
+  }
+  \label{fig:OPTROC}
+\end{figure} 
+
+综上所述，基于神经网络，我用变量控制的方法成功实现了新算法的去质量关联性，
+而且算法性能在一定程度上得到了提升，表~\ref{tab:Final}~为算法训练最终的结构参数以及输入变量和加权策略。
+下一小节将会看到，对比ATLAS合作组现在所使用的基线算法相比，
+设计出来的新算法显著提高了来自高横动量$H\rightarrow b\bar{b}$事例与来自QCD过程的multijet事例和来自强子型衰变的t夸克事例的区分度。
+
+\begin{table}[ht]
+\caption{算法训练最终的结构参数以及输入变量和加权策略。}
+\begin{center}
+%\begin{adjustbox}{width=\columnwidth,center}
+\begin{tabular}{c|c}
+    \hline
+    \hline
+    Parameter & Value or type  \\
+    \hline  
+    Loss & Categorical crossentropy \\
+     \hline  
+    Optimizer & \textsc{Adam}~\cite{Kingma:2014} \\
+    \hline  
+    Hidden layers & 6 \\
+    \hline  
+    Nodes per hidden layers & 250 \\
+    \hline  
+    Learning rate & $10^{-2}$\\
+    \hline  
+    Learning rate decay & $10^{-5}$ \\
+    \hline  
+    Activation of inner layers & \textsc{ReLU}~\cite{Glorot:2011} \\
+    \hline  
+    Activation of outer layers & \textsc{SoftMax}~\cite{MLMIT} \\
+    \hline  
+    Batch normalization~\cite{Ioffe:2015} & $10^{4}$ \\
+    \hline  
+    Epoch & 200 \\
+    \hline  
+    Inputs & JK from LR-jet + DLS from VR-jet \\
+    \hline  
+    Weighting strategy & resampling \\
+    \hline
+    \hline
+\end{tabular}
+%\end{adjustbox}
+\end{center}
+\label{tab:Final}
+\end{table}
+
+
+\section{算法性能}
+\label{sec:XbbPerf}
+
+
+通过\textsc{Lwtnn}~\cite{lwtnn}将上一节设计出来的
+高横动量$H\rightarrow b\bar{b}$标定算法应用到ATLAS合作组内部的软件系统中之后，
+将其性能与ATLAS合作组内部现在所使用的基线算法的性能做了对比。
+LR-jet来自新算法$D_{Xbb}$的区分因子通过模型的三个输出变量$p_{\text{Higgs}}$、$p_{\text{multijet}}$和$p_{\text{top}}$
+用以下式子来定义：
+\begin{equation} 
+\label{eq:discr}
+D_{Xbb} = \ln\frac{p_{\text{Higgs}}}{f_{Top}\cdot p_{\text{top}} + (1-f_{Top})\cdot p_{\text{multijet}}} %prob need a better name for this variable
+\end{equation}
+其中$f_{Top}$决定了t夸克本底的比例，在本章的性能研究当中，
+我们将它固定为$f_{Top}=0.25$，
+可以通过调整上式中区分因子的定义方式在比例不同的样本中筛选三种样本中任意一种，
+而新算法的工作点是通过在$D_{Xbb}$区分因子上的一个截断值来定义的，
+所选择的截断值对应于在信号样本中它对Higgs-jet事例的一个特定的标定效率，
+其中信号样本是应用第~\ref{sec:XbbOR}~小节筛选条件后的样本。
+而ATLAS合作组内部的基线算法由DL1r和MV2提供，定义方式与上一轮研究~\cite{TAGGING5}的类似，
+基线算法DL1r或MV2要求LR-jet中包含至少两个subjet，
+对于前两个横动量最高的subjet，由DL1r或MV2算法输出的用于b-jet标定的区分因子都要高于某个给定的阈值，
+也就是这两个区分因子中最小的那个要高于某一阈值，
+满足上述条件的LR-jet才会被基线算法标定为Higgs-jet。
+%另外，为了更好的测试算法性能，除了第~\ref{sec:XbbOR}~小节描述的筛选条件之外，
+%我们还要求事例中领头LR-jet的质量在76GeV和146GeV之间，
+%因为在上一轮研究~\cite{TAGGING5}当中，
+%在LR-jet横动量大于250GeV的情况下，
+%这个质量区间所包含的Higgs-jet的数量占总数的90\%。
+
+\subsection{去质量关联}
+\label{sec:XbbPerf1}
+首先，我们对$D_{Xbb}$算法与事例中领头LR-jet质量的关联性进行了研究，
+在这一小节的研究当中，对于t夸克样本中，没有要求事例中至少包含一个Top-jet，
+其他要求没有改变。
+在$D_{Xbb}$算法的标定效率为60\%的工作点下，
+如图~\ref{fig:MASS1}~所示，我们对比了事例中领头LR-jet质量分布在$D_{Xbb}$标定之前和之后的分布，
+左图是信号样本和multijet样本中领头LR-jet质量分布在$D_{Xbb}$标定之前和之后的对比，
+而右图是信号样本和t夸克样本中领头LR-jet质量分布在$D_{Xbb}$标定之前和之后的对比，
+可以看到$D_{Xbb}$算法对LR-jet的质量分布影响非常小。
+
+\begin{figure}[h]
+  \begin{center}
+    \includegraphics[width=0.49\textwidth]{figuresXbb/efficiencies/dijetcomp_all_largeRjet_jetjet_JZ_mass_inclusive_discf025zoom.pdf}
+    \includegraphics[width=0.49\textwidth]{figuresXbb/efficiencies/ttcomp_all_largeRjet_tt_mass_inclusive_discf025zoom.pdf}
+  \end{center}
+  \caption{
+ 在$D_{Xbb}$算法的标定效率为60\%的工作点下，事例中领头LR-jet质量分布在$D_{Xbb}$标定之前和之后的分布对比。
+ 左图是信号样本和multijet样本中领头LR-jet质量分布在$D_{Xbb}$标定之前和之后的对比，
+右图是信号样本和t夸克样本中领头LR-jet质量分布在$D_{Xbb}$标定之前和之后的对比。
+}
+  \label{fig:MASS1}
+\end{figure}
+
+
+同样在基线算法DL1r的标定效率为60\%的工作点下，
+如图~\ref{fig:MASS2}~所示，我们还研究了基线算法DL1r对事例中领头LR-jet质量分布的影响，
+左图是对于multijet样本，右图是对于t夸克样本，
+可以看到基线算法DL1r对LR-jet的质量分布影响也非常小，这是我们所预期的。
+
+\begin{figure}[h]
+  \begin{center}
+    \includegraphics[width=0.49\textwidth]{figuresXbb/efficiencies/dijetcomp_all_largeRjet_jetjet_JZ_mass_inclusive_discDL1rBaselinezoom.pdf}
+    \includegraphics[width=0.49\textwidth]{figuresXbb/efficiencies/ttcomp_all_largeRjet_tt_mass_inclusive_discDL1rBaselinezoom.pdf}
+  \end{center}
+  \caption{事例中领头LR-jet质量分布在基线算法DL1r标定之前和之后的分布对比。
+ 左图是信号样本和multijet样本中领头LR-jet质量分布被基线算法DL1r标定之前和之后的对比，
+ 右图是信号样本和t夸克样本中领头LR-jet质量分布被基线算法DL1r标定之前和之后的对比。}
+  \label{fig:MASS2}
+\end{figure}
+
+为了进一步说明$D_{Xbb}$算法对LR-jet质量分布的影响足够小，
+如图~\ref{fig:MASS3}~所示，
+我们还对比了事例中领头LR-jet质量分布在$D_{Xbb}$和基线算法DL1r标定之后的分布，
+图~\ref{fig:MASS3QCD}~是对于multijet样本，图~\ref{fig:MASS3Top}~是对于t夸克样本，图~\ref{fig:MASS3Higgs}~是对于信号样本，
+可以看到两者的差异都非常小，这是我们所能接受的。
+
+
+\begin{figure}[!thbp]
+  \begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.9\textwidth]{figuresXbb/efficiencies/jetjet_JZsculpt_all_largeRjet_mass_inclusive_discf025zoom.pdf}
+  \caption{}
+  \label{fig:MASS3QCD}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.9\textwidth]{figuresXbb/efficiencies/ttsculpt_all_largeRjet_mass_inclusive_discf025zoom.pdf}
+  \caption{}
+  \label{fig:MASS3Top}
+  \end{subfigure}
+\newline 
+  \begin{subfigure}{.99\textwidth}
+  \centering
+  \includegraphics[width=0.5\textwidth]{figuresXbb/efficiencies/RS_G_hh_bbbbsculpt_all_largeRjet_mass_inclusive_discf025zoom.pdf}
+  \caption{}
+  \label{fig:MASS3Higgs}
+  \end{subfigure}
+  \caption{
+ 事例中领头LR-jet质量分布在$D_{Xbb}$和基线算法DL1r标定之后的分布对比。
+ (a) 对于multijet样本；(b) 对于t夸克样本；(c) 对于信号样本。
+ }
+\label{fig:MASS3}
+\end{figure}
+
+
+
+\subsection{味标签}
+\label{sec:XbbPerf2}
+
+%由于信号样本是由KK $G\to hh$产生，
+%由大质量的引力子衰变而来的两个希格斯玻色子在探测器模拟中产生的两个LR-jet可能发生重叠，
+%这使得信号样本中领头LR-jet包含三个subjet的事例比例比较高。
+
+为了更好的测试算法性能，除了第~\ref{sec:XbbOR}~小节描述的筛选条件之外，
+我们还要求事例中领头LR-jet的质量在76GeV和146GeV之间，
+这个质量区间所包含的Higgs-jet的数量占总数的90\%~\cite{TAGGING5}。
+应用了全部筛选条件之后，我们对样本的多样性和其中真实味标签的分布进行了研究，
+表~\ref{tab:XbbPerf1}~展示了三个样本中事例领头LR-jet的VR-jet个数多样性，
+信号样本和t夸克样本中有超过99\%的事例中领头LR-jet包含至少两个VR-jet，
+而multijet样本中约有97.5\%的事例中领头LR-jet包含至少两个VR-jet。
+
+\begin{table}
+\begin{center}
+  \begin{tabular}{ c|c c c }
+    \hline
+    \hline
+    Category & Multijet & Top & Higgs \\
+    \hline
+    = 1 VR-jet  & 0.025  & 0.009  & 0.005 \\ 
+    \hline
+    = 2 VR-jet & 0.469  & 0.463  & 0.585 \\ 
+    \hline
+    $\geq$ 3 VR-jet & 0.505  & 0.528  & 0.410 \\ 
+    \hline
+    \hline
+  \end{tabular}
+  \caption{
+  应用事例筛选条件之后，三个样本中事例领头LR-jet的VR-jet个数多样性。
+      }
+\label{tab:XbbPerf1}
+\end{center}
+\end{table}
+
+表~\ref{tab:XbbPerf2}~展示了三个样本中事例领头LR-jet的VR-jet真实味标签的分布，
+可以看到，信号样本中约有92\%的事例有如下特点，其中领头LR-jet包含至少两个真实味标签为b-jet的VR-jet，
+在multijet样本中，大约有80\%的事例中领头LR-jet既不包含真实味标签为b-jet的VR-jet也不包含真实味标签为c-jet的VR-jet，
+而t夸克样本主要由领头LR-jet中包含单个真实味标签为b-jet的VR-jet的事例主导，
+这是由t夸克的性质决定的~\cite{PDG}。
+
+
+\begin{table}
+\begin{center}
+  \begin{tabular}{ c|c c c }
+    \hline
+    \hline
+    Category & Multijet & Top & Higgs \\
+    \hline
+    $\geq2b$ & 0.022 & 0.019 & 0.922 \\
+    \hline
+    $1b \ + \geq1c$ & 0.005 & 0.221 & 0.007 \\
+    \hline
+    $1b \ + \ 0c $ & 0.039 & 0.481 & 0.070 \\
+    \hline
+    $0b \ + \geq2c$ & 0.036 & 0.007 & - \\
+    \hline
+    $0b \ + \ 1c$ & 0.098 & 0.109 & - \\
+    \hline
+    $0b \ + \ 0c$ & 0.801 & 0.162 & 0.001 \\
+    \hline
+    \hline
+  \end{tabular}
+  \caption{
+ 应用事例筛选条件之后，三个样本中事例领头LR-jet的VR-jet真实味标签的分布。
+  }
+\label{tab:XbbPerf2}
+\end{center}
+\end{table}
+
+
+为了测试$D_{Xbb}$的作用效果，在$D_{Xbb}$算法的标定效率为60\%的工作点下，
+我们研究了被$D_{Xbb}$标定之后的样本中事例领头LR-jet的VR-jet真实味标签的分布，
+如表~\ref{tab:XbbPerf3}~所示，对比标定之前表~\ref{tab:XbbPerf2}~的情形，
+multijet样本和t夸克样本中具有以下特点的事例比例得到了显著的提升，
+领头LR-jet包含至少一个真实味标签为b-jet的VR-jet，
+分别达到了约95\%和99\%，
+也就是$D_{Xbb}$可以有效的排除领头LR-jet中VR-jet真实味标签为light-jet的事例。
+
+\begin{table}
+\begin{center}
+  \begin{tabular}{ c|c c c }
+    \hline
+    \hline
+    Category & Multijet & Top & Higgs \\
+    \hline
+$\geq2b$ & 0.871 & 0.229 & 0.997 \\
+ \hline
+$1b + \geq1c$ & 0.041 & 0.551 & 0.001 \\
+ \hline
+$1b + 0c $ & 0.046 & 0.216 & 0.002 \\
+ \hline
+$\geq2c + 0b$ & 0.033 & 0.001 & - \\
+ \hline
+$1c + 0b$ & 0.008 & 0.003 & - \\
+ \hline
+$0b + 0c$ & 0.002 & - & - \\
+    \hline
+    \hline
+  \end{tabular}
+  \caption{
+  在$D_{Xbb}$算法的标定效率为60\%的工作点下，
+被$D_{Xbb}$标定之后的样本中事例领头LR-jet的VR-jet真实味标签的分布。
+  }
+  \label{tab:XbbPerf3}
+  \end{center}
+\end{table}
+
+\subsection{区分因子}
+\label{sec:XbbPerf3}
+
+\input{data/discrim.tex}
+
+接下来我们对比了$D_{Xbb}$算法和DL1r基线算法在样本中的区分因子的分布。
+如图~\ref{fig:XbbPerf3}~所示，左图~\ref{fig:XbbPerf3DXBB}展示的是，
+在信号样本、multijet样本和t夸克样本中，
+由$D_{Xbb}$算法输出的的LR-jet的区分因子的分布，
+分别以橙色、蓝色和绿色线表示；
+而右图~\ref{fig:XbbPerf3DL1r}~展示的是，
+在信号样本、multijet样本和t夸克样本中，
+由基线算法DL1r输出的LR-jet的区分因子的分布，
+也是分别以橙色、蓝色和绿色线表示。
+可以看出，相比之下，
+$D_{Xbb}$算法能将信号和两种本底比较明显的区分开。
+
+\begin{figure}[!thbp]
+  \begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.9\textwidth]{figuresXbb/samples/Hbb_025_norm.pdf}
+  \caption{}
+  \label{fig:XbbPerf3DXBB}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.9\textwidth]{figuresXbb/samples/dl1r_norm.pdf}
+  \caption{}
+  \label{fig:XbbPerf3DL1r}
+  \end{subfigure}
+  \caption{
+  在信号样本、multijet样本和t夸克样本中，由$D_{Xbb}$算法(左图)和基线算法DL1r(右图)输出的LR-jet的区分因子的分布，分别以橙色、蓝色和绿色线表示。
+  其中分布都已经归一化。
+ }
+\label{fig:XbbPerf3}
+\end{figure}
+
+
+\subsection{本底排除率与信号效率}
+\label{sec:XbbPerf4}
+
+%在对$D_{Xbb}$算法性能进行评估的时候，~\ref{sec:XbbOR}小节所提到的筛选条件和~\ref{sec:XbbTagger}小节定义的希格斯玻色子质量区间都应用了，而且信号样本和t夸克样本都被重新加权，使得这两种样本中的大半径jet的横动量分布和图~\ref{fig:bkg-pt}中multijet样本中大半径jet的横动量分布是一样的。
+
+然后我们对比了在区分因子取不同截断值的情况下，$D_{Xbb}$算法与基线算法DL1r和MV2的本底排除率随着信号效率的变化关系。
+如图~\ref{fig:roc250}~所示，分别对multijet本底和t夸克本底进行了评估，
+蓝色线代表$D_{Xbb}$的性能，绿色线和灰色线分别代表基线算法DL1r和MV2基于领头LR-jet中两个横动量最高的VR-jet的性能表现，
+而灰色虚线代表基线算法MV2基于领头LR-jet中两个横动量最高的FR-jet的性能表现，
+图中底部展示的是信号效率相同时，各算法的本底排除率与基于VR-jet的基线算法MV2的本底排除率的比值，
+可以看出在信号效率相同的情况下，$D_{Xbb}$算法能实现相同或相对更高的本底排除率，尤其是在高信号效率区间。
+
+\begin{figure}[!thbp]
+  \begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.9\textwidth]{figuresXbb/pulled/roc/250_inf/zoom/dijet.pdf}
+  \caption{Higgs vs. Multijet}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.9\textwidth]{figuresXbb/pulled/roc/250_inf/top.pdf}
+  \caption{Higgs vs. Top}
+  \end{subfigure}
+  \caption{
+在领头LR-jet满足$p_{T}$>250GeV时，$D_{Xbb}$算法与基线算法DL1r和MV2的本底排除率随着信号效率的变化关系。
+分别对multijet本底(左图)和t夸克本底(右图)进行了评估。
+蓝色线代表$D_{Xbb}$的性能，绿色线和灰色线分别代表基线算法DL1r和MV2基于领头LR-jet中两个横动量最高的VR-jet的性能表现，
+而灰色虚线代表基线算法MV2基于领头LR-jet中两个横动量最高的FR-jet的性能表现。
+图中底部展示的是信号效率相同时，各算法的本底排除率与基于VR-jet的基线算法MV2的本底排除率的比值。
+ }
+\label{fig:roc250}
+\end{figure}
+
+为了凸显$D_{Xbb}$算法在高横动量区间的性能优势，
+在增加样本中领头LR-jet横动量大于500GeV的筛选条件之后，
+我们重新评估了$D_{Xbb}$算法与基线算法DL1r和MV2的本底排除率随着信号效率的变化。
+如图~\ref{fig:roc500}~所示，同样分别对multijet本底和t夸克本底进行了评估，
+可以看到，在信号效率为$60\%$的情况下，
+对于multijet本底，$D_{Xbb}$的本底排除率达到了92，是基于VR-jet的基线算法MV2的本底排除率的1.4倍，
+与基于VR-jet的基线算法DL1r的本底排除率大致相等；
+对于t夸克本底，$D_{Xbb}$的本底排除率达到了31，是基于VR-jet的基线算法MV2的本底排除率的2倍，
+是基于VR-jet的基线算法DL1r的本底排除率的1.6倍。
+
+
+\begin{figure}[!thbp]
+  \begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.9\textwidth]{figuresXbb/pulled/roc/500_inf/zoom/dijet.pdf}
+  \caption{Higgs vs. Multijet}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.9\textwidth]{figuresXbb/pulled/roc/500_inf/top.pdf}
+  \caption{Higgs vs. Top}
+  \end{subfigure}
+  \caption{
+在领头LR-jet满足$p_{T}$>500GeV时，
+$D_{Xbb}$算法与基线算法DL1r和MV2的本底排除率随着信号效率的变化关系。
+分别对multijet本底(左图)和t夸克本底(右图)进行了评估。
+蓝色线代表$D_{Xbb}$的性能，绿色线和灰色线分别代表基线算法DL1r和MV2基于领头LR-jet中两个横动量最高的VR-jet的性能表现，
+而灰色虚线代表基线算法MV2基于领头LR-jet中两个横动量最高的FR-jet的性能表现。
+图中底部展示的是信号效率相同时，各算法的本底排除率与基于VR-jet的基线算法MV2的本底排除率的比值。
+ }
+\label{fig:roc500}
+\end{figure}
+
+\subsection{本底排除率与LR-jet横动量}
+\label{sec:XbbPerf5}
+
+随后，我们还研究了在各个算法的信号标定效率都为$60\%$的工作点下，
+相应的本底排除率随着领头LR-jet横动量的变化关系。
+如图~\ref{fig:PT60}~所示，分别对multijet本底排除率和t夸克本底排除率进行了评估，
+蓝色点代表$D_{Xbb}$的性能，绿色点和灰色实心点分别代表基线算法DL1r和MV2基于领头LR-jet中两个横动量最高的VR-jet的性能表现，
+而灰色空心点代表基线算法MV2基于领头LR-jet中两个横动量最高的FR-jet的性能表现。
+在大部分LR-jet横动量区间，$D_{Xbb}$算法的本底排除率要高于基线算法DL1r的本底排除率，
+随着LR-jet横动量的增加，希格斯玻色子和t夸克的衰变产物更有可能被完全包含在对应的LR-jet当中，
+此时$D_{Xbb}$算法带来的性能提升就变得更加显著。
+而基线算法DL1r的本底排除率又要比基线算法MV2的高，这是由于基于神经网络的DL1r相对于基于提升决策树的MV2来说更强大。
+在高横动量区间，基于FR-jet的基线算法MV2的本底排除率明显降低，
+是因为FR-jet算法对来自高横动量$H\rightarrow b\bar{b}$衰变的两个重叠的b-jet分辨能力不足。
+
+\begin{figure}[!thbp]
+  \begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.9\textwidth]{figuresXbb/pulled/eff_vs_pt/const_eff_60/dijet.pdf}
+  \caption{}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.9\textwidth]{figuresXbb/pulled/eff_vs_pt/const_eff_60/top.pdf}
+  \caption{}
+  \end{subfigure}
+  \caption{
+  在各个算法的信号标定效率都为$60\%$的工作点下，相应的本底排除率随着领头LR-jet横动量的变化关系。
+  分别对multijet本底排除率(左图)和t夸克本底排除率(右图)进行了评估。
+  蓝色点代表$D_{Xbb}$的性能，绿色点和灰色实心点分别代表基线算法DL1r和MV2基于领头LR-jet中两个横动量最高的VR-jet的性能表现，
+而灰色空心点代表基线算法MV2基于领头LR-jet中两个横动量最高的FR-jet的性能表现，误差棒对应于统计误差。
+  }
+\label{fig:PT60}
+\end{figure}
+
+同样，为了凸显$D_{Xbb}$算法在高信号效率的工作点下的性能优势，
+我们也研究了在各个算法的信号标定效率都为$80\%$的工作点下，
+相应的本底排除率随着领头LR-jet横动量的变化关系。
+如图~\ref{fig:PT80}~所示，也分别对multijet本底排除率和t夸克本底排除率进行了评估，
+可以看到，在图中整个LR-jet横动量大于250GeV的区间，
+$D_{Xbb}$算法的本底排除率要显著高于基线算法DL1r和MV2的本底排除率。
+
+\begin{figure}[!thbp]
+  \begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.9\textwidth]{figuresXbb/pulled/eff_vs_pt/const_eff_80/dijet.pdf}
+  \caption{}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.9\textwidth]{figuresXbb/pulled/eff_vs_pt/const_eff_80/top.pdf}
+  \caption{}
+  \end{subfigure}
+  \caption{ 在各个算法的信号标定效率都为$80\%$的工作点下，相应的本底排除率随着领头LR-jet横动量的变化关系。
+  分别对multijet本底排除率(左图)和t夸克本底排除率(右图)进行了评估。
+  蓝色点代表$D_{Xbb}$的性能，绿色点和灰色实心点分别代表基线算法DL1r和MV2基于领头LR-jet中两个横动量最高的VR-jet的性能表现，
+而灰色空心点代表基线算法MV2基于领头LR-jet中两个横动量最高的FR-jet的性能表现，误差棒对应于统计误差。}
+\label{fig:PT80}
+\end{figure}
+
+\subsection{本底排除率与信号效率和LR-jet横动量}
+\label{sec:XbbPerf5}
+
+为了研究算法的整体性质，这里我们研究了$D_{Xbb}$算法的本底排除率相对提升随着领头LR-jet横动量下限和信号标定效率的变化关系。
+如图~\ref{fig:PTDL1r}~所示，
+展示的是$D_{Xbb}$算法相对于基线算法DL1r的提升随着领头LR-jet横动量下限和信号标定效率的变化关系，
+图中每个点表示：当要求样本中事例领头LR-jet的横动量大于某一阈值，且在信号效率固定的情况下，
+$D_{Xbb}$算法的本底排除率与基线算法DL1r的本底排除率的比值。
+分别对multijet本底和t夸克本底进行了评估，
+此处基线算法DL1r是基于领头LR-jet中两个横动量最高的VR-jet，
+其中$\epsilon$表示效率，它是排除率的倒数。
+从图中可以看出$D_{Xbb}$算法相对于基线算法DL1r有着显著的提升，
+第~\ref{sec:XbbSim}~小节中提到，用于性能评估的样本，在加权之后其领头LR-jet的横动量如图~\ref{fig:bkg-pt}~中由低到高平滑下降分布，
+这使得$D_{Xbb}$算法的性能主要受低横动量区的LR-jet的表现影响。
+
+
+\begin{figure}[!thbp]
+  \begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.9\textwidth]{figuresXbb/pulled/roc2d/ratio/dl1r/dijet.pdf}
+  \caption{}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.9\textwidth]{figuresXbb/pulled/roc2d/ratio/dl1r/top.pdf}
+  \caption{}
+  \end{subfigure}
+  \caption{
+  $D_{Xbb}$算法的本底排除率相对于基线算法DL1r的提升随着领头LR-jet横动量下限和信号标定效率的变化关系。
+  分别对multijet本底(左图)和t夸克本底(右图)进行了评估。
+  此处基线算法DL1r是基于领头LR-jet中两个横动量最高的VR-jet，
+  其中$\epsilon$表示效率，它是排除率的倒数。
+  }
+\label{fig:PTDL1r}
+\end{figure}
+
+图~\ref{fig:PTMV2}~中展示了$D_{Xbb}$算法的本底排除率相对于基线算法MV2的提升随着领头LR-jet横动量下限和信号标定效率的变化关系，
+此处基线算法MV2也是基于领头LR-jet中两个横动量最高的VR-jet。
+可以看出$D_{Xbb}$算法相对于基线算法MV2的提升也是很显著的。
+
+\begin{figure}[!thbp]
+  \begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.9\textwidth]{figuresXbb/pulled/roc2d/ratio/mv2/dijet.pdf}
+  \caption{}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.9\textwidth]{figuresXbb/pulled/roc2d/ratio/mv2/top.pdf}
+  \caption{}
+  \end{subfigure}
+  \caption{
+  $D_{Xbb}$算法的本底排除率相对于基线算法MV2的提升随着领头LR-jet横动量下限和信号标定效率的变化关系。
+  分别对multijet本底(左图)和t夸克本底(右图)进行了评估。
+  此处基线算法MV2是基于领头LR-jet中两个横动量最高的VR-jet，
+  其中$\epsilon$表示效率，它是排除率的倒数。
+  }
+\label{fig:PTMV2}
+\end{figure}
+
+综合上述性能研究，新算法$D_{Xbb}$在成功实现了去质量关联性的同时，
+也显著提高了高横动量$H\rightarrow b\bar{b}$的标定性能。
+
+
+\section{本章小结}
+\label{sec:XbbCon}
+
+这部分研究当中，
+我们提出了一种用于标定高横动量$H\rightarrow b\bar{b}$事例的新算法。
+新算法$D_{Xbb}$是基于神经网络以事例中领头LR-jet的$p_{T}$、$\eta$和其中横动量最高的三个VR-jet的DL1r区分因子为输入进行训练，
+用以区分高横动量$H\rightarrow b\bar{b}$信号事例和两种本底，
+这两种本底分别是来自QCD过程的multijet事例和来自强子型衰变的t夸克事例。
+其中对于VR-jet，基于神经网络的b-jet标定算法DL1r的性能更优于基于提升决策树的MV2，
+并能提供三个输出，分别代表该VR-jet被标定为b-jet、c-jet和light-jet的概率。
+$D_{Xbb}$算法不仅对LR-jet的质量分布没有明显的影响，
+而且与ATLAS实验在$Run\_2$期间使用基线算法DL1r和MV2相比，
+它对信号和本底的区分度有着显著的提升。
+当样本中领头LR-jet横动量大于500GeV时，在信号标定效率为$60\%$的工作点下，
+对于multijet本底，$D_{Xbb}$的本底排除率达到了92，是基于VR-jet的基线算法MV2的本底排除率的1.4倍，
+与基于VR-jet的基线算法DL1r的本底排除率大致相等；
+对于t夸克本底，$D_{Xbb}$的本底排除率达到了31，是基于VR-jet的基线算法MV2的本底排除率的2倍，
+是基于VR-jet的基线算法DL1r的本底排除率的1.6倍。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

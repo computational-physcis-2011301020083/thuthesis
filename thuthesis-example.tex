@@ -12,6 +12,14 @@
 % 论文基本配置，加载宏包等全局配置
 \input{thusetup}
 
+%WEI 
+
+\usepackage{makecell}
+\usepackage{adjustbox}
+\usepackage{amsmath}
+\DeclareMathOperator{\sech}{sech}
+
+
 
 \begin{document}
 
@@ -47,13 +55,21 @@
 \input{data/chap02}
 \input{data/chap03}
 \input{data/chap04}
+\input{data/chap06}
+\input{data/chap05}
+\input{data/chap07}
+%\input{data/chap01}
+%\input{data/chap02}
+%\input{data/chap03}
+%\input{data/chap04}
 
 
 % 其他部分
 \backmatter
 
 % 参考文献
-\bibliography{ref/refs}  % 参考文献使用 BibTeX 编译
+\bibliography{ref/refXbb.bib,ref/refDijet.bib,ref/refExp.bib,ref/refTheory.bib,ref/refs.bib,ref/ATLAS.bib,ref/ATLAS-useful.bib,ref/ATLAS-SUSY.bib,ref/CMS.bib,ref/ConfNotes.bib,ref/PubNotes.bib,ref/ANA-EXOT-2019-03-PAPER.bib}
+%\bibliography{ref/refs}  % 参考文献使用 BibTeX 编译
 % \printbibliography       % 参考文献使用 BibLaTeX 编译
 
 % 附录
