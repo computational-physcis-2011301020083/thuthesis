@@ -76,10 +76,10 @@ S=\int d^4x \quad \mathcal{L}\left[ \phi_i(x),\partial_{\mu}\phi_i(x) \right]
 \label{eq:ACTION5}
 \delta_{\epsilon}\mathcal{L} \quad = \quad 0 \quad = \quad \sum_i \Bigg\{ \left[ \frac{\partial\mathcal{L}}{\partial\phi_i}-\partial^{\mu}\left( \frac{\partial\mathcal{L}}{\partial(\partial^{\mu}\phi_i)} \right) \right] \delta_{\epsilon}\phi_i + \partial^{\mu}  \left[  \frac{\partial\mathcal{L}}{\partial(\partial^{\mu}\phi_i)}\delta_{\epsilon}\phi_i  \right]   \Bigg\}
 \end{equation}
-上式第一项便是欧拉-拉格朗日运动方程~\ref{eq:ACTION2}~，其值为零，
-因此体系有一个守恒流：
+上式右边第一项便是欧拉-拉格朗日运动方程~\ref{eq:ACTION2}~，其值为零，
+化简之后，体系有一个守恒流：
 \begin{equation} 
-\label{eq:ACTION5}
+\label{eq:ACTION6}
 J_{\mu}\equiv\sum_i \frac{\mathcal{L}}{\partial(\partial^{\mu}\phi_i)}\delta_{\epsilon}\phi_i , \quad \partial^{\mu}J_{\mu}=0
 \end{equation}
 其中第一项定义为守恒荷：
@@ -87,7 +87,7 @@ J_{\mu}\equiv\sum_i \frac{\mathcal{L}}{\partial(\partial^{\mu}\phi_i)}\delta_{\e
 \label{eq:ACTION7}
 Q \equiv \int d^3x J^0
 \end{equation}
-式~\ref{eq:ACTION5}~中的条件$\partial^{\mu}J_{\mu}=0$保证了$\frac{dQ}{dt}=0$，因此Q是个守恒量。
+式~\ref{eq:ACTION6}~中的条件$\partial^{\mu}J_{\mu}=0$保证了$\frac{dQ}{dt}=0$，因此Q是个守恒量。
 这种关系被称为Noether定理~\cite{NOETHER}，
 %可以将其扩展到
 在涉及时空坐标的一般变换中，
@@ -454,7 +454,7 @@ $g$和$g'$是耦合常数，到此，有了四个规范场用来构建四个玻�
 \end{equation}
 其中：
 \begin{equation} 
-\label{eq:EW18}
+\label{eq:EW19}
 U_L(x)=exp\left\{ i\frac{\sigma_i}{2}\alpha^i(x) \right\} \quad (i=1,2,3)
 \end{equation}
 可以看到$B_{\mu}$的变换方式与QED中电磁场的变换方式相同，
@@ -516,7 +516,7 @@ EW拉氏量~\ref{eq:EW14}~中第一项是费米子与四个玻色子场$W^{\pm}$
 后两项描述的是四个玻色子场的自相互作用，包含三顶点和四顶点自相互作用。
 体系的规范对称性要求费米子场和玻色子场都是无质量的，
 需要引入对称性破缺和希格斯机制赋予它们相应的质量，将在第~\ref{sec:SSB}~小节介绍。
-其中三代夸克的弱相互作用本征态d'、s'、b'并不是它们的质量本征态d、s、b，
+其中三代夸克的弱相互作用本征态$d'$、$s'$、$b'$并不是它们的质量本征态d、s、b，
 它们之间是通过一个的酉矩阵V，称为CKM矩阵~\cite{CKM}联系起来的：
 \begin{equation} 
 \label{eq:EW18}
@@ -638,7 +638,7 @@ $SU(2)\otimes U(1)$规范对称性会自发的破缺到电磁相互作用的$U(1
 这样表示的目的是利用拉氏量的$SU(2)$局部规范对称性来消除对$\theta^i(x)$的依赖性，
 %这样表示的目的在于拉氏量的$SU(2)$局部规范对称性可以消除对$\theta^i(x)$的依赖性，
 这三个场就是与对称性自发破缺机制相关联的三个无质量的Goldstone玻色子场。
-协变微分项~\ref{eq:SSB9}~中包含标量场和$SU(2)\otimes U(1)$规范玻色子的耦合，
+协变微分项~\ref{eq:SSB8}~中包含标量场和$SU(2)\otimes U(1)$规范玻色子的耦合，
 当选取物理的规范，即单位规范令$\theta^i(x)=0$，并结合式~\ref{eq:EW15}~，标量场拉氏量~\ref{eq:SSB8}~的动能项可以化为：
 \begin{equation} 
 \label{eq:SSB12}
@@ -752,9 +752,9 @@ CERN的大型正负电子对撞机和Tevatron的正负强子对撞机先后对�
 \label{sec:HiggsPD}
 
 标准模型中希格斯玻色子主要有以下几种产生模式~\cite{HANDHIGGS}：
-图示~\ref{fig:ggF}~胶子融合(ggF)；
-图示~\ref{fig:VBF}~矢量玻色子融合(VBF)；
-图示~\ref{fig:WZH}~矢量玻色子联合产生道(WH+ZH)；
+图示~\ref{fig:ggF}~胶子融合(Gluon–gluon fusion, ggF)；
+图示~\ref{fig:VBF}~矢量玻色子融合(Vector-boson fusion, VBF)；
+图示~\ref{fig:WZH}~矢量玻色子联合产生道(WH+ZH, VH)；
 图示~\ref{fig:ttH}~t夸克联合产生道($tH+t\bar{t}H$)。
 
 \begin{figure}
@@ -906,7 +906,7 @@ BR(H \rightarrow f)= \frac{\Gamma(H \rightarrow f)}{\sum_f \Gamma(H \rightarrow 
 比如$t\bar{t}H$~\cite{AHbb7,AHbb8,CHbb1}、VBF~\cite{AHbb6}和高横动量区的ggF~\cite{CHbb3}。
 
 而高横动量的$H\rightarrow b\bar{b}$衰变与低横动量的$H\rightarrow b\bar{b}$衰变的拓扑性质不一样，
-如图~\ref{fig:Boosted}~所示，在探测器中，来自高横动量希格斯玻色子衰变的两个b夸克接近准直，
+如图~\ref{fig:Boosted1}~所示，在探测器中，来自高横动量希格斯玻色子衰变的两个b夸克接近准直，
 会合并到一个大的喷注即LR-jet当中，将会在第~\ref{sec:JET}~小节介绍LR-jet的概念，
 通过其整体性可以更加容易的鉴定$H\rightarrow b\bar{b}$事例。
 %依靠其整体性使得$H\rightarrow b\bar{b}$事例更容易鉴定。
@@ -925,7 +925,7 @@ BR(H \rightarrow f)= \frac{\Gamma(H \rightarrow f)}{\sum_f \Gamma(H \rightarrow 
   \caption{
 来自高横动量希格斯玻色子衰变的两个b夸克接近准直，从而合并到一个LR-jet当中。
   }
-    \label{fig:Boosted}
+    \label{fig:Boosted1}
 \end{figure}
 
 
@@ -944,8 +944,8 @@ BR(H \rightarrow f)= \frac{\Gamma(H \rightarrow f)}{\sum_f \Gamma(H \rightarrow 
 但是，仍然存在一部分标准模型不能解释的现象。
 
 标准模型未能解释暗物质~\cite{DARKMATTER1}从何而来，也没有提供暗物质的候选粒子。
-在1930年，F. Zwicky观测到后发星系团(Coma cluster)中星系的速度弥散(Velocity dispersion)约为$\sim 1000km~s^{-1}$，
-这比根据实际发光物质所估计的速度弥散$\sim 80 km~s^{-1}$要大的多，
+在1930年，F. Zwicky观测到后发星系团(Coma cluster)中星系的速度弥散(Velocity dispersion)约为1000$km~s^{-1}$，
+这比根据实际发光物质所估计的速度弥散80$km~s^{-1}$要大的多，
 这表明存在“看不见”的物质即暗物质为星系团提供额外的吸引力将星系保持在星系团内部~\cite{DARKMATTER2}。
 在那以后，有更多的实验证据为暗物质提供了有力的支持~\cite{DARKMATTER1}，
 根据宇宙学观测的结果，暗物质贡献了宇宙总物质的$27\%$，

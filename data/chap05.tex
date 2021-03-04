@@ -229,13 +229,13 @@ MC样本被归一到和数据相同的积分亮度，
   \centering
    \includegraphics[width=0.9\textwidth]{figuresDijet/03-BenchmarkSignals/DeltaY.jpg}
    \caption{$|y_1-y_2|$分布对比}
-   \label{fig:QStar}
+   \label{fig:WSY1}
   \end{subfigure}
   \begin{subfigure}{.5\textwidth}
   \centering
    \includegraphics[width=0.9\textwidth]{figuresDijet/03-BenchmarkSignals/Significance.jpg}
    \caption{显著性随着$|y_1-y_2|$的变化}
-   \label{fig:QBH}
+   \label{fig:WSY2}
   \end{subfigure}
   \caption{$W^*$信号和QCD中两个领头阶jet的快度之差$|y_1-y_2|$分布的对比(左图)和信号显著性随着$|y_1-y_2|$筛选值的变化关系(右图)。}
   \label{fig:Selection1}
@@ -288,26 +288,26 @@ $Z'$信号的接收度同样取决于信号质量，并介于近似$20\%$和$45\
   \centering
    \includegraphics[width=0.9\textwidth]{figuresDijet/03-BenchmarkSignals/Acc_Qstar.pdf}
    \caption{}
-   \label{fig:QStar}
+   \label{fig:QStar1}
   \end{subfigure}
   \begin{subfigure}{.5\textwidth}
   \centering
    \includegraphics[width=0.9\textwidth]{figuresDijet/03-BenchmarkSignals/Acc_QBH.pdf}
    \caption{}
-   \label{fig:QBH}
+   \label{fig:QBH1}
   \end{subfigure}
 \newline
   \begin{subfigure}{.5\textwidth}
   \centering
    \includegraphics[width=0.9\textwidth]{figuresDijet/03-BenchmarkSignals/Acc_Wprime.pdf}
    \caption{}
-   \label{fig:WPrime}
+   \label{fig:WPrime1}
   \end{subfigure}
   \begin{subfigure}{.5\textwidth}
   \centering
    \includegraphics[width=0.9\textwidth]{figuresDijet/03-BenchmarkSignals/Acc_Wstar_yS1p2.pdf}
    \caption{}
-   \label{fig:WStar}
+   \label{fig:WStar1}
   \end{subfigure}
   \caption{
 在全包含信号区，$q^*$、QBH、$W'$和$W^*$信号的接收度随着信号质量的变化.
@@ -744,7 +744,7 @@ DM $Z\prime\rightarrow b\bar{b}$信号和QCD本底中DL1r算法在77\%的工作�
 
 
 \subsection{算法校准}
-\label{sec:DijetBtagging3}
+\label{sec:DijetBtagging4}
 
 为了补偿b-jet标定效率在数据和MC中的差异，使用似然方法(Likelihood-based)引入了依赖于jet横动量的校准因子(Scale factor)，并将它作用到MC上面~\cite{FTAG-2018-01}。
 鉴于数据中b-jets的数量在$p_{T}>400GeV$时极少，通过在模拟中变化那些会影响b-jet标定性能的基本量来评估额外的误差，
@@ -1198,14 +1198,14 @@ q_{\mu} =
 对于一个所观测到的统计检验量$q_{\mu,obs}$，相应的p-value为：
 \begin{equation} 
 \label{eq:Limit5}
-p_{mu}=\int^{\infty}_{q_{\mu,obs}} f\left(   q_{\mu}|\mu, \hat{\vec{\theta}}_{\mu}   \right) dq_{\mu}
+p_{\mu}=\int^{\infty}_{q_{\mu,obs}} f\left(   q_{\mu}|\mu, \hat{\vec{\theta}}_{\mu}   \right) dq_{\mu}
 \end{equation}
 其中$ f\left(   q_{\mu}|\mu, \hat{\vec{\theta}}_{\mu}   \right) $是在假设
 信号强度为$\mu$并且$\hat{\vec{\theta}}_{\mu}$为其极大似然估计时的概率分布函数。
 最后为了设置上限，定义如下置信度计算方式：
 \begin{equation} 
 \label{eq:Limit6}
-CL_\text{s}=\frac{CL_\text{s+b}}{CL_\text{b}}=\frac{p_{mu}}{1-p_0}=
+CL_\text{s}=\frac{CL_\text{s+b}}{CL_\text{b}}=\frac{p_{\mu}}{1-p_0}=
 \frac{\int^{\infty}_{q_{\mu,obs}} f\left(   q_{\mu}|\mu, \hat{\vec{\theta}}_{\mu}   \right) dq_{\mu}}
 {\int_{-\infty}^{q_{\mu,obs}} f\left(   q_{\mu}|0, \hat{\vec{\theta}}_0  \right) dq_{\mu}}
 \end{equation}
