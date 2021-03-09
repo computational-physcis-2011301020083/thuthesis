@@ -4,13 +4,13 @@
 研究~\cite{JSS1,JSS2}引入了一般性的能量关联函数：
 \begin{equation} 
 \label{eq:JSS1}
- \begin{aligned}
-E_{CF1}=\sum_{i\in J} p_{T}^i
+ \begin{split}
+E_{CF1}&=\sum_{i\in J} p_{T}^i
 \\
-E_{CF2}(\beta)=\sum_{i<j\in J} p_T^i p_T^j (R_{ij})^\beta
+E_{CF2}(\beta)&=\sum_{i<j\in J} p_T^i p_T^j (R_{ij})^\beta
  \\
-E_{CF3}(\beta)=\sum_{i<j<k\in J} p_T^i p_T^j (R_{ij})^\beta
- \end{aligned}
+E_{CF3}(\beta)&=\sum_{i<j<k\in J} p_T^i p_T^j (R_{ij})^\beta
+ \end{split}
 \end{equation}
 其中i、j、k是LR-jet的组份，$p_{T}^i$是第i个组份的横动量，
 $R_{ij}$是第i个组份与第j个组份之间的角距，
@@ -18,22 +18,24 @@ $\beta$取正整数，用于给组份的角距加权。
 接着可以定义两组比率：
 \begin{equation} 
 \label{eq:JSS2}
- \begin{aligned}
-e_2^{(\beta)}=\frac{E_{CF2}(\beta)}{E_{CF1}^2}
+ \begin{split}
+e_2^{(\beta)}&=\frac{E_{CF2}(\beta)}{E_{CF1}^2}
 \\
-e_3^{(\beta)}=\frac{E_{CF3}(\beta)}{E_{CF1}^3}
- \end{aligned}
+e_3^{(\beta)}&=\frac{E_{CF3}(\beta)}{E_{CF1}^3}
+ \end{split}
 \end{equation}
 然后可以更近一步的定义：
 \begin{equation} 
 \label{eq:JSS3}
- \begin{aligned}
-C_2^{(\beta)}=\frac{e_3^{(\beta)}}{(e_2^{(\beta)})^2}
+ \begin{split}
+C_2^{(\beta)}&=\frac{e_3^{(\beta)}}{(e_2^{(\beta)})^2}
 \\
-D_2^{(\beta)}=\frac{e_3^{(\beta)}}{(e_2^{(\beta)})^3}
- \end{aligned}
+D_2^{(\beta)}&=\frac{e_3^{(\beta)}}{(e_2^{(\beta)})^3}
+ \end{split}
 \end{equation}
-研究表明它们对于LR-jet内部结构的识别有一定用处，
+研究表明它们对于LR-jet内部结构的识别有一定
+作用，
+%用处，
 其中$e_3=e_3^{(\beta=1)}$、$C_2=C_2^{(\beta=1)}$和$D_2=D_2^{(\beta=1)}$
 在W玻色子标定和t夸克标定中都表现出一定的区分能力~\cite{JSCD2}。
 
@@ -48,24 +50,37 @@ D_2^{(\beta)}=\frac{e_3^{(\beta)}}{(e_2^{(\beta)})^3}
 $min \{ \Delta R_{1i},R_{2i},\dots ,R_{Ni}, \}$是第i个组份与距离这个组份最近的subjet轴线的角距，
 R=1是LR-jet的距离参数。
 当$\tau_N \approx 0$时，表明LR-jet中的每个组份都有与之共线的subjet相对应，
-而当$\tau_N \approx 1$时，表明在除了靠近subjet轴线外的其他方向有显著的能量辐射，
-也就是N个subjet不能合适的描述这个LR-jet。
+%而
+当$\tau_N \approx 1$时，表明在
+%除了
+靠近subjet轴线外的其他方向仍有显著的能量辐射，
+也就是这N个subjet不能合适的描述这个LR-jet。
 为了区分两体衰变和三体衰变，
 引入比率$\tau_{21}=\tau_2/\tau_1$和$\tau_{32}=\tau_3/\tau_2$，
 它们在W玻色子标定和t夸克标定中也表现出一定的区分能力~\cite{JSS3}。
 
-第三组变量KtDR也是基于对LR-jet组份进行重新会聚，
+第三组变量KtDR也是基于对LR-jet组份
+%进行
+的
+重新会聚，
 在距离参数R=0.4的情况下可以通过$k_t$算法将LR-jet的组份会聚成两个subjet，
 而变量KtDR便是这两个subjet轴线之间的角距~\cite{JSS14}。
-对于LR-jet质量为m横动量为$p_T$的两体衰变，
-这个变量有个特征值$KtDR\approx 2m/p_T$。
+对于%LR-jet
+质量为m横动量为$p_T$的LR-jet的两体衰变，
+这个变量有一个特征值$KtDR\approx 2m/p_T$。
 
-第四组变量Qw同样是基于对LR-jet组份进行重新会聚，
-也可以通过$k_t$算法将LR-jet的组份会聚成3个subjet，
-变量$Q_w$表示其中2个subjet的不变质量最小的值~\cite{JSS8}。
-它在由t夸克衰变而来的W玻色子的标定中有一定的作用。
+第四组变量Qw同样是基于对LR-jet组份
+%进行
+的重新会聚，
+%也可以
+通过$k_t$算法将LR-jet的组份会聚成三个subjet，
+变量$Q_w$表示其中两个subjet的不变质量最小的值~\cite{JSS8}。
+它是针对三体衰变过程优化的变量，
+在由t夸克衰变而来的W玻色子的标定中有一定的作用。
 
-第五组变量是基于$k_t$算法在会聚LR-jet组份过程中所形成的中间过程subjet，
+第五组变量是基于$k_t$算法在会聚LR-jet组份过程中所形成的中间
+%过程
+subjet，
 定义两个与式~\ref{eq:TOPOSN}~类似的分离比例$\sqrt{d_{12}}$和$\sqrt{d_{23}}$~\cite{JSS10}：
 \begin{equation} 
 \label{eq:JSS45}
@@ -80,13 +95,13 @@ $\sqrt{d_{12}}$的期望值约为t夸克质量的一半$m_t/2$，
 对于高横动量强子型衰变的W玻色子，
 $\sqrt{d_{23}}$的期望值约为W玻色子质量的一半$m_W/2$。
 但是对于来自QCD过程的轻夸克或者胶子辐射，
-分割比例$\sqrt{d_{12}}$和$\sqrt{d_{23}}$都较小~\cite{JSD12}。
+分离比例$\sqrt{d_{12}}$和$\sqrt{d_{23}}$都较小~\cite{JSD12}。
 在此基础上可以定义一个与分离比例相关的变量~\cite{JSS8}：
 \begin{equation} 
 \label{eq:JSS46}
 Z_{cut12}=\frac{d_{12}}{d_{12}+m^2}
 \end{equation}
-其中$d_{12}$是式~\ref{eq:JSS45}~中定义最后一步合并过程中的分离比例，
+其中$d_{12}$是式~\ref{eq:JSS45}~中定义的最后一步合并过程中的分离比例，
 m是最后一步合并过程中由第1个和第2个subjet重新会聚而成的subjet的质量。
 对于两体衰变，m代表LR-jet的质量，
 $Z_{cut12}$也是和$d_{12}$类似的子结构变量，
@@ -100,11 +115,11 @@ $Z_{cut12}$也是和$d_{12}$类似的子结构变量，
 首先将LR-jet的组份利用洛伦兹变换提升到质心系：
 \begin{equation} 
 \label{eq:JSS5}
- \begin{aligned}
- \tilde{E}=\gamma(E+\vec{\beta}\cdot \vec{p})
+ \begin{split}
+ \tilde{E}&=\gamma(E+\vec{\beta}\cdot \vec{p})
 \\
-\tilde{\vec{p}}=\vec{p}+\frac{\gamma-1}{|\vec{\beta}|^2} (\vec{\beta}\cdot \vec{p}) \vec{\beta}+\gamma E\vec{\beta}
- \end{aligned}
+\tilde{\vec{p}}&=\vec{p}+\frac{\gamma-1}{|\vec{\beta}|^2} (\vec{\beta}\cdot \vec{p}) \vec{\beta}+\gamma E\vec{\beta}
+ \end{split}
 \end{equation}
 其中$\vec{\beta}=\vec{p}_J/E_J$是LR-jet的速度矢量与真空光速的比值，
 $\gamma$是洛伦兹变换因子。
@@ -125,11 +140,11 @@ R_2^{FW}=\frac{H_2}{H_0}=\frac{\sum_{1\le i<j\le n_J} |\tilde{\vec{p_i}}| |\tild
 {\sum_{1\le i<j\le n_J} |\tilde{\vec{p_i}}| |\tilde{\vec{p_j}}|}
 \end{equation}
 归一化的二阶Fox-Wolfram矩对在质心系下对称的结构即背对背的辐射结构比较敏感，
-使得它可以用于区分两体衰变。
+使得它可以用于区分两体衰变和三体衰变。
 
 第七组变量平面度A也是一个形状变量，
 它也是在LR-jet的质心系下定义的~\cite{JSS6}，
-将LR-jet的组份利用洛伦兹变换提升到质心系之后，
+将LR-jet的组份利用洛伦兹变换~\ref{eq:JSS5}~提升到质心系之后，
 首先定义一个$3\times 3$的球形矩阵：
 \begin{equation} 
 \label{eq:JSS62}
@@ -141,14 +156,15 @@ S^{k,l}=\frac{ \sum_{1\le i<j\le n_J} \tilde{p}_i^k  \tilde{p}_j^l  }
 $\tilde{p}_j^l$和$\tilde{p}_i^k$是第i个组份的动量分量，
 上述与LR-jet组份相关的变量都是质心系下的变量。
 这个球形矩阵$S^{k,l}$有三个本征值$\lambda_1\le \lambda_2\le \lambda_3$，它们的和为1，
-利用本征值可以定义平面度：
+利用本征值$\lambda_3$可以定义平面度：
 \begin{equation} 
 \label{eq:JSS63}
 A=\frac{3\lambda_3}{2}
 \end{equation}
 它满足$0\le A \le 1/2$，
-在质心系下，对于QCD过程中轻夸克或胶子的各向同性的弥散辐射，有$A\approx 1/2$，
-对于背对背的两体衰变，会使得$A \approx 0$。
+在质心系下，对于QCD过程中轻夸克或胶子各向同性的弥散辐射，$A\approx 1/2$，
+对于背对背的两体衰变，%会使得
+$A \approx 0$。
 
 
 第八组变量倾斜度$a_3$由以下式子定义~\cite{JSS13,JSA3}：
@@ -160,10 +176,16 @@ a_3=\frac{1}{m_J} \sum_{i=1}^{n_J} E_i \sin^{-2} \theta_i (1-\cos \theta_i)^3
 $E_i$是第i个组份的能量，$\theta_i$是第i个组份相对于LR-jet轴线的夹角。
 $a_3$测量了广角辐射在LR-jet中所占的比重。
 对于对称的两体衰变，$a_3$趋向于较小的值，
-对于非共振态的轻夸克或者胶子辐射，$a_3$趋向于较大的值。
+对于
+QCD过程中
+%非共振态的
+轻夸克或者胶子辐射，$a_3$趋向于较大的值。
 
 %\mathbf
-第九组变量平面流$\mathcal{P}$用于衡量LR-jet中能量沿垂直于其轴线方向的平面和平行于其轴线方向的分布情况~\cite{JSS11}。
+第九组变量平面流$\mathcal{P}$用于衡量LR-jet中能量
+在垂直于其轴线方向的平面上的分布，
+以及沿平行于其轴线方向的分布情况~\cite{JSS11}。
+%沿垂直于其轴线方向的平面和平行于其轴线方向的分布情况~\cite{JSS11}。
 将LR-jet动量$\vec{P}$以及其组份的动量$\vec{p}_i$先绕z轴旋转$-\phi$：
 \begin{equation} 
 \label{eq:JSS8}
@@ -191,7 +213,8 @@ $a_3$测量了广角辐射在LR-jet中所占的比重。
 \end{bmatrix}
 \end{equation}
 其中$\phi$和$\eta$分别是LR-jet轴线的方位角和赝快度。
-两次旋转操作之后，使得LR-jet的动量方向指向了z轴正向：
+两次旋转操作之后，%使得
+LR-jet的动量方向会指向z轴正向：
 \begin{equation} 
 \label{eq:JSS10}
 \tilde{\vec{P}}=\mathbf{R}_{\eta}\mathbf{R}_{\phi}\vec{P}=
@@ -212,32 +235,43 @@ P_z
 |\vec{P}|
 \end{bmatrix}
 \end{equation}
-这样便于研究LR-jet组份的动量$\vec{p}_i$沿着垂直于LR-jet轴线方面的平面的分布情况。
-利用上述旋转矩阵将其组份i随着LR-jet轴线变换之后：
+这样便于研究LR-jet组份的动量$\vec{p}_i$
+%沿着
+在垂直于LR-jet轴线方面的平面上的分布情况。
+利用上述旋转矩阵将其组份i随着LR-jet轴线变换：
+%之后：
 \begin{equation} 
 \label{eq:JSS11}
 \tilde{\vec{p}}_i=\mathbf{R}_{\eta}\mathbf{R}_{\phi}\vec{p}_i
 \end{equation}
 其中$\vec{p}_i$是LR-jet第i个组份的动量，
-可以定义一个$2\times 2$的动量矩阵$I_E$：
+接着可以定义一个$2\times 2$的动量矩阵$I_E$：
 \begin{equation} 
 \label{eq:JSS12}
 I_E^{kl}=\frac{1}{m_J} \sum_{i=1}^{n_J} \frac{\tilde{p}_i^k\tilde{p}_i^l}{E_i}, \quad k,l \in \{x,y\}
 \end{equation}
 其中$m_J$是LR-jet的质量，$n_J$是其组份数量，
 $E_i$是第i个组份的能量，$\tilde{p}_i^k$是第i个组份在旋转之后的动量分量。
-随后平面流可以通过矩阵$I_E$的两个本征值$\lambda_1$和$\lambda_2$定义：
+随后平面流可以通过矩阵$I_E$的两个本征值$\lambda_1$和$\lambda_2$来定义：
 \begin{equation} 
 \label{eq:JSS13}
 \mathcal{P}=\frac{3\det{I_E}}{tr(I_E)^2}=\frac{4\lambda_1\lambda_2}{(\lambda_1+\lambda_2)^2}
 \end{equation}
 如果能量在垂直于LR-jet轴线方向的平面上分布比较均匀，
-会使得$\lambda_1\approx\lambda_2\approx 1/2$，从而平面流$\mathcal{P}\approx 1$；
-如果能量在平行于LR-jet轴线方向上分布比较均匀，
+会使$\lambda_1\approx\lambda_2\approx 1/2$，从而平面流$\mathcal{P}\approx 1$；
+如果能量沿平行于LR-jet轴线的方向分布比较均匀，
 则$\lambda_1\gg \lambda_2$，平面流$\mathcal{P}\approx 0$。
 由于两体衰变趋向于产生沿着LR-jet轴线方面的线性能量分布，
-而非共振态的轻夸克或者胶子辐射更趋向于产生弥散的各向同性的能量辐射，
-因此平面流$\mathcal{P}$非常适合区分这两者。
+而
+%非共振态的
+QCD过程中轻夸克或者胶子
+%辐射
+更趋向于产生
+各向同性的弥散辐射，
+%弥散的各向同性的能量辐射，
+因此平面流$\mathcal{P}$
+可以作为一个很好的区分变量。
+%非常适合区分这两者。
 
 
 

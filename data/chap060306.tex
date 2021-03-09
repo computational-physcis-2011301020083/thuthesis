@@ -326,7 +326,7 @@ Randall-Sundrum额外维模型~\cite{Randall:1999ee}产生。
 KK引力子能与标准模型中希格斯玻色子耦合，%其中耦合参数被设置为$k/\bar{M}_P=1$，
 并衰变成两个希格斯玻色子，希格斯玻色子的质量设置为125GeV，
 两个希格斯玻色子随后均衰变为$b\bar{b}$夸克对。
-其中耦合参数设置为$k/\overline{M}_P=1$，k是曲率参数(The curvature parameter)，
+其中耦合参数被设置为$k/\overline{M}_P=1$，k是曲率参数(The curvature parameter)，
 $\overline{M}_P$是普兰克质量刻度(The Planck mass scale)。
 
 %事例是使用领头阶NNPDF2.3部分子分布函数~\cite{Martin:2009iq}和\textsc{ATLAS A14}校准参数集~\cite{ATL-PHYS-PUB-2014-021}
@@ -624,8 +624,7 @@ $H\rightarrow b\bar{b}$
 算法，
 另一种
 %subjet重建
-算法FR-jet也会用于第~\ref{sec:XbbPerf}~小节中标定算法的性能对比，
-如果没有特别指出，研究中所使用的subjet重建算法都是VR-jet。
+算法FR-jet也会用于第~\ref{sec:XbbPerf}~小节中算法性能的对比。
 %当中。
 
 \begin{figure}
@@ -1095,26 +1094,82 @@ t夸克主要的衰变模式是$t\to b+W^+, \bar{t}\to \bar{b}+W^-$，
 %即t夸克样本中事例以LR-jet中包含3个subjet为主导，
 因此模型JKDLS(3-subjets)的性能更优。
 
-\begin{comment}
 
-\begin{figure}
-\begin{center}
-   \includegraphics[width=0.43\linewidth]{figuresXbb/Subjet/SUBQCD.pdf}
-   \includegraphics[width=0.43\linewidth]{figuresXbb/Subjet/SUBTop.pdf}
-\\
-   \includegraphics[width=0.43\linewidth]{figuresXbb/Subjet/SUBQCDMASS.pdf}
-   \includegraphics[width=0.43\linewidth]{figuresXbb/Subjet/SUBTopMASS.pdf}
-\\
-   \includegraphics[width=0.43\linewidth]{figuresXbb/Subjet/SUBQCDMASSPT1.pdf}
-   \includegraphics[width=0.43\linewidth]{figuresXbb/Subjet/SUBTopMASSPT1.pdf}
-\\
-   \includegraphics[width=0.43\linewidth]{figuresXbb/Subjet/SUBQCDMASSPT2.pdf}
-   \includegraphics[width=0.43\linewidth]{figuresXbb/Subjet/SUBTopMASSPT2.pdf}
-\\
-   \includegraphics[width=0.43\linewidth]{figuresXbb/Subjet/SUBQCDMASSPT3.pdf}
-   \includegraphics[width=0.43\linewidth]{figuresXbb/Subjet/SUBTopMASSPT3.pdf}
-\end{center}
-
+\begin{figure}[htbp]
+  \begin{subfigure}{.5\textwidth}
+  \centering
+   \includegraphics[width=0.75\textwidth]{figuresXbb/Subjet/SUBQCD.pdf}
+   %\caption{Higgs vs. Multijet, inclusive}
+   \caption{}
+   %\label{fig:}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+  \centering
+   \includegraphics[width=0.75\textwidth]{figuresXbb/Subjet/SUBTop.pdf}
+   %\caption{Higgs vs. Top, Inclusive}
+     \caption{}
+   %\label{fig:}
+  \end{subfigure}
+\newline 
+   \begin{subfigure}{.5\textwidth}
+  \centering
+   \includegraphics[width=0.75\textwidth]{figuresXbb/Subjet/SUBQCDMASS.pdf}
+   %\caption{Higgs vs. Multijet, $m_{J}\in [76,146]GeV$}
+     \caption{}
+   %\label{fig:}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+  \centering
+   \includegraphics[width=0.75\textwidth]{figuresXbb/Subjet/SUBTopMASS.pdf}
+   %\caption{Higgs vs. Top, $m_{J}\in [76,146]GeV$}
+     \caption{}
+   %\label{fig:}
+  \end{subfigure}
+ \newline 
+   \begin{subfigure}{.5\textwidth}
+  \centering
+   \includegraphics[width=0.75\textwidth]{figuresXbb/Subjet/SUBQCDMASSPT1.pdf}
+   %\caption{Higgs vs. Multijet, $m_{J}\in [76,146]GeV, p_{T}^{J}\in [250,500]GeV$}
+     \caption{}
+   %\label{fig:}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+  \centering
+   \includegraphics[width=0.75\textwidth]{figuresXbb/Subjet/SUBTopMASSPT1.pdf}
+   %\caption{Higgs vs. Top, $m_{J}\in [76,146]GeV, p_{T}^{J}\in [250,500]GeV$}
+     \caption{}
+   %\label{fig:}
+  \end{subfigure}
+ \newline 
+   \begin{subfigure}{.5\textwidth}
+  \centering
+   \includegraphics[width=0.75\textwidth]{figuresXbb/Subjet/SUBQCDMASSPT2.pdf}
+   %\caption{Higgs vs. Multijet, $m_{J}\in [76,146]GeV, p_{T}^{J}\in [500,1000]GeV$}
+     \caption{}
+   %\label{fig:}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+  \centering
+   \includegraphics[width=0.75\textwidth]{figuresXbb/Subjet/SUBTopMASSPT2.pdf}
+   %\caption{Higgs vs. Top, $m_{J}\in [76,146]GeV, p_{T}^{J}\in [500,1000]GeV$}
+     \caption{}
+   %\label{fig:}
+  \end{subfigure}
+ \newline 
+   \begin{subfigure}{.5\textwidth}
+  \centering
+   \includegraphics[width=0.75\textwidth]{figuresXbb/Subjet/SUBQCDMASSPT3.pdf}
+   %\caption{Higgs vs. Multijet, $m_{J}\in [76,146]GeV, p_{T}^{J}\in [1000,3000]GeV$}
+     \caption{}
+   %\label{fig:}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+  \centering
+   \includegraphics[width=0.75\textwidth]{figuresXbb/Subjet/SUBTopMASSPT3.pdf}
+   %\caption{Higgs vs. Top, $m_{J}\in [76,146]GeV, p_{T}^{J}\in [1000,3000]GeV$}
+     \caption{}
+   %\label{fig:}
+  \end{subfigure}
   \caption{
  模型JKDLS(3-subjets)和JKDLS(2-subjets)的性能对比。
 左排的图展示的是multijet本底排除率随着信号效率的变化关系的对比，
@@ -1123,9 +1178,8 @@ t夸克主要的衰变模式是$t\to b+W^+, \bar{t}\to \bar{b}+W^-$，
 %的性能对比。
   }
   \label{fig:SubjetROC}
-\end{figure}
+\end{figure} 
 
-\end{comment}
 
 \subsection{加权策略}
 \label{sec:XbbTagger3}
@@ -1245,37 +1299,87 @@ t夸克本底排除率随着信号效率的变化关系对比，
 的模型的本底排除率大约为基于分布加权的模型的2倍。
 于是，
 在最终训练中，我们采用的分布采样的加权策略。
+%我将分布采样作为最终用于算法训练的加权方式。
 
-\begin{comment}
-
-\begin{figure}
-\begin{center}
-   \includegraphics[width=0.43\linewidth]{figuresXbb/Reweight/QCDIN.pdf}
-   \includegraphics[width=0.43\linewidth]{figuresXbb/Reweight/TOPIN.pdf}
-\\
-   \includegraphics[width=0.43\linewidth]{figuresXbb/Reweight/QCDMASS.pdf}
-   \includegraphics[width=0.43\linewidth]{figuresXbb/Reweight/TOPMASS.pdf}
-\\
-   \includegraphics[width=0.43\linewidth]{figuresXbb/Reweight/QCDMASSPT1.pdf}
-   \includegraphics[width=0.43\linewidth]{figuresXbb/Reweight/TOPMASSPT1.pdf}
-\\
-   \includegraphics[width=0.43\linewidth]{figuresXbb/Reweight/QCDMASSPT2.pdf}
-   \includegraphics[width=0.43\linewidth]{figuresXbb/Reweight/TOPMASSPT2.pdf}
-\\
-   \includegraphics[width=0.43\linewidth]{figuresXbb/Reweight/QCDMASSPT3.pdf}
-   \includegraphics[width=0.43\linewidth]{figuresXbb/Reweight/TOPMASSPT3.pdf}
-\end{center}
-
+\begin{figure}[htbp]
+  \begin{subfigure}{.5\textwidth}
+  \centering
+   \includegraphics[width=0.75\textwidth]{figuresXbb/Reweight/QCDIN.pdf}
+   \caption{}
+   %\label{fig:}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+  \centering
+   \includegraphics[width=0.75\textwidth]{figuresXbb/Reweight/TOPIN.pdf}
+   \caption{}
+   %\label{fig:}
+  \end{subfigure}
+\newline 
+   \begin{subfigure}{.5\textwidth}
+  \centering
+   \includegraphics[width=0.75\textwidth]{figuresXbb/Reweight/QCDMASS.pdf}
+   \caption{}
+   %\label{fig:}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+  \centering
+   \includegraphics[width=0.75\textwidth]{figuresXbb/Reweight/TOPMASS.pdf}
+   \caption{}
+   %\label{fig:}
+  \end{subfigure}
+ \newline 
+   \begin{subfigure}{.5\textwidth}
+  \centering
+   \includegraphics[width=0.75\textwidth]{figuresXbb/Reweight/QCDMASSPT1.pdf}
+   \caption{}
+   %\label{fig:}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+  \centering
+   \includegraphics[width=0.75\textwidth]{figuresXbb/Reweight/TOPMASSPT1.pdf}
+   \caption{}
+   %\label{fig:}
+  \end{subfigure}
+ \newline 
+   \begin{subfigure}{.5\textwidth}
+  \centering
+   \includegraphics[width=0.75\textwidth]{figuresXbb/Reweight/QCDMASSPT2.pdf}
+   \caption{}
+   %\label{fig:}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+  \centering
+   \includegraphics[width=0.75\textwidth]{figuresXbb/Reweight/TOPMASSPT2.pdf}
+   \caption{}
+   %\label{fig:}
+  \end{subfigure}
+ \newline 
+   \begin{subfigure}{.5\textwidth}
+  \centering
+   \includegraphics[width=0.75\textwidth]{figuresXbb/Reweight/QCDMASSPT3.pdf}
+   \caption{}
+   %\label{fig:}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+  \centering
+   \includegraphics[width=0.75\textwidth]{figuresXbb/Reweight/TOPMASSPT3.pdf}
+   \caption{}
+   %\label{fig:}
+  \end{subfigure}
   \caption{
   基于分布采样和分布加权的模型的性能对比。
   左排的图展示的是multijet本底排除率随着信号效率的变化关系对比，
 右排的图展示的是t夸克本底排除率随着信号效率的变化关系对比，
 从上到下依次对应于第~\ref{sec:XbbTagger25}~小节中定义的五个区间。
+  %选择不同的加权方式进行训练时，模型JKDLS的性能对比。
+ % 左边的图展示的是模型的multijet本底排除率与信号效率的变化关系的对比，
+%右边的图展示的是模型的t夸克本底排除率与信号效率的变化关系的对比，
+%从上到下依次对应于五个区间的性能对比。
   }
   \label{fig:ReweightROC}
-\end{figure}
+\end{figure} 
 
-\end{comment}
+
 
 
 \subsection{结构参数优化}
@@ -1446,36 +1550,93 @@ t夸克本底排除率随着信号效率的变化关系对比，
 结构参数的优化对模型性能没有显著的提升。
 于是我们保留了对照组的模型用于后续性能研究。
 
-\begin{comment}
-
-\begin{figure}
-\begin{center}
-   \includegraphics[width=0.43\linewidth]{figuresXbb/OPT/OPTQCD.pdf}
-   \includegraphics[width=0.43\linewidth]{figuresXbb/OPT/OPTop.pdf}
-\\
-   \includegraphics[width=0.43\linewidth]{figuresXbb/OPT/OPTQCDMASS.pdf}
-   \includegraphics[width=0.43\linewidth]{figuresXbb/OPT/OPTopMASS.pdf}
-\\
-   \includegraphics[width=0.43\linewidth]{figuresXbb/OPT/OPTQCDMASSPT1.pdf}
-   \includegraphics[width=0.43\linewidth]{figuresXbb/OPT/OPTopMASSPT1.pdf}
-\\
-   \includegraphics[width=0.43\linewidth]{figuresXbb/OPT/OPTQCDMASSPT2.pdf}
-   \includegraphics[width=0.43\linewidth]{figuresXbb/OPT/OPTopMASSPT2.pdf}
-\\
-   \includegraphics[width=0.43\linewidth]{figuresXbb/OPT/OPTQCDMASSPT3.pdf}
-   \includegraphics[width=0.43\linewidth]{figuresXbb/OPT/OPTopMASSPT3.pdf}
-\end{center}
-
+\begin{figure}[htbp]
+  \begin{subfigure}{.5\textwidth}
+  \centering
+   \includegraphics[width=0.75\textwidth]{figuresXbb/OPT/OPTQCD.pdf}
+  % \caption{Higgs vs. Multijet, inclusive}
+   \caption{}
+   %\label{fig:}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+  \centering
+   \includegraphics[width=0.75\textwidth]{figuresXbb/OPT/OPTop.pdf}
+   %\caption{Higgs vs. Top, Inclusive}
+    \caption{}
+   %\label{fig:}
+  \end{subfigure}
+\newline 
+   \begin{subfigure}{.5\textwidth}
+  \centering
+   \includegraphics[width=0.75\textwidth]{figuresXbb/OPT/OPTQCDMASS.pdf}
+  % \caption{Higgs vs. Multijet, $m_{J}\in [76,146]GeV$}
+    \caption{}
+   %\label{fig:}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+  \centering
+   \includegraphics[width=0.75\textwidth]{figuresXbb/OPT/OPTopMASS.pdf}
+  % \caption{Higgs vs. Top, $m_{J}\in [76,146]GeV$}
+    \caption{}
+   %\label{fig:}
+  \end{subfigure}
+ \newline 
+   \begin{subfigure}{.5\textwidth}
+  \centering
+   \includegraphics[width=0.75\textwidth]{figuresXbb/OPT/OPTQCDMASSPT1.pdf}
+  % \caption{Higgs vs. Multijet, $m_{J}\in [76,146]GeV, p_{T}^{J}\in [250,500]GeV$}
+    \caption{}
+   %\label{fig:}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+  \centering
+   \includegraphics[width=0.75\textwidth]{figuresXbb/OPT/OPTopMASSPT1.pdf}
+   %\caption{Higgs vs. Top, $m_{J}\in [76,146]GeV, p_{T}^{J}\in [250,500]GeV$}
+    \caption{}
+   %\label{fig:}
+  \end{subfigure}
+ \newline 
+   \begin{subfigure}{.5\textwidth}
+  \centering
+   \includegraphics[width=0.75\textwidth]{figuresXbb/OPT/OPTQCDMASSPT2.pdf}
+  % \caption{Higgs vs. Multijet, $m_{J}\in [76,146]GeV, p_{T}^{J}\in [500,1000]GeV$}
+    \caption{}
+   %\label{fig:}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+  \centering
+   \includegraphics[width=0.75\textwidth]{figuresXbb/OPT/OPTopMASSPT2.pdf}
+   %\caption{Higgs vs. Top, $m_{J}\in [76,146]GeV, p_{T}^{J}\in [500,1000]GeV$}
+    \caption{}
+   %\label{fig:}
+  \end{subfigure}
+ \newline 
+   \begin{subfigure}{.5\textwidth}
+  \centering
+   \includegraphics[width=0.75\textwidth]{figuresXbb/OPT/OPTQCDMASSPT3.pdf}
+  % \caption{Higgs vs. Multijet, $m_{J}\in [76,146]GeV, p_{T}^{J}\in [1000,3000]GeV$}
+    \caption{}
+   %\label{fig:}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+  \centering
+   \includegraphics[width=0.75\textwidth]{figuresXbb/OPT/OPTopMASSPT3.pdf}
+  % \caption{Higgs vs. Top, $m_{J}\in [76,146]GeV, p_{T}^{J}\in [1000,3000]GeV$}
+    \caption{}
+   %\label{fig:}
+  \end{subfigure}
   \caption{
 对照组和优化组的模型的性能对比。
 左排的图展示的是multijet本底排除率随着信号效率的变化关系对比，
 右排的图展示的是t夸克本底排除率随着信号效率的变化关系对比，
 从上到下依次对应于第~\ref{sec:XbbTagger25}~小节中定义的五个区间。
+%左边的图展示的是multijet本底排除率与信号效率的变化关系的对比，
+%右边的图展示的是t夸克本底排除率与信号效率的变化关系的对比，
+%从上到下依次对应于五个区间的性能对比。
   }
   \label{fig:OPTROC}
-\end{figure}
+\end{figure} 
 
-\end{comment}
 
 综上所述，
 基于神经网络，
@@ -1536,98 +1697,6 @@ t夸克本底排除率随着信号效率的变化关系对比，
 \end{table}
 
 
-\begin{comment}
-
-\begin{figure}
-\begin{center}
-   \includegraphics[width=0.43\linewidth]{figuresXbb/Subjet/SUBQCD.pdf}
-   \includegraphics[width=0.43\linewidth]{figuresXbb/Subjet/SUBTop.pdf}
-\\
-   \includegraphics[width=0.43\linewidth]{figuresXbb/Subjet/SUBQCDMASS.pdf}
-   \includegraphics[width=0.43\linewidth]{figuresXbb/Subjet/SUBTopMASS.pdf}
-\\
-   \includegraphics[width=0.43\linewidth]{figuresXbb/Subjet/SUBQCDMASSPT1.pdf}
-   \includegraphics[width=0.43\linewidth]{figuresXbb/Subjet/SUBTopMASSPT1.pdf}
-\\
-   \includegraphics[width=0.43\linewidth]{figuresXbb/Subjet/SUBQCDMASSPT2.pdf}
-   \includegraphics[width=0.43\linewidth]{figuresXbb/Subjet/SUBTopMASSPT2.pdf}
-\\
-   \includegraphics[width=0.43\linewidth]{figuresXbb/Subjet/SUBQCDMASSPT3.pdf}
-   \includegraphics[width=0.43\linewidth]{figuresXbb/Subjet/SUBTopMASSPT3.pdf}
-\end{center}
-
-  \caption{
- 模型JKDLS(3-subjets)和JKDLS(2-subjets)的性能对比。
-左排的图展示的是multijet本底排除率随着信号效率的变化关系的对比，
-右排的图展示的是t夸克本底排除率随着信号效率的变化关系的对比，
-从上到下依次对应于第~\ref{sec:XbbTagger25}~小节中定义的五个区间。
-%的性能对比。
-  }
-  \label{fig:SubjetROC}
-\end{figure}
-
-
-
-
-\begin{figure}
-\begin{center}
-   \includegraphics[width=0.43\linewidth]{figuresXbb/Reweight/QCDIN.pdf}
-   \includegraphics[width=0.43\linewidth]{figuresXbb/Reweight/TOPIN.pdf}
-\\
-   \includegraphics[width=0.43\linewidth]{figuresXbb/Reweight/QCDMASS.pdf}
-   \includegraphics[width=0.43\linewidth]{figuresXbb/Reweight/TOPMASS.pdf}
-\\
-   \includegraphics[width=0.43\linewidth]{figuresXbb/Reweight/QCDMASSPT1.pdf}
-   \includegraphics[width=0.43\linewidth]{figuresXbb/Reweight/TOPMASSPT1.pdf}
-\\
-   \includegraphics[width=0.43\linewidth]{figuresXbb/Reweight/QCDMASSPT2.pdf}
-   \includegraphics[width=0.43\linewidth]{figuresXbb/Reweight/TOPMASSPT2.pdf}
-\\
-   \includegraphics[width=0.43\linewidth]{figuresXbb/Reweight/QCDMASSPT3.pdf}
-   \includegraphics[width=0.43\linewidth]{figuresXbb/Reweight/TOPMASSPT3.pdf}
-\end{center}
-
-  \caption{
-  基于分布采样和分布加权的模型的性能对比。
-  左排的图展示的是multijet本底排除率随着信号效率的变化关系对比，
-右排的图展示的是t夸克本底排除率随着信号效率的变化关系对比，
-从上到下依次对应于第~\ref{sec:XbbTagger25}~小节中定义的五个区间。
-  }
-  \label{fig:ReweightROC}
-\end{figure}
-
-
-
-
-\begin{figure}
-\begin{center}
-   \includegraphics[width=0.43\linewidth]{figuresXbb/OPT/OPTQCD.pdf}
-   \includegraphics[width=0.43\linewidth]{figuresXbb/OPT/OPTop.pdf}
-\\
-   \includegraphics[width=0.43\linewidth]{figuresXbb/OPT/OPTQCDMASS.pdf}
-   \includegraphics[width=0.43\linewidth]{figuresXbb/OPT/OPTopMASS.pdf}
-\\
-   \includegraphics[width=0.43\linewidth]{figuresXbb/OPT/OPTQCDMASSPT1.pdf}
-   \includegraphics[width=0.43\linewidth]{figuresXbb/OPT/OPTopMASSPT1.pdf}
-\\
-   \includegraphics[width=0.43\linewidth]{figuresXbb/OPT/OPTQCDMASSPT2.pdf}
-   \includegraphics[width=0.43\linewidth]{figuresXbb/OPT/OPTopMASSPT2.pdf}
-\\
-   \includegraphics[width=0.43\linewidth]{figuresXbb/OPT/OPTQCDMASSPT3.pdf}
-   \includegraphics[width=0.43\linewidth]{figuresXbb/OPT/OPTopMASSPT3.pdf}
-\end{center}
-
-  \caption{
-对照组和优化组的模型的性能对比。
-左排的图展示的是multijet本底排除率随着信号效率的变化关系对比，
-右排的图展示的是t夸克本底排除率随着信号效率的变化关系对比，
-从上到下依次对应于第~\ref{sec:XbbTagger25}~小节中定义的五个区间。
-  }
-  \label{fig:OPTROC}
-\end{figure}
-
-\end{comment}
-
 \section{算法性能}
 \label{sec:XbbPerf}
 
@@ -1683,20 +1752,14 @@ DL1r或MV2标定为Higgs-jet。
 
 \subsection{去质量关联}
 \label{sec:XbbPerf1}
-
 首先，我们对$D_{Xbb}$算法与事例中领头LR-jet质量的关联性进行了研究，
 在这一小节的研究当中，对于t夸克样本中，没有要求事例中至少包含一个Top-jet，
-其他筛选条件相同。
+其他要求没有改变。
 在$D_{Xbb}$算法的标定效率为60\%的工作点下，
-如图~\ref{fig:MASS1}~所示，我们对比了样本中事例的领头LR-jet质量分布在$D_{Xbb}$标定之前和之后的形状，
-左图对应于multijet样本和信号样本，右图对应于t夸克样本和信号样本，
-图中还展示了分布在标定前后的比值。
-%左图是信号样本和multijet样本中领头LR-jet质量分布在$D_{Xbb}$标定之前和之后的对比，
-%而右图是信号样本和t夸克样本中领头LR-jet质量分布在$D_{Xbb}$标定之前和之后的对比，
-可以看出，
-%与DL1r的表现类似，
-$D_{Xbb}$对LR-jet质量分布的影响非常小。
-%可以看到$D_{Xbb}$算法对LR-jet的质量分布影响非常小。
+如图~\ref{fig:MASS1}~所示，我们对比了事例中领头LR-jet质量分布在$D_{Xbb}$标定之前和之后的分布，
+左图是信号样本和multijet样本中领头LR-jet质量分布在$D_{Xbb}$标定之前和之后的对比，
+而右图是信号样本和t夸克样本中领头LR-jet质量分布在$D_{Xbb}$标定之前和之后的对比，
+可以看到$D_{Xbb}$算法对LR-jet的质量分布影响非常小。
 
 \begin{figure}[h]
   \begin{center}
@@ -1704,52 +1767,35 @@ $D_{Xbb}$对LR-jet质量分布的影响非常小。
     \includegraphics[width=0.49\textwidth]{figuresXbb/efficiencies/ttcomp_all_largeRjet_tt_mass_inclusive_discf025zoom.pdf}
   \end{center}
   \caption{
- 在$D_{Xbb}$算法的标定效率为60\%的工作点下，
-样本中事例的领头LR-jet质量分布在$D_{Xbb}$标定之前和之后的形状。
-左图对应于multijet样本和信号样本，右图对应于t夸克样本和信号样本。
- %事例中领头LR-jet质量分布在$D_{Xbb}$标定之前和之后的分布对比。
-% 左图是信号样本和multijet样本中领头LR-jet质量分布在$D_{Xbb}$标定之前和之后的对比，
-%右图是信号样本和t夸克样本中领头LR-jet质量分布在$D_{Xbb}$标定之前和之后的对比。
+ 在$D_{Xbb}$算法的标定效率为60\%的工作点下，事例中领头LR-jet质量分布在$D_{Xbb}$标定之前和之后的分布对比。
+ 左图是信号样本和multijet样本中领头LR-jet质量分布在$D_{Xbb}$标定之前和之后的对比，
+右图是信号样本和t夸克样本中领头LR-jet质量分布在$D_{Xbb}$标定之前和之后的对比。
 }
   \label{fig:MASS1}
 \end{figure}
 
 
-同样在
-%基线算法
-DL1r算法的标定效率为60\%的工作点下，
-如图~\ref{fig:MASS2}~所示，我们还研究了
-%基线算法
-DL1r对事例中领头LR-jet质量分布的影响，
-左图是对应于multijet样本，右图是对应于t夸克样本，
-可以看到%基线算法
-DL1r对LR-jet质量分布的影响也非常小，这是我们所预期的。
+同样在基线算法DL1r的标定效率为60\%的工作点下，
+如图~\ref{fig:MASS2}~所示，我们还研究了基线算法DL1r对事例中领头LR-jet质量分布的影响，
+左图是对于multijet样本，右图是对于t夸克样本，
+可以看到基线算法DL1r对LR-jet的质量分布影响也非常小，这是我们所预期的。
 
 \begin{figure}[h]
   \begin{center}
     \includegraphics[width=0.49\textwidth]{figuresXbb/efficiencies/dijetcomp_all_largeRjet_jetjet_JZ_mass_inclusive_discDL1rBaselinezoom.pdf}
     \includegraphics[width=0.49\textwidth]{figuresXbb/efficiencies/ttcomp_all_largeRjet_tt_mass_inclusive_discDL1rBaselinezoom.pdf}
   \end{center}
-  \caption{
-在DL1r算法的标定效率为60\%的工作点下，
-样本中事例的领头LR-jet质量分布在DL1r标定之前和之后的形状。
-左图对应于multijet样本和信号样本，右图对应于t夸克样本和信号样本。
-  %事例中领头LR-jet质量分布在基线算法DL1r标定之前和之后的分布对比。
- %左图是信号样本和multijet样本中领头LR-jet质量分布被基线算法DL1r标定之前和之后的对比，
- %右图是信号样本和t夸克样本中领头LR-jet质量分布被基线算法DL1r标定之前和之后的对比。
- }
+  \caption{事例中领头LR-jet质量分布在基线算法DL1r标定之前和之后的分布对比。
+ 左图是信号样本和multijet样本中领头LR-jet质量分布被基线算法DL1r标定之前和之后的对比，
+ 右图是信号样本和t夸克样本中领头LR-jet质量分布被基线算法DL1r标定之前和之后的对比。}
   \label{fig:MASS2}
 \end{figure}
 
 为了进一步说明$D_{Xbb}$算法对LR-jet质量分布的影响足够小，
 如图~\ref{fig:MASS3}~所示，
-我们还对比了事例中领头LR-jet质量分布在$D_{Xbb}$和
-%基线算法
-DL1r标定之后的形状，
-图~\ref{fig:MASS3QCD}~是对应于multijet样本，
-图~\ref{fig:MASS3Top}~是对应于t夸克样本，
-图~\ref{fig:MASS3Higgs}~是对应于信号样本。
-可以看到在三个样本中两者的差异都非常小，这是我们所能接受的。
+我们还对比了事例中领头LR-jet质量分布在$D_{Xbb}$和基线算法DL1r标定之后的分布，
+图~\ref{fig:MASS3QCD}~是对于multijet样本，图~\ref{fig:MASS3Top}~是对于t夸克样本，图~\ref{fig:MASS3Higgs}~是对于信号样本，
+可以看到两者的差异都非常小，这是我们所能接受的。
 
 
 \begin{figure}[!thbp]
@@ -1773,10 +1819,8 @@ DL1r标定之后的形状，
   \label{fig:MASS3Higgs}
   \end{subfigure}
   \caption{
- 事例中领头LR-jet质量分布在$D_{Xbb}$和
- %基线算法
- DL1r标定之后的分布对比。
- (a) 对应于multijet样本；(b) 对应于t夸克样本；(c) 对应于信号样本。
+ 事例中领头LR-jet质量分布在$D_{Xbb}$和基线算法DL1r标定之后的分布对比。
+ (a) 对于multijet样本；(b) 对于t夸克样本；(c) 对于信号样本。
  }
 \label{fig:MASS3}
 \end{figure}
@@ -1792,19 +1836,11 @@ DL1r标定之后的形状，
 
 为了更好的测试算法性能，除了第~\ref{sec:XbbOR}~小节描述的筛选条件之外，
 我们还要求事例中领头LR-jet的质量在76GeV和146GeV之间，
-前面提到这个质量区间所包含的Higgs-jet的数量占总数的90\%
-。
-%~\cite{TAGGING5}。
-%应用了全部筛选条件之后，
-随后，
-我们对样本的多样性和其中真实味标签的分布进行了研究，
-表~\ref{tab:XbbPerf1}~展示了
-%三个样本中
-事例的领头LR-jet中VR-jet的个数多样性，
-在信号样本和t夸克样本中，
-有超过99\%的事例的领头LR-jet中包含至少两个VR-jet，
-而对于multijet样本，这个比例在97.5\%。
-%而multijet样本中约有97.5\%的事例中领头LR-jet包含至少两个VR-jet。
+这个质量区间所包含的Higgs-jet的数量占总数的90\%~\cite{TAGGING5}。
+应用了全部筛选条件之后，我们对样本的多样性和其中真实味标签的分布进行了研究，
+表~\ref{tab:XbbPerf1}~展示了三个样本中事例领头LR-jet的VR-jet个数多样性，
+信号样本和t夸克样本中有超过99\%的事例中领头LR-jet包含至少两个VR-jet，
+而multijet样本中约有97.5\%的事例中领头LR-jet包含至少两个VR-jet。
 
 \begin{table}
 \begin{center}
@@ -1822,24 +1858,15 @@ DL1r标定之后的形状，
     \hline
   \end{tabular}
   \caption{
-  %应用事例筛选条件之后，
-  %三个样本中
-  对于三个样本，
-  事例的领头LR-jet中VR-jet的个数多样性。
+  应用事例筛选条件之后，三个样本中事例领头LR-jet的VR-jet个数多样性。
       }
 \label{tab:XbbPerf1}
 \end{center}
 \end{table}
 
-表~\ref{tab:XbbPerf2}~展示了
-%三个样本中
-事例的领头LR-jet中VR-jet的真实味标签分布，
-%可以看到，
-信号样本中约有92\%的事例有如下特点，%其中
-领头LR-jet中包含至少两个真实味标签为b-jet的VR-jet，
-而在multijet样本中，
-大约有80\%的事例的领头LR-jet中既不包含真实味标签为b-jet的VR-jet，
-也不包含真实味标签为c-jet的VR-jet，
+表~\ref{tab:XbbPerf2}~展示了三个样本中事例领头LR-jet的VR-jet真实味标签的分布，
+可以看到，信号样本中约有92\%的事例有如下特点，其中领头LR-jet包含至少两个真实味标签为b-jet的VR-jet，
+在multijet样本中，大约有80\%的事例中领头LR-jet既不包含真实味标签为b-jet的VR-jet也不包含真实味标签为c-jet的VR-jet，
 而t夸克样本主要由领头LR-jet中包含单个真实味标签为b-jet的VR-jet的事例主导，
 这是由t夸克的性质决定的~\cite{PDG}。
 
@@ -1866,33 +1893,20 @@ DL1r标定之后的形状，
     \hline
   \end{tabular}
   \caption{
- %应用事例筛选条件之后，
-对于三个样本，
-事例的领头LR-jet中VR-jet的真实味标签分布。
+ 应用事例筛选条件之后，三个样本中事例领头LR-jet的VR-jet真实味标签的分布。
   }
 \label{tab:XbbPerf2}
 \end{center}
 \end{table}
 
 
-为了测试$D_{Xbb}$的作用效果，
-同样在 $D_{Xbb}$的标定效率为60\%的工作点下，
-%在$D_{Xbb}$算法的标定效率为60\%的工作点下，
-我们研究了
-%被
-$D_{Xbb}$标定之后的样本中真实味标签分布的多样性。
-%事例领头LR-jet的VR-jet真实味标签的分布，
-如表~\ref{tab:XbbPerf3}~所示，
-对比标定之前表~\ref{tab:XbbPerf2}~的
-结果，
-%情形，
-可以看出，
-multijet样本和t夸克样本中具有以下特点的事例的比例得到了显著的提升，
-领头LR-jet中包含至少一个真实味标签为b-jet的VR-jet，
+为了测试$D_{Xbb}$的作用效果，在$D_{Xbb}$算法的标定效率为60\%的工作点下，
+我们研究了被$D_{Xbb}$标定之后的样本中事例领头LR-jet的VR-jet真实味标签的分布，
+如表~\ref{tab:XbbPerf3}~所示，对比标定之前表~\ref{tab:XbbPerf2}~的情形，
+multijet样本和t夸克样本中具有以下特点的事例比例得到了显著的提升，
+领头LR-jet包含至少一个真实味标签为b-jet的VR-jet，
 分别达到了约95\%和99\%，
-这表明
-%也就是
-$D_{Xbb}$可以有效的排除领头LR-jet中VR-jet真实味标签为light-jet的事例。
+也就是$D_{Xbb}$可以有效的排除领头LR-jet中VR-jet真实味标签为light-jet的事例。
 
 \begin{table}
 \begin{center}
@@ -1916,10 +1930,8 @@ $0b + 0c$ & 0.002 & - & - \\
     \hline
   \end{tabular}
   \caption{
-在$D_{Xbb}$的标定效率为60\%的工作点下，
-$D_{Xbb}$标定之后的样本中真实味标签分布的多样性。
- % 在$D_{Xbb}$算法的标定效率为60\%的工作点下，
-%被$D_{Xbb}$标定之后的样本中事例领头LR-jet的VR-jet真实味标签的分布。
+  在$D_{Xbb}$算法的标定效率为60\%的工作点下，
+被$D_{Xbb}$标定之后的样本中事例领头LR-jet的VR-jet真实味标签的分布。
   }
   \label{tab:XbbPerf3}
   \end{center}
@@ -1930,30 +1942,17 @@ $D_{Xbb}$标定之后的样本中真实味标签分布的多样性。
 
 \input{data/discrim.tex}
 
-
-接下来我们对比了$D_{Xbb}$
-%算法
-和DL1r
-%基线算法
-在样本中的区分因子的分布。
-如图~\ref{fig:XbbPerf3}~所示，
-左图~\ref{fig:XbbPerf3DXBB}展示的是，
+接下来我们对比了$D_{Xbb}$算法和DL1r基线算法在样本中的区分因子的分布。
+如图~\ref{fig:XbbPerf3}~所示，左图~\ref{fig:XbbPerf3DXBB}展示的是，
 在信号样本、multijet样本和t夸克样本中，
-由$D_{Xbb}$
-%算法输出的
-提供的领头LR-jet的区分因子的分布，
-分别以橙色、蓝色和绿色线表示，
- 所有分布都已经归一化；
-而右图~\ref{fig:XbbPerf3DL1r}~对应于DL1r的情形。
-%而右图~\ref{fig:XbbPerf3DL1r}~展示的是，
-%在信号样本、multijet样本和t夸克样本中，
-%由基线算法DL1r输出的LR-jet的区分因子的分布，
-%也是分别以橙色、蓝色和绿色线表示。
-%可以看出，相比之下，
-可以看到，相对于DL1r，
-$D_{Xbb}$
-%算法
-能将信号和两种本底比较明显的区分开。
+由$D_{Xbb}$算法输出的的LR-jet的区分因子的分布，
+分别以橙色、蓝色和绿色线表示；
+而右图~\ref{fig:XbbPerf3DL1r}~展示的是，
+在信号样本、multijet样本和t夸克样本中，
+由基线算法DL1r输出的LR-jet的区分因子的分布，
+也是分别以橙色、蓝色和绿色线表示。
+可以看出，相比之下，
+$D_{Xbb}$算法能将信号和两种本底比较明显的区分开。
 
 \begin{figure}[!thbp]
   \begin{subfigure}{.5\textwidth}
@@ -1969,8 +1968,8 @@ $D_{Xbb}$
   \label{fig:XbbPerf3DL1r}
   \end{subfigure}
   \caption{
-  在信号样本、multijet样本和t夸克样本中，由$D_{Xbb}$(左图)和DL1r(右图)提供的领头LR-jet的区分因子的分布，分别以橙色、蓝色和绿色线表示。
-  所有分布都已经归一化。
+  在信号样本、multijet样本和t夸克样本中，由$D_{Xbb}$算法(左图)和基线算法DL1r(右图)输出的LR-jet的区分因子的分布，分别以橙色、蓝色和绿色线表示。
+  其中分布都已经归一化。
  }
 \label{fig:XbbPerf3}
 \end{figure}
@@ -1981,17 +1980,12 @@ $D_{Xbb}$
 
 %在对$D_{Xbb}$算法性能进行评估的时候，~\ref{sec:XbbOR}小节所提到的筛选条件和~\ref{sec:XbbTagger}小节定义的希格斯玻色子质量区间都应用了，而且信号样本和t夸克样本都被重新加权，使得这两种样本中的大半径jet的横动量分布和图~\ref{fig:bkg-pt}中multijet样本中大半径jet的横动量分布是一样的。
 
-然后我们对比了在区分因子取不同截断值的情况下，
-$D_{Xbb}$、DL1r和MV2三种算法的本底排除率随着信号效率的变化关系。
-如图~\ref{fig:roc250}~所示，分别对multijet本底和t夸克本底进行了评估。
-图中蓝色线代表$D_{Xbb}$的性能，绿色线和灰色线分别代表DL1r和MV2的性能，相应的subjet是利用VR-jet算法重建出来的。
-灰色虚线代表MV2的性能，与之对应的subjet是利用FR-jet算法重建出来的。
-%蓝色线代表$D_{Xbb}$的性能，绿色线和灰色线分别代表基线算法DL1r和MV2基于领头LR-jet中两个横动量最高的VR-jet的性能表现，
-%而灰色虚线代表基线算法MV2基于领头LR-jet中两个横动量最高的FR-jet的性能表现，
-%图中底部展示的是信号效率相同时，各算法的本底排除率与基于VR-jet的基线算法MV2的本底排除率的比值，
-图中还展示了在信号效率相同时，算法的本底排除率与基于VR-jet的MV2算法的本底排除率的比值。
-可以看到，在信号效率相同的情况下，$D_{Xbb}$能实现相同或相对更高的本底排除率，尤其是在高信号效率区间。
-%可以看出在信号效率相同的情况下，$D_{Xbb}$算法能实现相同或相对更高的本底排除率，尤其是在高信号效率区间。
+然后我们对比了在区分因子取不同截断值的情况下，$D_{Xbb}$算法与基线算法DL1r和MV2的本底排除率随着信号效率的变化关系。
+如图~\ref{fig:roc250}~所示，分别对multijet本底和t夸克本底进行了评估，
+蓝色线代表$D_{Xbb}$的性能，绿色线和灰色线分别代表基线算法DL1r和MV2基于领头LR-jet中两个横动量最高的VR-jet的性能表现，
+而灰色虚线代表基线算法MV2基于领头LR-jet中两个横动量最高的FR-jet的性能表现，
+图中底部展示的是信号效率相同时，各算法的本底排除率与基于VR-jet的基线算法MV2的本底排除率的比值，
+可以看出在信号效率相同的情况下，$D_{Xbb}$算法能实现相同或相对更高的本底排除率，尤其是在高信号效率区间。
 
 \begin{figure}[!thbp]
   \begin{subfigure}{.5\textwidth}
@@ -2005,33 +1999,24 @@ $D_{Xbb}$、DL1r和MV2三种算法的本底排除率随着信号效率的变化�
   \caption{Higgs vs. Top}
   \end{subfigure}
   \caption{
-在事例中领头LR-jet满足$p_{T}$>250GeV的情况下，
-$D_{Xbb}$、DL1r和MV2三种算法的本底排除率随着信号效率的变化关系。
-分别对multijet本底(左图)和t夸克本底(右图)进行了评估，
-图中还展示了在信号效率相同时，算法的本底排除率与基于VR-jet的MV2算法的本底排除率的比值。  
-%在领头LR-jet满足$p_{T}$>250GeV时，$D_{Xbb}$算法与基线算法DL1r和MV2的本底排除率随着信号效率的变化关系。
-%分别对multijet本底(左图)和t夸克本底(右图)进行了评估。
-%蓝色线代表$D_{Xbb}$的性能，绿色线和灰色线分别代表基线算法DL1r和MV2基于领头LR-jet中两个横动量最高的VR-jet的性能表现，
-%而灰色虚线代表基线算法MV2基于领头LR-jet中两个横动量最高的FR-jet的性能表现。
-%图中底部展示的是信号效率相同时，各算法的本底排除率与基于VR-jet的基线算法MV2的本底排除率的比值。
+在领头LR-jet满足$p_{T}$>250GeV时，$D_{Xbb}$算法与基线算法DL1r和MV2的本底排除率随着信号效率的变化关系。
+分别对multijet本底(左图)和t夸克本底(右图)进行了评估。
+蓝色线代表$D_{Xbb}$的性能，绿色线和灰色线分别代表基线算法DL1r和MV2基于领头LR-jet中两个横动量最高的VR-jet的性能表现，
+而灰色虚线代表基线算法MV2基于领头LR-jet中两个横动量最高的FR-jet的性能表现。
+图中底部展示的是信号效率相同时，各算法的本底排除率与基于VR-jet的基线算法MV2的本底排除率的比值。
  }
 \label{fig:roc250}
 \end{figure}
 
-为了凸显$D_{Xbb}$在高横动量区间的性能优势，
-在提高LR-jet横动量的筛选条件到500GeV之后，
-%在增加样本中领头LR-jet横动量大于500GeV的筛选条件之后，
-我们重新评估了$D_{Xbb}$、DL1r和MV2三种算法的本底排除率随着信号效率的变化。
+为了凸显$D_{Xbb}$算法在高横动量区间的性能优势，
+在增加样本中领头LR-jet横动量大于500GeV的筛选条件之后，
+我们重新评估了$D_{Xbb}$算法与基线算法DL1r和MV2的本底排除率随着信号效率的变化。
 如图~\ref{fig:roc500}~所示，同样分别对multijet本底和t夸克本底进行了评估，
 可以看到，在信号效率为$60\%$的情况下，
-对于multijet本底，$D_{Xbb}$的本底排除率达到了92，
-是MV2的1.4倍，与DL1r的大致相等；
-%是基于VR-jet的基线算法MV2的本底排除率的1.4倍，
-%与基于VR-jet的基线算法DL1r的本底排除率大致相等；
-对于t夸克本底，$D_{Xbb}$的本底排除率达到了31，
-是MV2的2倍，DL1r的1.6倍。
-%是基于VR-jet的基线算法MV2的本底排除率的2倍，
-%是基于VR-jet的基线算法DL1r的本底排除率的1.6倍。
+对于multijet本底，$D_{Xbb}$的本底排除率达到了92，是基于VR-jet的基线算法MV2的本底排除率的1.4倍，
+与基于VR-jet的基线算法DL1r的本底排除率大致相等；
+对于t夸克本底，$D_{Xbb}$的本底排除率达到了31，是基于VR-jet的基线算法MV2的本底排除率的2倍，
+是基于VR-jet的基线算法DL1r的本底排除率的1.6倍。
 
 
 \begin{figure}[!thbp]
@@ -2046,16 +2031,12 @@ $D_{Xbb}$、DL1r和MV2三种算法的本底排除率随着信号效率的变化�
   \caption{Higgs vs. Top}
   \end{subfigure}
   \caption{
- 在事例中领头LR-jet满足$p_{T}$>500GeV的情况下，
-$D_{Xbb}$、DL1r和MV2三种算法的本底排除率随着信号效率的变化关系。
+在领头LR-jet满足$p_{T}$>500GeV时，
+$D_{Xbb}$算法与基线算法DL1r和MV2的本底排除率随着信号效率的变化关系。
 分别对multijet本底(左图)和t夸克本底(右图)进行了评估。
-%图中还展示了在信号效率相同时，算法的本底排除率与基于VR-jet的MV2算法的本底排除率的比值。  
-%在领头LR-jet满足$p_{T}$>500GeV时，
-%$D_{Xbb}$算法与基线算法DL1r和MV2的本底排除率随着信号效率的变化关系。
-%分别对multijet本底(左图)和t夸克本底(右图)进行了评估。
-%蓝色线代表$D_{Xbb}$的性能，绿色线和灰色线分别代表基线算法DL1r和MV2基于领头LR-jet中两个横动量最高的VR-jet的性能表现，
-%而灰色虚线代表基线算法MV2基于领头LR-jet中两个横动量最高的FR-jet的性能表现。
-%中底部展示的是信号效率相同时，各算法的本底排除率与基于VR-jet的基线算法MV2的本底排除率的比值。
+蓝色线代表$D_{Xbb}$的性能，绿色线和灰色线分别代表基线算法DL1r和MV2基于领头LR-jet中两个横动量最高的VR-jet的性能表现，
+而灰色虚线代表基线算法MV2基于领头LR-jet中两个横动量最高的FR-jet的性能表现。
+图中底部展示的是信号效率相同时，各算法的本底排除率与基于VR-jet的基线算法MV2的本底排除率的比值。
  }
 \label{fig:roc500}
 \end{figure}
@@ -2063,42 +2044,17 @@ $D_{Xbb}$、DL1r和MV2三种算法的本底排除率随着信号效率的变化�
 \subsection{本底排除率与LR-jet横动量}
 \label{sec:XbbPerf5}
 
-随后，我们还研究了在
-%各个算法的
-信号标定效率
-%都
-为60\%的工作点下，
-%相应
-三种算法
-的本底排除率随着领头LR-jet横动量的变化关系。
-如图~\ref{fig:PT60}~所示，分别对multijet
-%本底排除率
-样本
-和t夸克
-样本
-%本底排除率
-进行了评估，误差棒对应于统计误差。
-图中蓝色点代表$D_{Xbb}$的性能，绿色点和灰色实心点分别代表DL1r和MV2的性能，它们都是基于VR-jet重建算法。
-灰色空心点代表基于FR-jet重建算法的MV2的性能。
-%绿色点和灰色实心点分别代表基线算法DL1r和MV2基于领头LR-jet中两个横动量最高的VR-jet的性能表现，
-%而灰色空心点代表基线算法MV2基于领头LR-jet中两个横动量最高的FR-jet的性能表现。
-在大部分
-%LR-jet
-横动量区间，$D_{Xbb}$的本底排除率要高于
-%基线算法
-DL1r，
-%的本底排除率，
-随着
-%LR-jet
-横动量的增加，希格斯玻色子和t夸克的衰变产物
-更加接近准直，
-%更有可能被完全包含在对应的LR-jet当中，
-此时$D_{Xbb}$带来的性能提升变得更加显著。
-%而DL1r的本底排除率
-%明显高于MV2，
-%主要是因为神经网络相对于提升决策树来说更
-在高横动量区间，基于FR-jet重建算法的MV2的本底排除率明显降低了，
-这是由于FR-jet重建算法对来自高横动量$H\rightarrow b\bar{b}$衰变的两个接近重叠的b-jet分辨能力不足。
+随后，我们还研究了在各个算法的信号标定效率都为$60\%$的工作点下，
+相应的本底排除率随着领头LR-jet横动量的变化关系。
+如图~\ref{fig:PT60}~所示，分别对multijet本底排除率和t夸克本底排除率进行了评估，
+蓝色点代表$D_{Xbb}$的性能，绿色点和灰色实心点分别代表基线算法DL1r和MV2基于领头LR-jet中两个横动量最高的VR-jet的性能表现，
+而灰色空心点代表基线算法MV2基于领头LR-jet中两个横动量最高的FR-jet的性能表现。
+在大部分LR-jet横动量区间，$D_{Xbb}$算法的本底排除率要高于基线算法DL1r的本底排除率，
+随着LR-jet横动量的增加，希格斯玻色子和t夸克的衰变产物更有可能被完全包含在对应的LR-jet当中，
+此时$D_{Xbb}$算法带来的性能提升就变得更加显著。
+而基线算法DL1r的本底排除率又要比基线算法MV2的高，这是由于基于神经网络的DL1r相对于基于提升决策树的MV2来说更强大。
+在高横动量区间，基于FR-jet的基线算法MV2的本底排除率明显降低，
+是因为FR-jet算法对来自高横动量$H\rightarrow b\bar{b}$衰变的两个重叠的b-jet分辨能力不足。
 
 \begin{figure}[!thbp]
   \begin{subfigure}{.5\textwidth}
@@ -2112,23 +2068,20 @@ DL1r，
   \caption{}
   \end{subfigure}
   \caption{
-  在信号标定效率为60\%的工作点下，
-$D_{Xbb}$、DL1r和MV2三种算法的本底排除率随着领头LR-jet横动量的变化关系。
-  %在各个算法的信号标定效率都为$60\%$的工作点下，相应的本底排除率随着领头LR-jet横动量的变化关系。
-  分别对multijet样本(左图)和t夸克样本(右图)进行了评估，误差棒对应于统计误差。
-%蓝色点代表$D_{Xbb}$的性能，绿色点和灰色实心点分别代表基线算法DL1r和MV2基于领头LR-jet中两个横动量最高的VR-jet的性能表现，
-%而灰色空心点代表基线算法MV2基于领头LR-jet中两个横动量最高的FR-jet的性能表现，误差棒对应于统计误差。
+  在各个算法的信号标定效率都为$60\%$的工作点下，相应的本底排除率随着领头LR-jet横动量的变化关系。
+  分别对multijet本底排除率(左图)和t夸克本底排除率(右图)进行了评估。
+  蓝色点代表$D_{Xbb}$的性能，绿色点和灰色实心点分别代表基线算法DL1r和MV2基于领头LR-jet中两个横动量最高的VR-jet的性能表现，
+而灰色空心点代表基线算法MV2基于领头LR-jet中两个横动量最高的FR-jet的性能表现，误差棒对应于统计误差。
   }
 \label{fig:PT60}
 \end{figure}
 
-同样，为了凸显$D_{Xbb}$在高标定效率的工作点下的性能优势，
-我们也研究了
-在信号标定效率为80\%的工作点下，
-三种算法的本底排除率随着领头LR-jet横动量的变化关系。
-如图~\ref{fig:PT80}~所示，也分别对multijet样本和t夸克样本进行了评估。
-在整个LR-jet横动量大于250GeV的区间，
-$D_{Xbb}$的本底排除率都显著高于DL1r和MV2。
+同样，为了凸显$D_{Xbb}$算法在高信号效率的工作点下的性能优势，
+我们也研究了在各个算法的信号标定效率都为$80\%$的工作点下，
+相应的本底排除率随着领头LR-jet横动量的变化关系。
+如图~\ref{fig:PT80}~所示，也分别对multijet本底排除率和t夸克本底排除率进行了评估，
+可以看到，在图中整个LR-jet横动量大于250GeV的区间，
+$D_{Xbb}$算法的本底排除率要显著高于基线算法DL1r和MV2的本底排除率。
 
 \begin{figure}[!thbp]
   \begin{subfigure}{.5\textwidth}
@@ -2141,46 +2094,27 @@ $D_{Xbb}$的本底排除率都显著高于DL1r和MV2。
   \includegraphics[width=0.9\textwidth]{figuresXbb/pulled/eff_vs_pt/const_eff_80/top.pdf}
   \caption{}
   \end{subfigure}
-  \caption{
-  在信号标定效率为80\%的工作点下，
-$D_{Xbb}$、DL1r和MV2三种算法的本底排除率随着领头LR-jet横动量的变化关系。
-  %在各个算法的信号标定效率都为$60\%$的工作点下，相应的本底排除率随着领头LR-jet横动量的变化关系。
-  分别对multijet样本(左图)和t夸克样本(右图)进行了评估。
-  %误差棒对应于统计误差。
-  % 在各个算法的信号标定效率都为$80\%$的工作点下，相应的本底排除率随着领头LR-jet横动量的变化关系。
-  %分别对multijet本底排除率(左图)和t夸克本底排除率(右图)进行了评估。
-  %蓝色点代表$D_{Xbb}$的性能，绿色点和灰色实心点分别代表基线算法DL1r和MV2基于领头LR-jet中两个横动量最高的VR-jet的性能表现，
-%而灰色空心点代表基线算法MV2基于领头LR-jet中两个横动量最高的FR-jet的性能表现，误差棒对应于统计误差。
-}
+  \caption{ 在各个算法的信号标定效率都为$80\%$的工作点下，相应的本底排除率随着领头LR-jet横动量的变化关系。
+  分别对multijet本底排除率(左图)和t夸克本底排除率(右图)进行了评估。
+  蓝色点代表$D_{Xbb}$的性能，绿色点和灰色实心点分别代表基线算法DL1r和MV2基于领头LR-jet中两个横动量最高的VR-jet的性能表现，
+而灰色空心点代表基线算法MV2基于领头LR-jet中两个横动量最高的FR-jet的性能表现，误差棒对应于统计误差。}
 \label{fig:PT80}
 \end{figure}
 
 \subsection{本底排除率与信号效率和LR-jet横动量}
 \label{sec:XbbPerf6}
 
-为了对比算法的整体性质，
-这一小节我们研究了$D_{Xbb}$的本底排除率的相对提升
-随着领头LR-jet横动量下限和信号标定效率的变化关系。
-%如
-图~\ref{fig:PTDL1r}~
-%所示，
-展示的是$D_{Xbb}$的本底排除率相对于DL1r的提升，
-%随着领头LR-jet横动量下限和信号标定效率的变化关系，
-%图中每个点表示：当要求样本中事例领头LR-jet的横动量大于某一阈值，且在信号效率固定的情况下，
-%$D_{Xbb}$算法的本底排除率与基线算法DL1r的本底排除率的比值。
-左图对应于multijet样本，右图对应于t夸克样本，
-%分别对multijet本底和t夸克本底进行了评估，
-%此处基线算法
+为了研究算法的整体性质，这里我们研究了$D_{Xbb}$算法的本底排除率相对提升随着领头LR-jet横动量下限和信号标定效率的变化关系。
+如图~\ref{fig:PTDL1r}~所示，
+展示的是$D_{Xbb}$算法相对于基线算法DL1r的提升随着领头LR-jet横动量下限和信号标定效率的变化关系，
+图中每个点表示：当要求样本中事例领头LR-jet的横动量大于某一阈值，且在信号效率固定的情况下，
+$D_{Xbb}$算法的本底排除率与基线算法DL1r的本底排除率的比值。
+分别对multijet本底和t夸克本底进行了评估，
+此处基线算法DL1r是基于领头LR-jet中两个横动量最高的VR-jet，
 其中$\epsilon$表示效率，它是排除率的倒数。
-%从图中
-可以看到$D_{Xbb}$相对于DL1r有着显著的提升，
-第~\ref{sec:XbbSim}~小节中提到，
-用于性能评估的样本，
-在加权之后其领头LR-jet的横动量如图~\ref{fig:bkg-pt}~中
-所示
-%由低到高
-平滑下降分布，
-这使得$D_{Xbb}$的性能主要受低横动量区LR-jet的表现影响。
+从图中可以看出$D_{Xbb}$算法相对于基线算法DL1r有着显著的提升，
+第~\ref{sec:XbbSim}~小节中提到，用于性能评估的样本，在加权之后其领头LR-jet的横动量如图~\ref{fig:bkg-pt}~中由低到高平滑下降分布，
+这使得$D_{Xbb}$算法的性能主要受低横动量区的LR-jet的表现影响。
 
 
 \begin{figure}[!thbp]
@@ -2195,15 +2129,17 @@ $D_{Xbb}$、DL1r和MV2三种算法的本底排除率随着领头LR-jet横动量�
   \caption{}
   \end{subfigure}
   \caption{
-  $D_{Xbb}$的本底排除率相对于DL1r的提升随着领头LR-jet横动量下限和信号标定效率的变化关系。
-  分别对multijet样本(左图)和t夸克样本(右图)进行了评估，
+  $D_{Xbb}$算法的本底排除率相对于基线算法DL1r的提升随着领头LR-jet横动量下限和信号标定效率的变化关系。
+  分别对multijet本底(左图)和t夸克本底(右图)进行了评估。
+  此处基线算法DL1r是基于领头LR-jet中两个横动量最高的VR-jet，
   其中$\epsilon$表示效率，它是排除率的倒数。
   }
 \label{fig:PTDL1r}
 \end{figure}
 
-图~\ref{fig:PTMV2}~中展示了$D_{Xbb}$的本底排除率相对于MV2的提升，
-可以看到$D_{Xbb}$相对于MV2的提升也是非常显著的。
+图~\ref{fig:PTMV2}~中展示了$D_{Xbb}$算法的本底排除率相对于基线算法MV2的提升随着领头LR-jet横动量下限和信号标定效率的变化关系，
+此处基线算法MV2也是基于领头LR-jet中两个横动量最高的VR-jet。
+可以看出$D_{Xbb}$算法相对于基线算法MV2的提升也是很显著的。
 
 \begin{figure}[!thbp]
   \begin{subfigure}{.5\textwidth}
@@ -2217,131 +2153,36 @@ $D_{Xbb}$、DL1r和MV2三种算法的本底排除率随着领头LR-jet横动量�
   \caption{}
   \end{subfigure}
   \caption{
-    $D_{Xbb}$的本底排除率相对于MV2的提升随着领头LR-jet横动量下限和信号标定效率的变化关系。
-  分别对multijet样本(左图)和t夸克样本(右图)进行了评估，
-  %其中$\epsilon$表示效率，它是排除率的倒数。
+  $D_{Xbb}$算法的本底排除率相对于基线算法MV2的提升随着领头LR-jet横动量下限和信号标定效率的变化关系。
+  分别对multijet本底(左图)和t夸克本底(右图)进行了评估。
+  此处基线算法MV2是基于领头LR-jet中两个横动量最高的VR-jet，
+  其中$\epsilon$表示效率，它是排除率的倒数。
   }
 \label{fig:PTMV2}
 \end{figure}
 
-综合上述性能研究，新算法$D_{Xbb}$在成功实现了去质量关联的同时，
-相对于ATLAS合作组目前所使用的基线算法DL1r和MV2，
-它也显著提升了高横动量$H\rightarrow b\bar{b}$的标定性能。
+综合上述性能研究，新算法$D_{Xbb}$在成功实现了去质量关联性的同时，
+也显著提高了高横动量$H\rightarrow b\bar{b}$的标定性能。
 
 
 \section{本章小结}
 \label{sec:XbbCon}
 
-%这部分研究当中，
-这一章中，
-我们提出了一种用于标定高横动量$H\rightarrow b\bar{b}$事例的新算法$D_{Xbb}$。
-$D_{Xbb}$基于神经网络，
-是以事例中领头LR-jet的$p_{T}$、$\eta$和其中横动量最高的三个VR-jet的DL1r区分因子做为输入训练得到的，
-%进行训练，
+这部分研究当中，
+我们提出了一种用于标定高横动量$H\rightarrow b\bar{b}$事例的新算法。
+新算法$D_{Xbb}$是基于神经网络以事例中领头LR-jet的$p_{T}$、$\eta$和其中横动量最高的三个VR-jet的DL1r区分因子为输入进行训练，
 用以区分高横动量$H\rightarrow b\bar{b}$信号事例和两种本底，
-这两种本底分别是来自QCD过程的multijet事例和来自强子型衰变的t夸克事例，
-其中DL1r是做合作组目前所使用的b-jet标定算法。
-%其中对于VR-jet，基于神经网络的b-jet标定算法DL1r的性能更优于基于提升决策树的MV2，
-%并能提供三个输出，分别代表该VR-jet被标定为b-jet、c-jet和light-jet的概率。
-$D_{Xbb}$不仅对LR-jet的质量分布没有明显的影响，
-而且与ATLAS合作组在$Run\_2$期间使用基线算法DL1r和MV2相比，
-它对信号和本底的区分精度也有着显著的提升。
+这两种本底分别是来自QCD过程的multijet事例和来自强子型衰变的t夸克事例。
+其中对于VR-jet，基于神经网络的b-jet标定算法DL1r的性能更优于基于提升决策树的MV2，
+并能提供三个输出，分别代表该VR-jet被标定为b-jet、c-jet和light-jet的概率。
+$D_{Xbb}$算法不仅对LR-jet的质量分布没有明显的影响，
+而且与ATLAS实验在$Run\_2$期间使用基线算法DL1r和MV2相比，
+它对信号和本底的区分度有着显著的提升。
 当样本中领头LR-jet横动量大于500GeV时，在信号标定效率为$60\%$的工作点下，
-对于multijet样本，$D_{Xbb}$的本底排除率达到了92，是基于VR-jet的MV2的本底排除率的1.4倍，
-与基于VR-jet的DL1r的本底排除率大致相等；
-对于t夸克样本，$D_{Xbb}$的本底排除率达到了31，是基于VR-jet的MV2的本底排除率的2倍，
-是基于VR-jet的DL1r的本底排除率的1.6倍。
-
-
-
-\begin{figure}
-\begin{center}
-   \includegraphics[width=0.43\linewidth]{figuresXbb/Subjet/SUBQCD.pdf}
-   \includegraphics[width=0.43\linewidth]{figuresXbb/Subjet/SUBTop.pdf}
-\\
-   \includegraphics[width=0.43\linewidth]{figuresXbb/Subjet/SUBQCDMASS.pdf}
-   \includegraphics[width=0.43\linewidth]{figuresXbb/Subjet/SUBTopMASS.pdf}
-\\
-   \includegraphics[width=0.43\linewidth]{figuresXbb/Subjet/SUBQCDMASSPT1.pdf}
-   \includegraphics[width=0.43\linewidth]{figuresXbb/Subjet/SUBTopMASSPT1.pdf}
-\\
-   \includegraphics[width=0.43\linewidth]{figuresXbb/Subjet/SUBQCDMASSPT2.pdf}
-   \includegraphics[width=0.43\linewidth]{figuresXbb/Subjet/SUBTopMASSPT2.pdf}
-\\
-   \includegraphics[width=0.43\linewidth]{figuresXbb/Subjet/SUBQCDMASSPT3.pdf}
-   \includegraphics[width=0.43\linewidth]{figuresXbb/Subjet/SUBTopMASSPT3.pdf}
-\end{center}
-
-  \caption{
- 模型JKDLS(3-subjets)和JKDLS(2-subjets)的性能对比。
-左排的图展示的是multijet本底排除率随着信号效率的变化关系的对比，
-右排的图展示的是t夸克本底排除率随着信号效率的变化关系的对比，
-从上到下依次对应于第~\ref{sec:XbbTagger25}~小节中定义的五个区间。
-%的性能对比。
-  }
-  \label{fig:SubjetROC}
-\end{figure}
-
-
-
-
-\begin{figure}
-\begin{center}
-   \includegraphics[width=0.43\linewidth]{figuresXbb/Reweight/QCDIN.pdf}
-   \includegraphics[width=0.43\linewidth]{figuresXbb/Reweight/TOPIN.pdf}
-\\
-   \includegraphics[width=0.43\linewidth]{figuresXbb/Reweight/QCDMASS.pdf}
-   \includegraphics[width=0.43\linewidth]{figuresXbb/Reweight/TOPMASS.pdf}
-\\
-   \includegraphics[width=0.43\linewidth]{figuresXbb/Reweight/QCDMASSPT1.pdf}
-   \includegraphics[width=0.43\linewidth]{figuresXbb/Reweight/TOPMASSPT1.pdf}
-\\
-   \includegraphics[width=0.43\linewidth]{figuresXbb/Reweight/QCDMASSPT2.pdf}
-   \includegraphics[width=0.43\linewidth]{figuresXbb/Reweight/TOPMASSPT2.pdf}
-\\
-   \includegraphics[width=0.43\linewidth]{figuresXbb/Reweight/QCDMASSPT3.pdf}
-   \includegraphics[width=0.43\linewidth]{figuresXbb/Reweight/TOPMASSPT3.pdf}
-\end{center}
-
-  \caption{
-  基于分布采样和分布加权的模型的性能对比。
-  左排的图展示的是multijet本底排除率随着信号效率的变化关系对比，
-右排的图展示的是t夸克本底排除率随着信号效率的变化关系对比，
-从上到下依次对应于第~\ref{sec:XbbTagger25}~小节中定义的五个区间。
-  }
-  \label{fig:ReweightROC}
-\end{figure}
-
-
-
-
-\begin{figure}
-\begin{center}
-   \includegraphics[width=0.43\linewidth]{figuresXbb/OPT/OPTQCD.pdf}
-   \includegraphics[width=0.43\linewidth]{figuresXbb/OPT/OPTop.pdf}
-\\
-   \includegraphics[width=0.43\linewidth]{figuresXbb/OPT/OPTQCDMASS.pdf}
-   \includegraphics[width=0.43\linewidth]{figuresXbb/OPT/OPTopMASS.pdf}
-\\
-   \includegraphics[width=0.43\linewidth]{figuresXbb/OPT/OPTQCDMASSPT1.pdf}
-   \includegraphics[width=0.43\linewidth]{figuresXbb/OPT/OPTopMASSPT1.pdf}
-\\
-   \includegraphics[width=0.43\linewidth]{figuresXbb/OPT/OPTQCDMASSPT2.pdf}
-   \includegraphics[width=0.43\linewidth]{figuresXbb/OPT/OPTopMASSPT2.pdf}
-\\
-   \includegraphics[width=0.43\linewidth]{figuresXbb/OPT/OPTQCDMASSPT3.pdf}
-   \includegraphics[width=0.43\linewidth]{figuresXbb/OPT/OPTopMASSPT3.pdf}
-\end{center}
-
-  \caption{
-对照组和优化组的模型的性能对比。
-左排的图展示的是multijet本底排除率随着信号效率的变化关系对比，
-右排的图展示的是t夸克本底排除率随着信号效率的变化关系对比，
-从上到下依次对应于第~\ref{sec:XbbTagger25}~小节中定义的五个区间。
-  }
-  \label{fig:OPTROC}
-\end{figure}
-
+对于multijet本底，$D_{Xbb}$的本底排除率达到了92，是基于VR-jet的基线算法MV2的本底排除率的1.4倍，
+与基于VR-jet的基线算法DL1r的本底排除率大致相等；
+对于t夸克本底，$D_{Xbb}$的本底排除率达到了31，是基于VR-jet的基线算法MV2的本底排除率的2倍，
+是基于VR-jet的基线算法DL1r的本底排除率的1.6倍。
 
 
 

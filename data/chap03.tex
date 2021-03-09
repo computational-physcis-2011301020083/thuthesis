@@ -84,7 +84,7 @@ LHCb(Large Hadron Collider beauty)~\cite{LHCb}是一个用于研究B介子物理
 ALICE(A Large Ion Collider Experiment)~\cite{ALICE}是一个用于研究重离子碰撞的探测器。
 %的研究着重于重离子碰撞。
 其中ATLAS实验在$Run\_2$计划期间所收集的数据总积分亮度为147$fb^{-1}$，
-在设备运转正常和数据采集稳定的情况下可用于实际物理分析的数据总积分亮度为139$fb^{-1}$。
+在设备运转正常和数据采集稳定的情况下可用于实际物理分析的数据总积分亮度为139$fb^{-1}$~\cite{ATLASWEB1}。
 %束流相交时非常高的质子-质子碰撞频率给探测器带来了极大的挑战，
 %同时也因为高密度的质子束流使得两个单独的质子束相交时能够产生多次碰撞(堆积事例，pileup)~\cite{PileUp}，让探测器中事例的重建也非常具有挑战性。
 高频率的碰撞事例和高密度的质子束碰撞产生的堆积事例(Pileup)~\cite{PileUp}给探测器和其中事例的重建带来了极大的挑战。
@@ -148,9 +148,9 @@ t夸克性质的精确测量，比如质量、耦合常数和自旋等；
 %精确的电磁量能技术和强子量能技术，用于电子、光子和喷注等能量测量；
 能精确的识别$\mu$子和高的$\mu$子动量分辨率。
 因此，ATLAS采用层叠式设计，从里到外由不同的子探测器组成，覆盖在束流管和对撞点周围，
-它们依次是内部探测器(The Inner Detector, ID)~\cite{ATLASINNER}、电磁量能器(The Electromagnetic Calorimeter)、
-强子量能器(The Hadronic Calorimeter)、前端量能器(The Forward Calorimeter)~\cite{ATLASLACA,ATLASTCA}、
-$\mu$子谱仪(The Muon Spectrometer)~\cite{ATLASMUSPEC}和亮度探测器(The Luminosity Detectors)~\cite{ATLASLUMID}。
+它们依次是内部探测器(The Inner Detector, ID)~\cite{ATLASINNER}、电磁量能器(The Electromagnetic Calorimeter, ECal)、
+强子量能器(The Hadronic Calorimeter, HCal)、前端量能器(The Forward Calorimeter, FCal)~\cite{ATLASLACA,ATLASTCA}、
+$\mu$子谱仪(The Muon Spectrometer, MS)~\cite{ATLASMUSPEC}和亮度探测器(The Luminosity Detectors)~\cite{ATLASLUMID}。
 其中，内部探测器处于一个平行于束流轴的强度为2T的恒定磁场中，它可以测量带电粒子的运动方向、动量和电荷，也可以用来重建碰撞顶点。
 量能器用来吸收光子、电子和强子并测量它们的能量，它能吸收除$\mu$子和中微子之外的所有已知粒子。
 $\mu$子谱仪位于探测器的最外面，它也被包围在一个恒定的强磁场中，磁场由超导磁铁产生，使它能以非常高的精度测量$\mu$子的轨迹和动量。
@@ -304,7 +304,9 @@ ATLAS探测器中包含两个独立的磁系统~\cite{ATLASMS}，由以下四个
 \subsection{内部探测器}
 \label{sec:ATLASID}
 
-如图~\ref{fig:ATLAS6}~所示，是ATLAS内部探测器(The Inner Detector, ID)的截面图，
+如图~\ref{fig:ATLAS6}~所示，是ATLAS内部探测器
+%(The Inner Detector, ID)
+的截面图，
 它是由桶部和端盖部分同心的多层探测材料组成，离对撞点最近，
 长6.2m，端盖半径为1.1.m，处于一个强度为2T的螺线管磁场中。
 主要用于高精度的重建带电粒子的动量、径迹和事例的主顶点、第二顶点等信息，覆盖了$|\eta|<2.5$的范围。
@@ -445,8 +447,14 @@ ATLAS内部探测器沿$R$-$z$平面的截面图。图中展示了其中各个�
 
 如图~\ref{fig:ATLASCA1}~所示，ATLAS的量能器系统~\cite{ATLASLACA,ATLASTCA}包围在内部探测器的外面，
 覆盖了整个$0\le\phi<2\pi$的范围。
-它主要由电磁量能器(The Electromagnetic Calorimeter, ECal)、
-强子量能器(The Hadronic Calorimeter, HCal)和前端量能器(The Forward Calorimeter, FCal)三大部分组成，
+它主要由电磁量能器
+%(The Electromagnetic Calorimeter, ECal)
+、
+强子量能器
+%(The Hadronic Calorimeter, HCal)
+和前端量能器
+%(The Forward Calorimeter, FCal)
+三大部分组成，
 分别覆盖了$|\eta|<3.2$、$|\eta|<3.9$和$3.1<|\eta|<4.9$的范围。
 整个量能器系统处于桶部和左右端盖处三个低温恒温箱中，
 %并覆盖了整个$0\le\phi<2\pi$的范围。
@@ -591,7 +599,9 @@ ATLAS前端量能器的示意图。
 \subsection{$\mu$子谱仪}
 \label{sec:ATLASMSP}
 
-$\mu$子谱仪(The Muon Spectrometer, MS)~\cite{ATLASMUSPEC}位于ATLAS探测器的最外部，
+$\mu$子谱仪
+%(The Muon Spectrometer, MS)
+~\cite{ATLASMUSPEC}位于ATLAS探测器的最外部，
 由精密室(The precision-measurement tracking chambers)和触发室(The trigger chambers)两大部分组成，
 %从径向半径5m处延伸到接近10m的位置，
 用于重建$\mu$子的径迹和动量。
@@ -832,7 +842,7 @@ MC模拟中关键的一环是
 %对被模拟的
 硬散射(Hard scattering)过程的截面计算，
 而截面计算主要依赖于QCD因式分解定理~\cite{MC1}。
-结合部分子分布函数(Parton Distribution Functions, PDFs)~\cite{MC2}，
+结合部分子分布函数(Parton Distribution Functions, PDF)~\cite{MC2}，
 该定理可以将低横动量部分子相互作用与代表硬散射过程的高横动量部分子相互作用过程分离，
 %部分子硬散射过程分离。
 其中
@@ -871,7 +881,7 @@ MC模拟中关键的一环是
 需要建模对其进行描述，
 %强子化建模的主流模型有两个：
 主流的强子化模型有两种：
-Lund弦模型(the Lund string model)~\cite{Hadonization}和簇模型(the cluster model)~\cite{MC4}。
+Lund弦模型(The Lund string model)~\cite{Hadonization}和簇模型(The cluster model)~\cite{MC4}。
 在Lund弦模型中，如图~\ref{fig:MC1}~所示，夸克通过随着夸克分离而拉伸的弦连接在一起，
 这些弦可以被拉断，同时会在新弦的末端产生一个夸克-反夸克对，
 过程一直持续到能量不足以拉断夸克之间的弦，
